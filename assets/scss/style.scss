@@ -1,0 +1,314 @@
+@import "reset";
+@import "home";
+
+@font-face {
+  font-family: "MochiyPopOne";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Mochiy_Pop_One"),
+    url("@/assets/font/Mochiy_Pop_One/MochiyPopOne-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "mayoritte";
+  font-style: normal;
+  font-weight: normal;
+  src: local("mayoritte"),
+    url("@/assets/font/mayoritte/Mayoritte.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Montserrat"),
+    url("@/assets/font/Montserrat/static/Montserrat-Regular.ttf") format("ttf");
+}
+
+
+//mixins
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1920px;
+
+@mixin responsive($screen-size) {
+  @if $screen-size==$sm {
+    @media screen and (min-width: $screen-size) {
+      @content;
+    }
+  }
+
+  @else if $screen-size==$md {
+    @media screen and (min-width: $screen-size) {
+      @content;
+    }
+  }
+
+  @else if $screen-size==$lg {
+    @media screen and (min-width: $screen-size) {
+      @content;
+    }
+  }
+
+  @else if $screen-size==$xl {
+    @media screen and (min-width: $screen-size) {
+      @content;
+    }
+  }
+
+  @else if $screen-size==$xxl {
+    @media screen and (min-width: $screen-size) {
+      @content;
+    }
+  }
+
+  @else {
+    @error "#{$screen-size} is Invalid screen size";
+  }
+}
+
+//variables
+$beyond-white: #FEF7F1;
+$beyond-blue: #1D3858;
+$beyond-orange: #F7CCA3;
+$beyond-grey: #EDEDED;
+$beyond-black: #000000;
+$beyond-brown: #876745;
+$primary-color: #662483;
+
+.row-grid{
+  margin-top:2.9296875vw;
+}
+.row-max-grid{
+  margin-top:5.859375vw;
+}
+.box-shadow{
+
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+
+}
+body{
+  background: #F9F8F8;
+}
+// Variables
+$columns: 12;
+
+// Gird system
+.container {
+  width: 100% - 20%;
+  max-width: 1920px;
+  margin: 0 auto;
+  // overflow: hidden;
+}
+
+// @include responsive($xxl) {
+//   .container {
+//     width: 100% - 10%;
+//     max-width: 1920px;
+//     margin: 0 auto;
+//     // overflow: hidden;
+//   }
+// }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+//default col
+@for $i from 0 through $columns {
+  .col-#{$i} {
+    flex: 0 0 calc(100% / $columns) * $i;
+  }
+
+  .col-offset-#{$i} {
+    margin-left: calc(100% / $columns) * $i;
+  }
+}
+
+// // Small devices (landscape phones, 576px and up)
+
+@include responsive($sm) {
+  @for $i from 0 through $columns {
+    .col-sm-#{$i} {
+      flex: 0 0 calc(100% / $columns) * $i;
+    }
+
+    .col-sm-offset-#{$i} {
+      margin-left: calc(100% / $columns) * $i;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@include responsive($md) {
+  @for $i from 0 through $columns {
+    .col-md-#{$i} {
+      flex: 0 0 calc(100% / $columns) * $i;
+    }
+
+    .col-md-offset-#{$i} {
+      margin-left: calc(100% / $columns) * $i;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@include responsive($lg) {
+  @for $i from 0 through $columns {
+    .col-lg-#{$i} {
+      flex: 0 0 calc(100% / $columns) * $i;
+    }
+
+    .col-lg-offset-#{$i} {
+      margin-left: calc(100% / $columns) * $i;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@include responsive($xl) {
+  @for $i from 0 through $columns {
+    .col-xl-#{$i} {
+      flex: 0 0 calc(100% / $columns) * $i;
+    }
+
+    .col-xl-offset-#{$i} {
+      margin-left: calc(100% / $columns) * $i;
+    }
+  }
+}
+
+// Buttons
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 1.75rem;
+  font-size: 0.9rem;
+  // border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@include responsive($lg) {
+  .btn {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+}
+
+.btn-font {
+  font-family: "Neue Helvetica thin";
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+.btn-primary {
+  @extend .btn-font;
+  font-size: 1rem;
+  color: #1D3858;
+  padding: 0.7rem 1rem;
+  background: #fff;
+  width: 15vw;
+  // border: 1px #707070 solid;
+  max-width: 24.5rem;
+  text-align: center;
+}
+
+.btn-cta {
+  @extend .btn-font;
+  background: #313131;
+  padding: 0.7rem 8rem;
+  color: #fff;
+  border: none;
+  max-width: 24.5rem;
+  text-align: center;
+
+}
+
+@include responsive($md) {
+  .btn-cta {
+    padding: 0.7rem 2rem;
+  }
+}
+
+.btn-secondary {
+  @extend .btn-cta;
+  background: #f3eee7;
+  border: 1px #707070 solid;
+  color: #313131;
+}
+
+.sub-title {
+  font-family: "Neue Helvetica thin";
+  font-weight: 600;
+  color: #525252;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.title {
+  font-family: "Neue Helvetica Medium";
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.E-bg {
+  background: #f3eee7;
+}
+
+.text {
+  font-family: "Neue Helvetica thin";
+  font-weight: 600;
+  letter-spacing: 0.07rem;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+
+  //   @include responsive($md) {
+  //   font-size: 1rem;
+  // }
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.link {
+  font-family: "Neue Helvetica thin";
+  font-weight: 600;
+  color: #525252;
+  font-size: 1rem;
+  position: relative;
+  letter-spacing: 0.07rem;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    position: absolute;
+    font-size: 0.8rem;
+    top: 120%;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #525252;
+  }
+}

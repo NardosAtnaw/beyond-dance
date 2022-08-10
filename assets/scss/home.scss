@@ -1,0 +1,104 @@
+.home-nav {
+  display: grid;
+  place-content: center;
+  .container {
+    // display: grid;
+    // place-content: center;
+    width: 100%;
+    .logo {
+      display: grid;
+      place-content: center;
+      img {
+        width: 10vw;
+      }
+    }
+    .links {
+      .ul-links {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 4.49vw;
+        li {
+          font-size: 1vw;
+          color: #1D3858;
+          font-family: "Montserrat";
+          .box-form {
+            background-color: #662483;
+            padding: .7vw;
+            padding-left: 2.2vw;
+            padding-right: 2.2vw;
+            color: #ffff;
+          }
+        }
+      }
+    }
+  }
+}
+.hero-vid{
+    .container{
+        .video{
+         
+            img{
+
+                width: 100%;
+                height:40vw;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.join-cta{
+    display: grid;
+    place-content: center;
+         position: relative;
+         align-items: center;
+    .container{
+        display: grid;
+        place-items: center;
+        .bg-texture{
+            display: grid;
+            place-items: center;
+            align-items: center;
+            img{
+
+                width: 130rem;
+            }
+            // position: absolute;
+        }
+        .join-txt{
+            display: grid;
+         justify-items:  center;
+            
+                 align-items: center;
+            position: absolute;
+            top: 1vw;
+
+            .join-title{
+                z-index: 9999;
+                h1{
+                    font-family: "mayoritte";
+                    // font-family: "MochiyPopOne";
+                    font-size: 6.5vw;
+                    color: #FEF7F1;
+                    text-align: center;
+
+                }
+
+            }
+            .join-p{
+                p{
+                    font-family: "Montserrat";
+                    text-align: center;
+           width: 35rem;
+           margin-top: 1.5vw;
+           color: #FEF7F1;
+           font-size: 1.25vw;
+           line-height: 2vw;
+         
+                }
+            }
+     
+        }
+    }
+}
