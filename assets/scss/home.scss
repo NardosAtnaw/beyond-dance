@@ -9,27 +9,37 @@
       display: grid;
       place-content: center;
       img {
-        width: 10vw;
+        width: 40vw;
+        @include responsive($lg){
+          width: 10vw;
+        }
       }
     }
     .links {
       .ul-links {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        gap: 6vw;
-        li {
-          font-size: 0.8vw;
-          color: #1d3858;
-          font-family: "Montserrat";
-          .box-form {
-            background-color: #662483;
-            padding: 0.7vw;
-            padding-left: 2.2vw;
-            padding-right: 2.2vw;
-            color: #ffff;
+        display: none;
+     
+      }
+      @include responsive($lg){
+        .ul-links {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          gap: 6vw;
+          li {
+            font-size: 0.8vw;
+            color: #1d3858;
+            font-family: "Montserrat";
+            .box-form {
+              background-color: #662483;
+              padding: 0.7vw;
+              padding-left: 2.2vw;
+              padding-right: 2.2vw;
+              color: #ffff;
+            }
           }
         }
+
       }
     }
   }
@@ -39,8 +49,13 @@
     .video {
       img {
         width: 100%;
-        height: 40vw;
+        height: 80vw;
         object-fit: cover;
+        @include responsive($lg){
+          width: 100%;
+          height: 40vw;
+          object-fit: cover;
+        }
       }
     }
   }
@@ -59,7 +74,11 @@
       place-items: center;
       align-items: center;
       img {
-        width: 130rem;
+//         width: 100%;
+// object-fit: cover;
+        @include responsive($lg){
+          width: 130rem;
+        }
       }
       // position: absolute;
     }
@@ -88,8 +107,11 @@
           width: 35rem;
           margin-top: 1.5vw;
           color: #fef7f1;
-          font-size: 1.25vw;
+          font-size:2.25vw;
           line-height: 2vw;
+          @include responsive($lg){
+            font-size: 1.25vw;
+          }
         }
       }
       button {
@@ -101,30 +123,51 @@
 .who-we-are {
   .container {
     .who-all {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      place-content: center;
+  
       align-items: center;
       gap: 2vw;
-      width: 100%;
+    
+      @include responsive($lg){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2vw;
+        width: 100%; 
+      }
       .who-title {
         h1 {
           font-family: "Mochiy Pop One", sans-serif;
           font-weight: 100;
-          font-size: 5vw;
+          font-size: 4.5vw;
           color: #876745;
           line-height: 8vw;
           letter-spacing: 0.9vw;
+          text-align: center;
+          @include responsive($lg){
+            text-align: left;
+          }
         }
       }
       .who-desc {
-        width: 60%;
+        width: 100%;
+        @include responsive($lg){
+          width: 60%;
+        }
         p {
           color: #876745;
-          font-size: 1.25vw;
+          font-size: 3.5vw;
           font-weight: 500;
           font-family: "Montserrat";
-          line-height: 2vw;
+          // line-height: 3.5vw;
           // text-align: center;
+          text-align: center;
+          @include responsive($lg){
+            text-align: left;
+            font-size: 1.25vw;
+            line-height: 2vw;
+          }
         }
       }
     }
@@ -133,28 +176,50 @@
 .big-image {
   img {
     width: 100%;
-    height: 40vh;
+    height: 20vh;
     object-fit: cover;
+    @include responsive($lg){
+      width: 100%;
+      height: 40vh;
+      object-fit: cover; 
+    }
   }
 }
 footer {
   background-color: #1d3858;
   .footer-all {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+display: grid;
+place-items: center;
+    @include responsive($lg){
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     .logo-foot {
       img {
-        width: 13vw;
+        width: 43vw;
+        @include responsive($lg){
+          width: 13vw;
+        }
       }
     }
     .desc-foot {
-      width: 50%;
+      width: 100%;
+      @include responsive($lg){
+        width: 50%;
+      }
       p {
-        font-size: 0.8vw;
-        line-height: 1.25vw;
+        font-size: 2.8vw;
+     margin-bottom: 2vw;
         font-family: "Montserrat";
         color: #fef7f1;
+        text-align: center;
+        @include responsive($lg){
+          font-size: 0.8vw;
+          text-align: left;
+          line-height: 1.25vw;
+          margin-bottom: 0vw;
+        }
       }
     }
   }
@@ -172,38 +237,60 @@ footer {
         position: relative;
         h2 {
           font-family: "mayoritte";
-          font-size: 4.5vw;
+          font-size: 8.5vw;
           color: #876745;
+          @include responsive($lg){
+            font-size: 4.5vw;
+          }
         }
         .decor-box {
           position: absolute;
-          width: 500px;
-          height: 45px;
-          left: 60px;
+          width: 250px;
+          height: 25px;
+          left: 40px;
           z-index: -1;
-          margin-top: -2vw;
+          margin-top: -4vw;
 
           background: rgba(247, 204, 163, 0.39);
+          @include responsive($lg){
+            width: 500px;
+            height: 45px;
+            margin-top: -2vw;
+            left: 60px;
+
+          }
         }
         .sch-img {
           display: grid;
           place-items: center;
           img {
-            width: 50vw;
+            width: 100vw;
             object-fit: cover;
+            @include responsive ($lg){
+              width: 50vw;
+            }
           }
           .desc {
             display: grid;
             place-items: center;
             p {
-              width: 60%;
+              width: 100%;
               font-family: "Montserrat";
-              font-size: 1.25vw;
+              font-size: 3.5vw;
               text-align: center;
+              @include responsive($lg){
+                font-size: 1.25vw; 
+                width: 60%;
+              }
             }
             .buttons {
-              display: flex;
-              gap: 3vw;
+             display: grid;
+             place-content: center;
+             width: 3vw;
+              @include responsive($lg){
+                display: flex;
+                gap: 3vw;
+              }
             }
           }
         }
@@ -214,44 +301,209 @@ footer {
         position: relative;
         h2 {
           font-family: "mayoritte";
-          font-size: 4.5vw;
+          font-size: 8.5vw;
           color: #876745;
+          @include responsive($lg){
+            font-size: 4.5vw;
+          }
         }
         .decor-box {
           position: absolute;
-          width: 500px;
-          height: 45px;
-          left: 60px;
+          width: 250px;
+          height: 25px;
+          left: 40px;
           z-index: -1;
-          margin-top: -2vw;
+          margin-top: -4vw;
 
           background: rgba(247, 204, 163, 0.39);
+          @include responsive($lg){
+            width: 500px;
+            height: 45px;
+            margin-top: -2vw;
+            left: 60px;
+
+          }
         }
         .class-list {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 3vw;
-          align-items: flex-end;
+         display: grid;
+         place-items: center;
+          @include responsive($lg){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3vw;
+            align-items:center;
+          }
+
           .class-single {
             display: grid;
             place-items: center;
             margin-top: 6vw;
             img {
-              width: 20vw;
+              width: 40vw;
+              margin-top:8vw;
+              @include responsive($lg){
+                width: 20vw;
+                margin-top: 3vw;
+              }
             }
             h3 {
-              font-size: 1.5vw;
+              font-size: 4.5vw;
               text-align: center;
               color: #1d3858;
+              margin-top:8vw;
               font-family: "Montserrat";
+              @include responsive($lg){
+                font-size: 1.5vw;
+                margin-top: 3vw;
+              }
             }
             p {
-              font-size: 0.8vw;
+              font-size: 3.5vw;
               text-align: center;
               color: #1d3858;
               font-family: "Montserrat";
+              @include responsive($lg){
+                font-size: 1.25vw;
+              }
             }
           }
+        }
+      }
+    }
+  }
+}
+.show-case {
+  .container {
+    h1 {
+      font-size: 5vw;
+      font-family: "Montserrat";
+      color: #1d3858;
+      text-align: center;
+      @include responsive($lg){
+        font-size: 2vw;
+       
+      }
+    }
+    .show-videos {
+    display: grid;
+    place-items: center;
+    gap: 2vw;
+      @include responsive($lg){
+        display: flex;
+       
+      }
+
+      .single-video {
+        iframe {
+          width: 75vw;
+          height: 50vw;
+          @include responsive($lg){
+            width: 25vw;
+            height: 20vw;
+          }
+        }
+      }
+    }
+  }
+}
+.home-contact {
+  .container {
+    h1 {
+      font-size: 5vw;
+      font-family: "Montserrat";
+      color: #1d3858;
+      text-align: center;
+      @include responsive($lg){
+        font-size: 2vw;
+       
+      }
+    }
+    .contact-list {
+ display: grid;
+
+      @include responsive($lg){
+        display: flex;
+        // justify-content: space-between;
+      }
+      .form {
+        form {
+          p {
+            font-size:3.8vw;
+            margin-top: 6vw;
+
+            font-family: "Montserrat";
+            color: #876745;
+            width: 60%;
+            @include responsive($lg){
+              font-size: 0.8vw;
+              margin-top: 2vw;
+            }
+          }
+          .input {
+            border: none;
+            border-bottom: 1px solid #1d3858;
+            background-color: transparent;
+            margin-top: 2vw;
+            width: 85vw;
+            font-size: 0.8vw;
+            outline: none;
+            font-family: "Montserrat";
+            color: #876745;
+            @include responsive($lg){
+              width: 35vw;
+            }
+          }
+        }
+      }
+      .contact-info {
+        // position: relative;
+        // width: 10%;
+        img {
+     
+          @include responsive($lg){
+            position: absolute;
+            // top: 0;
+            right: 0;
+            width: 30vw;
+            // margin-right: -10vw;
+            z-index: -1;
+          }
+        }
+        h2 {
+          // position: absolute;
+          font-family: "Mochiy Pop One", sans-serif;
+
+          font-size:6vw;
+          color: #1d3858;
+          text-align: center;
+          @include responsive ($lg){
+            font-size: 3vw;
+
+          }
+        }
+        p{
+          text-align: center;
+          color: #1d3858;
+
+        }
+        .home-social-links{
+          display: grid;
+          place-items: center;
+          .soc-links{
+            display: flex;
+            align-items: center;
+            margin-top: 2vw;
+            gap: 1.5vw;
+            position: absolute;
+        
+      a{
+     
+        img{
+        
+        }
+      }
+       
+        }
         }
       }
     }

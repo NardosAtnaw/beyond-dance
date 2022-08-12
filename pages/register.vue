@@ -99,9 +99,9 @@
           <p>Dancer's Shoe Size (Euro Measurements)</p>
           <input class="input" type="text" />
           <p>Additional Information</p>
-          <input class="input" type="text" />
-        </form>
+          <input class="input" type="text" /><br/>
         <button class="btn btn-thrid">Submit</button>
+        </form>
       </div>
     </div>
     <div class="big-image row-grid">
