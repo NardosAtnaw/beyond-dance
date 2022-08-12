@@ -13,17 +13,17 @@ position: relative;
         .soc-links{
             display: flex;
             align-items: center;
-            gap: 1.8vw;
+            gap: 1.5vw;
             position: absolute;
             z-index: 9;
-            top: 18vw;
-            right: 5vw;
-            a{
-                img{
-                    // width: 2vw;
+            top: 17vw;
+            right: 9.5vw;
+            // a{
+            //     img{
+                 
 
-                }
-            }
+            //     }
+            // }
         }
     }
 .register-form{
@@ -61,6 +61,8 @@ outline: none;
 }
 .mg-left{
   margin-left: 1vw;
+
+  margin-top: 1vw;
 }
         }
     }
