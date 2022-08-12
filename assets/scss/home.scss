@@ -17,14 +17,14 @@
         display: flex;
         align-items: center;
         width: 100%;
-        gap: 4.49vw;
+        gap: 6vw;
         li {
-          font-size: 1vw;
-          color: #1D3858;
+          font-size: 0.8vw;
+          color: #1d3858;
           font-family: "Montserrat";
           .box-form {
             background-color: #662483;
-            padding: .7vw;
+            padding: 0.7vw;
             padding-left: 2.2vw;
             padding-right: 2.2vw;
             color: #ffff;
@@ -34,71 +34,226 @@
     }
   }
 }
-.hero-vid{
-    .container{
-        .video{
-         
-            img{
-
-                width: 100%;
-                height:40vw;
-                object-fit: cover;
-            }
-        }
+.hero-vid {
+  .container {
+    .video {
+      img {
+        width: 100%;
+        height: 40vw;
+        object-fit: cover;
+      }
     }
+  }
 }
 
-.join-cta{
+.join-cta {
+  display: grid;
+  place-content: center;
+  position: relative;
+  align-items: center;
+  .container {
     display: grid;
-    place-content: center;
-         position: relative;
-         align-items: center;
-    .container{
-        display: grid;
-        place-items: center;
-        .bg-texture{
+    place-items: center;
+    .bg-texture {
+      display: grid;
+      place-items: center;
+      align-items: center;
+      img {
+        width: 130rem;
+      }
+      // position: absolute;
+    }
+    .join-txt {
+      display: grid;
+      justify-items: center;
+
+      align-items: center;
+      position: absolute;
+      top: 1vw;
+
+      .join-title {
+        z-index: 9999;
+        h1 {
+          font-family: "mayoritte";
+          // font-family: "MochiyPopOne";
+          font-size: 6.5vw;
+          color: #fef7f1;
+          text-align: center;
+        }
+      }
+      .join-p {
+        p {
+          font-family: "Montserrat";
+          text-align: center;
+          width: 35rem;
+          margin-top: 1.5vw;
+          color: #fef7f1;
+          font-size: 1.25vw;
+          line-height: 2vw;
+        }
+      }
+      button {
+        font-family: "Montserrat";
+      }
+    }
+  }
+}
+.who-we-are {
+  .container {
+    .who-all {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2vw;
+      width: 100%;
+      .who-title {
+        h1 {
+          font-family: "Mochiy Pop One", sans-serif;
+          font-weight: 100;
+          font-size: 5vw;
+          color: #876745;
+          line-height: 8vw;
+          letter-spacing: 0.9vw;
+        }
+      }
+      .who-desc {
+        width: 60%;
+        p {
+          color: #876745;
+          font-size: 1.25vw;
+          font-weight: 500;
+          font-family: "Montserrat";
+          line-height: 2vw;
+          // text-align: center;
+        }
+      }
+    }
+  }
+}
+.big-image {
+  img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+  }
+}
+footer {
+  background-color: #1d3858;
+  .footer-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo-foot {
+      img {
+        width: 13vw;
+      }
+    }
+    .desc-foot {
+      width: 50%;
+      p {
+        font-size: 0.8vw;
+        line-height: 1.25vw;
+        font-family: "Montserrat";
+        color: #fef7f1;
+      }
+    }
+  }
+}
+.programs {
+  .container {
+    h1 {
+      font-size: 2vw;
+      font-family: "Montserrat";
+      color: #1d3858;
+      text-align: center;
+    }
+    .schedule-all {
+      .sch-title {
+        position: relative;
+        h2 {
+          font-family: "mayoritte";
+          font-size: 4.5vw;
+          color: #876745;
+        }
+        .decor-box {
+          position: absolute;
+          width: 500px;
+          height: 45px;
+          left: 60px;
+          z-index: -1;
+          margin-top: -2vw;
+
+          background: rgba(247, 204, 163, 0.39);
+        }
+        .sch-img {
+          display: grid;
+          place-items: center;
+          img {
+            width: 50vw;
+            object-fit: cover;
+          }
+          .desc {
             display: grid;
             place-items: center;
-            align-items: center;
-            img{
-
-                width: 130rem;
+            p {
+              width: 60%;
+              font-family: "Montserrat";
+              font-size: 1.25vw;
+              text-align: center;
             }
-            // position: absolute;
+            .buttons {
+              display: flex;
+              gap: 3vw;
+            }
+          }
         }
-        .join-txt{
-            display: grid;
-         justify-items:  center;
-            
-                 align-items: center;
-            position: absolute;
-            top: 1vw;
-
-            .join-title{
-                z-index: 9999;
-                h1{
-                    font-family: "mayoritte";
-                    // font-family: "MochiyPopOne";
-                    font-size: 6.5vw;
-                    color: #FEF7F1;
-                    text-align: center;
-
-                }
-
-            }
-            .join-p{
-                p{
-                    font-family: "Montserrat";
-                    text-align: center;
-           width: 35rem;
-           margin-top: 1.5vw;
-           color: #FEF7F1;
-           font-size: 1.25vw;
-           line-height: 2vw;
-         
-                }
-            }
-     
-        }
+      }
     }
+    .class-all {
+      .class-title {
+        position: relative;
+        h2 {
+          font-family: "mayoritte";
+          font-size: 4.5vw;
+          color: #876745;
+        }
+        .decor-box {
+          position: absolute;
+          width: 500px;
+          height: 45px;
+          left: 60px;
+          z-index: -1;
+          margin-top: -2vw;
+
+          background: rgba(247, 204, 163, 0.39);
+        }
+        .class-list {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 3vw;
+          align-items: flex-end;
+          .class-single {
+            display: grid;
+            place-items: center;
+            margin-top: 6vw;
+            img {
+              width: 20vw;
+            }
+            h3 {
+              font-size: 1.5vw;
+              text-align: center;
+              color: #1d3858;
+              font-family: "Montserrat";
+            }
+            p {
+              font-size: 0.8vw;
+              text-align: center;
+              color: #1d3858;
+              font-family: "Montserrat";
+            }
+          }
+        }
+      }
+    }
+  }
 }

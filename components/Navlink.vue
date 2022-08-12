@@ -9,13 +9,13 @@
 
             <div class="links">
             <ul class="ul-links">
-                <li>Home</li>
-              <li>Dance Studio</li>
-                 <li>Programs</li>
-                  <li>Performance Information and Videos</li>
-                  <li>Events</li>
-                     <li>Contact Us</li>
-                  <li ><span class="box-form">Register Now</span> </li>
+                <li>  <nuxt-link to="/">Home</nuxt-link></li>
+              <li><nuxt-link to="/">Dance Studio</nuxt-link></li>
+                 <li><nuxt-link to="/">Programs</nuxt-link></li>
+                  <li><nuxt-link to="/">Performance Information and Videos</nuxt-link></li>
+                  <li><nuxt-link to="/">Events</nuxt-link></li>
+                     <li><nuxt-link to="/">Contact Us</nuxt-link></li>
+                  <li ><nuxt-link to="/"><span class="box-form">Register Now</span> </nuxt-link></li>
             </ul>
             </div>
         </div>

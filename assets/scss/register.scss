@@ -1,0 +1,70 @@
+.register-body{
+position: relative;
+    .social-media{
+     
+        .bg-back{
+            position: absolute;
+            top: -1vw;
+        z-index: -1;
+        width: 80vw;
+            right:-23vw ;
+            transform: rotate(90deg);
+        }
+        .soc-links{
+            display: flex;
+            align-items: center;
+            gap: 1.8vw;
+            position: absolute;
+            z-index: 9;
+            top: 18vw;
+            right: 5vw;
+            a{
+                img{
+                    // width: 2vw;
+
+                }
+            }
+        }
+    }
+.register-form{
+    .container{
+        h1{
+            margin-top: 10vw;
+            font-size: 1.6vw;
+            font-weight: 400;
+            font-family: "Mochiy Pop One", sans-serif;
+            color: #1d3858;
+            // text-align: center;
+        }
+        p{
+            font-size: .8vw;
+            margin-top: 2vw;
+       
+            font-family: "Montserrat";
+            color: #876745;
+            width: 60%;
+        }
+
+        .full-form{
+            .input{
+    border: none;
+    border-bottom: 1px solid #7e7979;
+    background-color: transparent;
+    margin-top: 2vw;
+    width: 80%;
+    font-size: .8vw;
+outline: none;
+    font-family: "Montserrat";
+    color: #876745;
+    
+
+}
+.mg-left{
+  margin-left: 1vw;
+}
+        }
+    }
+}
+
+
+}
