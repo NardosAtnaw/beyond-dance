@@ -8,11 +8,55 @@
     .logo {
       display: grid;
       place-content: center;
+      width: 30vw;
+      object-fit: cover;
+  // .logo-img{
+  //   background: url(../img/balletlogo.svg) no-repeat;
+  //   display: block;
+  //   width: 100px;
+  //   height: 100px;
+  //      object-fit: cover;
+  // }
+  // .logo-mask{
+    // width: 100px;
+    // height: 100px;
+
+  // }
       img {
-        width: 40vw;
+        width: 30vw;
         @include responsive($lg){
           width: 10vw;
         }
+      }
+    }
+    .mobile-link {
+      display: grid;
+      place-content: center;
+      .ul-links {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 6vw;
+        li {
+          font-size: 1rem;
+          color: #1d3858;
+          font-family: "Montserrat";
+          .box-form {
+            background-color: #662483;
+            padding: 1.25vw;
+            padding-left: 2.2vw;
+            padding-right: 2.2vw;
+            color: #ffff;
+          }
+        }
+      }
+      @include responsive($lg){
+        .ul-links {
+          display: none;
+       
+        }
+   
+
       }
     }
     .links {
@@ -74,10 +118,12 @@
       place-items: center;
       align-items: center;
       img {
-//         width: 100%;
-// object-fit: cover;
+        // width: 100%;
+        width: 200vw;
+
+object-fit: cover;
         @include responsive($lg){
-          width: 130rem;
+          width: 130vw;
         }
       }
       // position: absolute;
@@ -95,22 +141,29 @@
         h1 {
           font-family: "mayoritte";
           // font-family: "MochiyPopOne";
-          font-size: 6.5vw;
+          font-size: 8.5vw;
           color: #fef7f1;
           text-align: center;
+          @include responsive($lg){
+            font-size: 6.5vw;
+          }
         }
       }
       .join-p {
         p {
           font-family: "Montserrat";
           text-align: center;
-          width: 35rem;
+         display: none;
           margin-top: 1.5vw;
           color: #fef7f1;
-          font-size:2.25vw;
-          line-height: 2vw;
+          font-size:3vw;
+      
           @include responsive($lg){
+            display: block;
+            width: 35rem;
             font-size: 1.25vw;
+            line-height: 2vw;
+
           }
         }
       }
@@ -145,15 +198,19 @@
           line-height: 8vw;
           letter-spacing: 0.9vw;
           text-align: center;
+          @include responsive($md){
+            font-size: 3vw;
+          }
           @include responsive($lg){
-            text-align: left;
+   
+            font-size: 3vw;
           }
         }
       }
       .who-desc {
         width: 100%;
         @include responsive($lg){
-          width: 60%;
+          width: 70%;
         }
         p {
           color: #876745;
@@ -163,9 +220,13 @@
           // line-height: 3.5vw;
           // text-align: center;
           text-align: center;
+          @include responsive($md){
+            font-size: 2.2vw;
+            line-height: 4vw;
+          }
           @include responsive($lg){
             text-align: left;
-            font-size: 1.25vw;
+            font-size: 1vw;
             line-height: 2vw;
           }
         }
@@ -198,6 +259,9 @@ place-items: center;
     .logo-foot {
       img {
         width: 43vw;
+        @include responsive($md){
+          width: 18vw;
+        }
         @include responsive($lg){
           width: 13vw;
         }
@@ -209,11 +273,18 @@ place-items: center;
         width: 50%;
       }
       p {
-        font-size: 2.8vw;
+        font-size: .8rem;
      margin-bottom: 2vw;
+     margin-left: 3rem;
+     margin-right: 3rem;
+    //  width:80%;
         font-family: "Montserrat";
         color: #fef7f1;
         text-align: center;
+        @include responsive($lg){
+          margin-left: 5rem;
+          margin-right: 5rem;
+        }
         @include responsive($lg){
           font-size: 0.8vw;
           text-align: left;
@@ -227,10 +298,17 @@ place-items: center;
 .programs {
   .container {
     h1 {
-      font-size: 2vw;
+      font-size: 5vw;
       font-family: "Montserrat";
       color: #1d3858;
       text-align: center;
+      @include responsive($md){
+        font-size: 2.5vw;
+      }
+      @include responsive($lg){
+        font-size: 2vw;
+       
+      }
     }
     .schedule-all {
       .sch-title {
@@ -239,13 +317,16 @@ place-items: center;
           font-family: "mayoritte";
           font-size: 8.5vw;
           color: #876745;
+          @include responsive($md){
+            font-size: 5.5vw;
+          }
           @include responsive($lg){
             font-size: 4.5vw;
           }
         }
         .decor-box {
           position: absolute;
-          width: 250px;
+          width: 70%;
           height: 25px;
           left: 40px;
           z-index: -1;
@@ -253,7 +334,8 @@ place-items: center;
 
           background: rgba(247, 204, 163, 0.39);
           @include responsive($lg){
-            width: 500px;
+            // width: 500px;
+            width: 40%;
             height: 45px;
             margin-top: -2vw;
             left: 60px;
@@ -278,6 +360,9 @@ place-items: center;
               font-family: "Montserrat";
               font-size: 3.5vw;
               text-align: center;
+              @include responsive($md){
+                font-size: 2.25vw; 
+              }
               @include responsive($lg){
                 font-size: 1.25vw; 
                 width: 60%;
@@ -287,6 +372,7 @@ place-items: center;
              display: grid;
              place-content: center;
              width: 3vw;
+
               @include responsive($lg){
                 display: flex;
                 gap: 3vw;
@@ -303,13 +389,16 @@ place-items: center;
           font-family: "mayoritte";
           font-size: 8.5vw;
           color: #876745;
+          @include responsive($md){
+            font-size: 5.5vw;
+          }
           @include responsive($lg){
             font-size: 4.5vw;
           }
         }
         .decor-box {
           position: absolute;
-          width: 250px;
+          width: 70%;
           height: 25px;
           left: 40px;
           z-index: -1;
@@ -317,7 +406,8 @@ place-items: center;
 
           background: rgba(247, 204, 163, 0.39);
           @include responsive($lg){
-            width: 500px;
+            // width: 500px;
+            width: 40%;
             height: 45px;
             margin-top: -2vw;
             left: 60px;
@@ -327,7 +417,7 @@ place-items: center;
         .class-list {
          display: grid;
          place-items: center;
-          @include responsive($lg){
+          @include responsive($md){
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 3vw;
@@ -341,8 +431,12 @@ place-items: center;
             img {
               width: 40vw;
               margin-top:8vw;
+              @include responsive($md){
+                width: 25vw;
+
+              }
               @include responsive($lg){
-                width: 20vw;
+                width: 15vw;
                 margin-top: 3vw;
               }
             }
@@ -352,6 +446,9 @@ place-items: center;
               color: #1d3858;
               margin-top:8vw;
               font-family: "Montserrat";
+              @include responsive($md){
+                font-size: 3.5vw;
+              }
               @include responsive($lg){
                 font-size: 1.5vw;
                 margin-top: 3vw;
@@ -362,6 +459,9 @@ place-items: center;
               text-align: center;
               color: #1d3858;
               font-family: "Montserrat";
+              @include responsive($md){
+                font-size: 2vw;
+              }
               @include responsive($lg){
                 font-size: 1.25vw;
               }
@@ -379,6 +479,9 @@ place-items: center;
       font-family: "Montserrat";
       color: #1d3858;
       text-align: center;
+      @include responsive($md){
+        font-size: 2.5vw;
+      }
       @include responsive($lg){
         font-size: 2vw;
        
@@ -413,6 +516,9 @@ place-items: center;
       font-family: "Montserrat";
       color: #1d3858;
       text-align: center;
+      @include responsive($md){
+        font-size: 3vw;
+      }
       @include responsive($lg){
         font-size: 2vw;
        
@@ -423,7 +529,7 @@ place-items: center;
 
       @include responsive($lg){
         display: flex;
-        // justify-content: space-between;
+        justify-content: space-between;
       }
       .form {
         form {
@@ -434,6 +540,9 @@ place-items: center;
             font-family: "Montserrat";
             color: #876745;
             width: 60%;
+            @include responsive($md){
+              font-size:2.8vw;
+            }
             @include responsive($lg){
               font-size: 0.8vw;
               margin-top: 2vw;
@@ -461,7 +570,7 @@ place-items: center;
         img {
      
           @include responsive($lg){
-            position: absolute;
+            // position: absolute;
             // top: 0;
             right: 0;
             width: 30vw;
@@ -483,6 +592,7 @@ place-items: center;
         }
         p{
           text-align: center;
+          font-family: "Montserrat";
           color: #1d3858;
 
         }
@@ -493,13 +603,20 @@ place-items: center;
             display: flex;
             align-items: center;
             margin-top: 2vw;
+            @include responsive($lg){
+              margin-top: 0vw;
+            }
             gap: 1.5vw;
-            position: absolute;
+     
         
       a{
-     
         img{
+      @include responsive($lg){
+        display: flex;
+        gap: 1rem;
         
+        width: 2vw;
+      }
         }
       }
        

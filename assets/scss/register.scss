@@ -6,43 +6,65 @@ position: relative;
             position: absolute;
             top: -1vw;
         z-index: -1;
-        width: 80vw;
-            right:-23vw ;
+        width: 250vw;
+
+            right:-28vw ;
             transform: rotate(90deg);
+            @include responsive($lg){
+                width: 75vw;
+                right:-23vw ;
+
+            }
+            
         }
         .soc-links{
-            display: flex;
-            align-items: center;
+            display: grid;
+       align-items: center;
             gap: 1.5vw;
             position: absolute;
             z-index: 9;
             top: 17vw;
             right: 9.5vw;
-            // a{
-            //     img{
-                 
+            @include responsive($lg){
+                display: flex;
+                align-items: center;
+                gap: 1vw;
+            }
+            a{
+                display: grid;
+                place-items: center;
+                img{
+                 width: 1.25rem;
+                 @include responsive($lg){
+                    width: 1.8rem;
+                 }
 
-            //     }
-            // }
+                }
+            }
         }
     }
 .register-form{
     .container{
         h1{
             margin-top: 10vw;
-            font-size: 1.6vw;
+            font-size: 1.25rem;
             font-weight: 400;
             font-family: "Mochiy Pop One", sans-serif;
             color: #1d3858;
             // text-align: center;
         }
         p{
-            font-size: .8vw;
-            margin-top: 2vw;
+            font-size: .8rem;
+            margin-top: 2rem;
        
             font-family: "Montserrat";
             color: #876745;
-            width: 60%;
+            width: 100%;
+            @include responsive($lg){
+                margin-top: 2vw;
+                font-size: .8vw;
+                width: 60%;
+            }
         }
 
         .full-form{
@@ -52,10 +74,14 @@ position: relative;
     background-color: transparent;
     margin-top: 2vw;
     width: 80%;
-    font-size: .8vw;
+    font-size: .8rem;
 outline: none;
     font-family: "Montserrat";
     color: #876745;
+    @include responsive($lg){
+        font-size: .8vw;
+        width: 80%;
+    }
     
 
 }
