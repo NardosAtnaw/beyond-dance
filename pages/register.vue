@@ -30,77 +30,169 @@
           person*
         </p>
 
-        <form action=" " class="full-form row-max-grid">
+        <form
+          action=""
+          @submit.prevent="submitForm"
+          class="full-form row-max-grid"
+        >
           <p>Student's Name *</p>
-          <input class="input" type="text" />
+          <input class="input" v-model="form.student_name" type="text" />
           <p>
             Parent/Guardian Name<br />
             Required for Children Ages 18 and Under
           </p>
-          <input class="input" type="text" />
+          <input class="input" v-model="form.parent_name" type="text" />
           <p>Student's Gender *</p>
           <p>
-            <input type="radio" name="gender" value="female" class="mg-left" />
+            <input
+              type="radio"
+              class="mg-left"
+              v-model="form.gender"
+              value="female"
+            />
             Female
-            <input type="radio" class="mg-left" name="gender" value="male" />
+            <input
+              type="radio"
+              class="mg-left"
+              v-model="form.gender"
+              value="male"
+            />
             Male
           </p>
           <p></p>
           <p>Date of Birth</p>
-          <input class="input" type="date" />
+          <input class="input" v-model="form.dob" type="date" />
           <p>Age Group *</p>
           <p>
-            <input type="radio" class="mg-left" />
-            3-5 year old <input type="radio" class="mg-left" /> 6-9 year old
+            <input
+              type="radio"
+              value="3-5"
+              v-model="form.age_group"
+              class="mg-left"
+            />
+            3-5 year old
+            <input
+              type="radio"
+              value="6-9"
+              v-model="form.age_group"
+              class="mg-left"
+            />
+            6-9 year old
           </p>
 
           <p></p>
           <p>
-            <input type="radio" class="mg-left" />10-13 year old
-            <input type="radio" class="mg-left" />14-18 year old
+            <input
+              type="radio"
+              value="10-13"
+              v-model="form.age_group"
+              class="mg-left"
+            />10-13 year old
+            <input
+              type="radio"
+              value="14-18"
+              v-model="form.age_group"
+              class="mg-left"
+            />14-18 year old
           </p>
-          <p><input type="radio" class="mg-left" />Other</p>
+          <p>
+            <input
+              type="radio"
+              value="other"
+              v-model="form.age_group"
+              class="mg-left"
+            />Other
+          </p>
           <p>School (if applicable)</p>
-          <input class="input" type="text" />
+          <input class="input" v-model="form.school" type="text" />
           <p>Email Address *</p>
-          <input class="input" type="text" />
+          <input class="input" v-model="form.email" type="text" />
           <p>Phone Number *</p>
-          <input class="input" type="text" />
+          <input class="input" v-model="form.phone" type="text" />
           <p>Instagram Account (if applicable)</p>
-          <input class="input" type="text" />
+          <input class="input" v-model="form.instagram" type="text" />
           <p>What are you interested in? (Check all that applies) *</p>
           <p>
-            <input type="checkbox" class="mg-left" /> Children's Dance Classes
-            (Ballet, Jazz, Hip Hop, Lyrical Etc.)
+            <input
+              type="checkbox"
+              value="children"
+              v-model="form.interest"
+              class="mg-left"
+            />
+            Children's Dance Classes (Ballet, Jazz, Hip Hop, Lyrical Etc.)
           </p>
 
           <p>
-            <input type="checkbox" class="mg-left" />Adults Classes (Yoga,
-            Kickboxing,Salsa, Zumba...)
+            <input
+              type="checkbox"
+              value="adult"
+              v-model="form.interest"
+              class="mg-left"
+            />Adults Classes (Yoga, Kickboxing,Salsa, Zumba...)
           </p>
           <p>
-            <input type="checkbox" class="mg-left" /> Taekwondo<input
+            <input
+              type="checkbox"
+              value="taekwondo"
+              v-model="form.interest"
+              class="mg-left"
+            />
+            Taekwondo
+            <input
               type="checkbox"
               class="mg-left"
+              value="summer_camp"
+              v-model="form.interest"
             />
             Summer Camp
           </p>
           <p>
-            <input type="checkbox" class="mg-left" />Birthday Parties
-            <input type="checkbox" class="mg-left" /> Private Piano Lessons
+            <input
+              type="checkbox"
+              value="birthday"
+              v-model="form.interest"
+              class="mg-left"
+            />Birthday Parties
+            <input
+              type="checkbox"
+              value="piano"
+              v-model="form.interest"
+              class="mg-left"
+            />
+            Private Piano Lessons
           </p>
           <p></p>
           <p>
-            <input type="checkbox" class="mg-left" /> Studio Space Rental
-            <input type="checkbox" class="mg-left" /> Job Opportunity
+            <input
+              type="checkbox"
+              value="studio_space_rental"
+              v-model="form.interest"
+              class="mg-left"
+            />
+            Studio Space Rental
+            <input
+              type="checkbox"
+              value="job"
+              v-model="form.interest"
+              class="mg-left"
+            />
+            Job Opportunity
           </p>
           <p></p>
-          <p><input type="checkbox" class="mg-left" /> Other</p>
+          <p>
+            <input
+              type="checkbox"
+              value="other"
+              v-model="form.interest"
+              class="mg-left"
+            />
+            Other
+          </p>
           <p>Dancer's Shoe Size (Euro Measurements)</p>
-          <input class="input" type="text" />
+          <input class="input" v-model="form.shoe" type="text" />
           <p>Additional Information</p>
-          <input class="input" type="text" /><br/>
-        <button class="btn btn-thrid">Submit</button>
+          <input class="input" v-model="form.add_info" type="text" /><br />
+          <button type="submit" class="btn btn-thrid">Submit</button>
         </form>
       </div>
     </div>
@@ -113,8 +205,40 @@
 
 <script>
 import Footer from "../components/Footer.vue";
+import axios from "axios";
 export default {
   name: "IndexPage",
   components: { Footer },
+  data() {
+    return {
+      form: {
+        student_name: "",
+        parent_name: "",
+        gender: "",
+        dob: "",
+        age_group: "",
+        school: "",
+        email: "",
+        phone: "",
+        instagram: "",
+        interest: [],
+        shoe: "",
+        add_info: "",
+      },
+    };
+  },
+  methods: {
+    async submitForm() {
+      // console.log(this.form);
+
+      await axios
+        .post("http://localhost:8080/register", {
+          form: this.form,
+        })
+        .then((res) => {
+          console.log(res.data);
+        });
+    },
+  },
 };
 </script>
