@@ -5,7 +5,7 @@
     <div class="join-cta row-max-grid">
       <div class="container">
         <div class="bg-texture">
-          <img src="@/assets/img/texture.svg" alt="" />
+          <img src="../assets/img/texture.svg" alt="" />
         </div>
         <div class="join-txt">
           <div class="join-title">
@@ -49,7 +49,7 @@
     </div>
 
     <div class="big-image row-grid">
-      <img src="@/assets/img/showcase2.JPG" alt="" />
+      <img src="../assets/img/showcase2.JPG" alt="" />
     </div>
     <div class="programs row-max-grid">
       <div class="container">
@@ -59,7 +59,7 @@
             <h2>Schedule</h2>
             <div class="decor-box"></div>
             <div class="sch-img row-max-grid">
-              <img src="@/assets/img/unnamed2.png" alt="" />
+              <img src="../assets/img/unnamed2.png" alt="" />
               <div class="desc row-max-grid">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -85,7 +85,7 @@
             <div class="decor-box"></div>
             <div class="class-list">
               <div class="class-single row-max-grid">
-                <img src="@/assets/img/takwalogo.svg" alt="" />
+                <img src="../assets/img/takwalogo.svg" alt="" />
                 <h3 class="row-grid">TAEKWONDO</h3>
                 <p class="row-grid">
                   Taekwondo is a system of symmetrical body exercises or
@@ -94,7 +94,7 @@
                 </p>
               </div>
               <div class="class-single row-max-grid">
-                <img src="@/assets/img/hiphoplogo.svg" alt="" />
+                <img src="../assets/img/hiphoplogo.svg" alt="" />
                 <h3 class="row-grid">HIP HOP</h3>
                 <p class="row-grid">
                   Hip Hop is very unique, as it allows its dancers to perform
@@ -102,7 +102,7 @@
                 </p>
               </div>
               <div class="class-single row-max-grid">
-                <img src="@/assets/img/gymlogo.svg" alt="" />
+                <img src="../assets/img/gymlogo.svg" alt="" />
                 <h3 class="row-grid">GYMNASTICS</h3>
                 <p class="row-grid">
                   Gymnastics is a sport that includes physical exercises
@@ -111,7 +111,7 @@
                 </p>
               </div>
               <div class="class-single row-max-grid">
-                <img src="@/assets/img/yogalogo.svg" alt="" />
+                <img src="../assets/img/yogalogo.svg" alt="" />
                 <h3 class="row-grid">YOGA</h3>
                 <p class="row-grid">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -120,7 +120,7 @@
                 </p>
               </div>
               <div class="class-single row-max-grid">
-                <img src="@/assets/img/balletlogo.svg" alt="" />
+                <img src="../assets/img/balletlogo.svg" alt="" />
                 <h3 class="row-grid">BALLET</h3>
                 <p class="row-grid">
                   The focus will be set on placement, alignment, flexibility and
@@ -129,7 +129,7 @@
                 </p>
               </div>
               <div class="class-single row-max-grid">
-                <img src="@/assets/img/painologo.svg" alt="" />
+                <img src="../assets/img/painologo.svg" alt="" />
                 <h3 class="row-grid">PAINO</h3>
                 <p class="row-grid">
                   Students learn basic piano skills and fundamentals of music
@@ -206,18 +206,18 @@
             <div class="home-social-links row-max-grid">
               <div class="soc-links">
                 <a href="https://www.facebook.com/beyonddancers">
-                  <img src="@/assets/img/faceblue.svg" alt="" />
+                  <img src="../assets/img/faceblue.svg" alt="" />
                 </a>
                 <a href="https://www.instagram.com/beyonddancers/">
-                  <img src="@/assets/img/instablue.svg" alt="" />
+                  <img src="..assets/img/instablue.svg" alt="" />
                 </a>
                 <a
                   href="https://www.youtube.com/channel/UC53ryMIGEZptZToOvmBgLWQ"
                 >
-                  <img src="@/assets/img/youblue.svg" alt="" />
+                  <img src="../assets/img/youblue.svg" alt="" />
                 </a>
                 <a href="https://www.tiktok.com/@beyonddancestudio">
-                  <img src="@/assets/img/tiktokblue.svg" alt="" />
+                  <img src="../assets/img/tiktokblue.svg" alt="" />
                 </a>
               </div>
             </div>
