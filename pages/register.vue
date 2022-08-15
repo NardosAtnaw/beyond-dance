@@ -2,19 +2,19 @@
   <div class="register-body">
     <Navlink />
     <div class="social-media">
-      <img class="bg-back" src="../assets/img/texture.svg" alt="" />
+      <img class="bg-back" src="@/assets/img/texture.svg" alt="" />
       <div class="soc-links">
         <a href="https://www.facebook.com/beyonddancers">
-          <img src="../assets/img/facebookwhite.svg" alt="" />
+          <img src="@/assets/img/facebookwhite.svg" alt="" />
         </a>
         <a href="https://www.instagram.com/beyonddancers/">
-          <img src="../assets/img/instawhite.svg" alt="" />
+          <img src="@/assets/img/instawhite.svg" alt="" />
         </a>
         <a href="https://www.youtube.com/channel/UC53ryMIGEZptZToOvmBgLWQ">
-          <img src="../assets/img/youtubewhite.svg" alt="" />
+          <img src="@/assets/img/youtubewhite.svg" alt="" />
         </a>
         <a href="https://www.tiktok.com/@beyonddancestudio">
-          <img src="../assets/img/tiktokwhite.svg" alt="" />
+          <img src="@/assets/img/tiktokwhite.svg" alt="" />
         </a>
       </div>
     </div>
@@ -197,7 +197,7 @@
       </div>
     </div>
     <div class="big-image row-grid">
-      <img src="../assets/img/showcase 2.jpg" alt="" />
+      <img src="@/assets/img/showcase2.jpg" alt="" />
     </div>
     <Footer />
   </div>

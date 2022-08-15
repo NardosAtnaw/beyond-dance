@@ -4,7 +4,7 @@
         <div class="container">
 
             <div class="logo"> <nuxt-link to="/">
-    <img src="../assets/img/logopng.png" alt="">
+    <img src="@/assets/img/logopng.png" alt="">
     <!-- <div class="logo-img"></div>
     <div class="logo-mask"></div> -->
     </nuxt-link>
