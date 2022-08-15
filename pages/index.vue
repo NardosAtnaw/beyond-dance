@@ -209,7 +209,7 @@
                   <img src="../assets/img/faceblue.svg" alt="" />
                 </a>
                 <a href="https://www.instagram.com/beyonddancers/">
-                  <img src="..assets/img/instablue.svg" alt="" />
+                  <img src="../assets/img/instablue.svg" alt="" />
                 </a>
                 <a
                   href="https://www.youtube.com/channel/UC53ryMIGEZptZToOvmBgLWQ"
