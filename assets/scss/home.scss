@@ -2,13 +2,12 @@
   display: grid;
   place-content: center;
   .container {
-    // display: grid;
-    // place-content: center;
+    display: grid;
+    place-content: center;
     width: 100%;
     .logo {
       display: grid;
       place-content: center;
-      width: 30vw;
       object-fit: cover;
   // .logo-img{
   //   background: url(../img/balletlogo.svg) no-repeat;
