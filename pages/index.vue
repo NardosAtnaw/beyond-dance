@@ -49,7 +49,7 @@
     </div>
 
     <div class="big-image row-grid">
-      <img src="../assets/img/showcase 2.jpg" alt="" />
+      <img src="../assets/img/showcase2.JPG" alt="" />
     </div>
     <div class="programs row-max-grid">
       <div class="container">
