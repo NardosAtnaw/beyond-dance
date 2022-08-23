@@ -59,7 +59,7 @@
             <h2>Schedule</h2>
             <div class="decor-box"></div>
             <div class="sch-img row-max-grid">
-              <img src="../assets/img/unnamed2.png" alt="" />
+              <img src="../assets/img/unamed2.jpg" alt="" />
               <div class="desc row-max-grid">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.

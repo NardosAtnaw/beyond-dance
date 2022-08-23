@@ -2,7 +2,7 @@
 <div class="hero-vid">
     <div class="container">
         <div class="video row-max-grid">
-            <img src="@/assets/img/showcase11.jpg" alt="">
+            <img src="@/assets/img/showcase5.jpg" alt="">
         </div>
     </div>
 </div>

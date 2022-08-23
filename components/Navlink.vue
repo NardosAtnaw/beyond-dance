@@ -20,7 +20,7 @@
 
             <ul class="ul-links">
                 <li>  <nuxt-link to="/">Home</nuxt-link></li>
-              <li><nuxt-link to="/">Dance Studio</nuxt-link></li>
+              <li><nuxt-link to="/dancestudio">Dance Studio</nuxt-link></li>
                  <li><nuxt-link to="/">Programs</nuxt-link></li>
                   <li><nuxt-link to="/">Performance Information and Videos</nuxt-link></li>
                   <li><nuxt-link to="/">Events</nuxt-link></li>

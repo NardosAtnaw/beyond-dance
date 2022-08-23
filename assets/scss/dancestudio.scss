@@ -1,0 +1,511 @@
+.about-us {
+  .container {
+    display: grid;
+    place-content: right;
+
+    h1 {
+      font-family: "mayoritte";
+      font-size: 2rem;
+      color: #876745;
+    }
+    .desc-about {
+      display: grid;
+      place-items: center;
+
+      .about-txt {
+        display: grid;
+        place-items: center;
+        background: #876745;
+        padding: 1rem;
+
+        width: 18rem;
+        @include responsive($md) {
+          width: 35rem;
+         }
+         @include responsive($lg) {
+          width: 48rem;
+         }
+         @include responsive($xl) {
+          width: 58rem;
+         }
+        p {
+          font-size: 0.8rem;
+          line-height: 1.2rem;
+          color: #ffffff;
+          font-family: "Montserrat";
+          text-align: center;
+        }
+        button {
+          margin-top: 1.5rem;
+          font-family: "Montserrat";
+        }
+      }
+      .about-image {
+        z-index: -1;
+       
+        img {
+          margin-top: -2rem;
+          @include responsive($lg){
+            width: 100%;
+            // height: 20vh;
+              object-fit: cover;
+            }
+        }
+      }
+    }
+  }
+}
+.faq {
+  .container {
+    position: relative;
+
+    .faq-texture {
+      position: absolute;
+      display: grid;
+      place-content: center;
+      @include responsive($lg){
+        // width: 50rem;
+        object-fit: cover;
+      }
+    }
+    h1 {
+      font-family: "mayoritte";
+      font-size: 2rem;
+      color: #876745;
+    }
+    .faq-wrapper {
+      display: grid;
+      place-content: center;
+   
+      #wrapper {
+        min-height: 0;
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        margin: 50px 0;
+        transform: translate(-50%, 0);
+        // background-color: #fefffa;
+        // max-width: 450px;
+
+        @media (max-width: 550px) {
+          box-sizing: border-box;
+          transform: translate(0, 0);
+          max-width: 100%;
+          min-height: 100%;
+          margin: 0;
+          left: 0;
+        }
+      }
+      h1,
+      h2 {
+        color: #0000;
+      }
+
+      h1 {
+        margin: 10% auto 0;
+        text-transform: uppercase;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 3px;
+        font-weight: 100;
+        text-align: center;
+        display: table;
+
+        font-weight: bolder;
+        border-bottom: 2px solid #000;
+      }
+
+      h2 {
+        font-size: 1rem;
+        // line-height: 2rem;
+        font-weight: 500;
+
+        display: block;
+        color: #1d3858;
+        font-family: "Montserrat";
+        margin: 0;
+        cursor: pointer;
+      
+        .plus-icon {
+          font-size: 2rem;
+          margin-left: 0.6rem;
+          color: #876745;
+          @include responsive($lg){
+            margin-left: 4.6rem;
+          }
+          @include responsive($xl){
+            margin-left: 8.6rem;
+          }
+        }
+      }
+      p {
+        color: #876745;
+        font-size: 0.8rem;
+        line-height: 20px;
+
+        position: relative;
+        overflow: hidden;
+        font-family: "Montserrat";
+        max-height: 800px;
+        opacity: 1;
+        transform: translate(0, 0);
+        margin-top: 14px;
+        z-index: 2;
+        transition: all 500ms ease;
+      }
+      ul{
+        @include responsive($md) {
+          display: grid;
+          grid-template-columns: 1fr 1fr ;
+       place-items: center;
+       gap: .5rem;
+         }
+      }
+      p,
+      ul li i:before,
+      ul li i:after {
+        transition: all 0.25s ease-in-out;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+       
+        & li {
+          position: relative;
+          padding: 0;
+          margin: 0;
+          padding-bottom: 4px;
+          padding-top: 18px;
+          border-top: 1px solid #e4eaec;
+          & i {
+            position: absolute;
+            transform: translate(-6px, 0);
+            margin-top: 9px;
+            right: 0;
+            &:before,
+            &:after {
+              content: "";
+              position: absolute;
+              background-color: #0000;
+              width: 3px;
+              height: 16px;
+            }
+            &:before {
+              transform: translate(2px, 0) rotate(45deg);
+            }
+            &:after {
+              transform: translate(2px, 0) rotate(-45deg);
+            }
+          }
+          & input[type="checkbox"] {
+            position: absolute;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0;
+            &:checked ~ p {
+              margin-top: 0;
+              max-height: 0;
+              opacity: 0;
+              transform: translate(0, 50%);
+            }
+            &:checked ~ i:before {
+              margin-top: 9px;
+              color: #1d3858;
+              height: 9px;
+              transform: translate(2px, 0) rotate(45deg);
+            }
+            &:checked ~ i:after {
+              margin-top: 9px;
+              height: 9px;
+              transform: translate(-2px, 0) rotate(-45deg);
+            }
+          }
+        }
+      }
+
+      ul li:nth-of-type(1) {
+        border-top: none;
+        animation-delay: 0.5s;
+      }
+      ul li:nth-of-type(2) {
+        animation-delay: 0.75s;
+      }
+      ul li:nth-of-type(3) {
+        animation-delay: 1s;
+      }
+      ul li:last-of-type {
+        padding-bottom: 0;
+      }
+      li {
+        animation: bounceInUp 1s ease both;
+      }
+    }
+  }
+}
+.separt {
+  .container {
+    .box {
+      width: 100%;
+      height: 2rem;
+      background-color: #876745;
+    }
+  }
+}
+.safty {
+  .container {
+    h2 {
+      font-size: 5vw;
+      font-family: "Montserrat";
+      color: #1d3858;
+      text-align: center;
+      @include responsive($md) {
+        font-size: 2.5vw;
+      }
+      @include responsive($lg) {
+        font-size: 2vw;
+      }
+    }
+    .list-safty {
+      @include responsive($md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+      }
+      .studio-safty {
+        h3 {
+          font-size: 5vw;
+          font-family: "Montserrat";
+          color: #1d3858;
+          font-weight: 600;
+          text-align: center;
+
+          @include responsive($md) {
+            font-size: 2.5vw;
+           
+          }
+          @include responsive($lg) {
+            font-size: 1rem;
+          }
+        }
+        p {
+          width: 100%;
+          font-family: "Montserrat";
+          font-size: .9rem;
+          color: #1d3858;
+          line-height: 1.2rem;
+          font-weight: 500; text-align: center;
+          @include responsive($lg) {
+            line-height: 0rem;
+
+          }
+      
+        
+        }
+      }
+      .covid-safty {
+        h3 {
+          font-size: 5vw;
+          font-family: "Montserrat";
+          color: #1d3858;
+          font-weight: 600;
+          margin-top: 2rem;
+          text-align: center;
+          @include responsive($md) {
+       
+            font-size: 2.5vw;
+            margin-top:0rem;
+          }
+          @include responsive($lg) {
+            
+            font-size: 1rem;
+          }
+        }
+        p {
+          text-align: center;
+          width: 100%;
+          font-family: "Montserrat";
+          font-size: .9rem;
+          color: #1d3858;
+          font-weight: 500;
+          line-height: 1.2rem;
+          @include responsive($lg) {
+            line-height: 0rem;
+
+          }
+          
+        }
+      }
+    }
+    .download-mid {
+      display: grid;
+      place-items: center;
+      p {
+        text-align: center;
+        color: #876745;
+        @include responsive($lg){
+          width: 30rem;
+        }
+      }
+    }
+  }
+}
+.dance-wear {
+  background-color: #1d3858;
+  padding-top: 5.859375vw;
+  padding-bottom: 5.859375vw;
+  .container {
+    display: grid;
+          place-items: center;
+    h2 {
+      font-family: "Mochiy Pop One", sans-serif;
+      font-weight: 100;
+      font-size: 2rem;
+      color: #ffffff;
+      text-align: center;
+    }
+   .frist-p  {
+      text-align: center;
+      color: #ffffff;
+      font-size: 0.8rem;
+      font-family: "Montserrat";
+      width: 35rem;
+    }
+    .dance-wear-wrapper {
+      .dance-wear-items {
+        @include responsive($md) {
+          display: grid;
+          align-items: flex-start;
+          grid-template-columns: 1fr 1fr;
+          gap: 2rem;
+        }
+
+        .single-item {
+         display: grid;
+          place-items: center; 
+          @include responsive($md) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+          }
+          .bigimg {
+            width: 15rem;
+            height: 20rem;
+            object-fit: cover;
+            @include responsive($md) {
+         
+
+
+            }
+          }
+          .right-table {
+            display: grid;
+            place-items: center;
+            margin-top: 2rem;
+            
+            @include responsive($md) {
+              height: 22rem;
+              place-items: left;
+              margin-top: 0rem;
+
+            }
+
+
+            h4 {
+              // text-align: center;
+              color: #ffffff;
+              font-size: 1rem;
+              font-family: "Montserrat";
+              @include responsive($md) {
+                font-size: .8rem;
+              }
+
+            }
+            p{
+              font-size: .7rem;
+              // margin-top: .5rem;
+              color: #ffffff;
+              font-family: "Montserrat";
+              @include responsive($md) {
+                text-align: left;
+              }
+            }
+            .images {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              gap: 1rem;
+              // margin-top: 2rem;
+
+              @include responsive($md) {
+                place-items: left;
+                margin-top: 1.5rem;
+               
+  
+              }
+              @include responsive($lg){
+                img{
+                  height: 10rem;
+                  object-fit: cover;
+                }
+              }
+            }
+            button {
+              margin-top: 2rem;
+              font-size: .6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.gallery{
+  .container{
+    h1{
+      font-family: "mayoritte";
+      font-size: 8.5vw;
+      color: #876745;
+      @include responsive($md) {
+        font-size: 5.5vw;
+      }
+      @include responsive($lg) {
+        font-size: 4.5vw;
+      }
+    }
+    .gallery-wrapper{
+      @include responsive($md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-end;
+        gap: 1rem;
+       }
+      @include responsive($lg) {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       gap: 1rem;
+      }
+      .single-img{
+display: grid;
+place-items: center;
+        img{
+          width: 18rem;
+          height: 25rem;
+          object-fit: cover;
+        }
+        .studio-name{
+          text-align: center;
+          font-family: "Montserrat";
+      color: #1d3858;
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      font-weight: 600;
+
+
+        }
+      }
+
+    }
+  }
+}

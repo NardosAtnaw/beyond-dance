@@ -45,7 +45,7 @@ $xxl: 1920px;
 @import "reset";
 @import "home";
 @import "register";
-
+@import "dancestudio";
 @font-face {
   font-family: "Mochiy_Pop_One";
   font-style: normal;
@@ -96,7 +96,7 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
 }
 body{
   // overflow: hidden;
-  background: #F9F8F8;
+  background: #FFFFFF;
 }
 // Variables
 $columns: 12;
@@ -240,7 +240,7 @@ $columns: 12;
   background: #fff;
   // width: 15vw;
   // border: 1px #707070 solid;
-  max-width: 24.5rem;
+  // max-width: 24.5rem;
   text-align: center;
 }
 
@@ -250,7 +250,7 @@ $columns: 12;
   // padding: 0.7rem 8rem;
   color: #fff;
   border: none;
-  max-width: 24.5rem;
+  // max-width: 24.5rem;
   text-align: center;
 
 }
@@ -270,15 +270,16 @@ $columns: 12;
   font-family: "Montserrat";
   color: #FEF7F1;
   @include responsive($lg){
-    width: 20rem;
+    width: 11rem;
+    font-size: .7rem;
 
   }
   a{
     color: #FEF7F1;
     font-size:.8rem;
     @include responsive($lg){
-      font-size: 1vw; 
-      width: 10rem;
+      // font-size: .5rem; 
+      // // width: 10rem;
     } 
   }
 }
@@ -294,8 +295,8 @@ $columns: 12;
     color: #FEF7F1;
     font-size: .8rem;
     @include responsive($lg){
-      font-size: 1vw; 
-      width: 10rem;
+      // font-size: 1vw; 
+      width: 11rem;
     } 
   }
 }
