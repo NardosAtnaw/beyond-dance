@@ -344,6 +344,7 @@
       place-items: center;
       p {
         text-align: center;
+
         color: #876745;
         @include responsive($lg){
           width: 30rem;
@@ -371,7 +372,10 @@
       color: #ffffff;
       font-size: 0.8rem;
       font-family: "Montserrat";
-      width: 35rem;
+  
+      @include responsive($md) {
+        width: 35rem;
+      }
     }
     .dance-wear-wrapper {
       .dance-wear-items {
@@ -490,8 +494,8 @@
 display: grid;
 place-items: center;
         img{
-          width: 18rem;
-          height: 25rem;
+          width: 15rem;
+          height: 20rem;
           object-fit: cover;
         }
         .studio-name{

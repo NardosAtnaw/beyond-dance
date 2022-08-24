@@ -1,0 +1,80 @@
+.events{
+    .container{
+        .event-wrapper{
+            @include responsive ($lg){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                place-items: center;
+                align-items: flex-start;
+                gap: 2rem;
+            }
+            .single-event{
+                @include responsive ($lg){
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    place-items: center;
+                    align-items: flex-start;
+                    gap: 2rem;
+                }
+                img{
+
+    width: 100%;
+    object-fit: cover;
+    height: 20rem;
+    @include responsive ($lg){
+        width: 35rem;
+        height: 15rem;
+     
+    }
+                }
+                h2{
+                    font-family: "Mochiy Pop One", sans-serif;
+                    font-weight: 100;
+                    font-size: 1rem;
+                    color: #1d3858;
+                    margin-top: 1rem;
+                    @include responsive ($lg){
+                        margin-top: 0rem;
+                    }
+               
+
+                }
+                p{
+                    font-size: .9rem;
+                        
+                   margin-top: 1rem;
+                    font-family: "Montserrat";
+                    color: #1d3858;
+                    @include responsive ($lg){
+                        font-size: .7rem;
+                    }
+                }
+                ul{
+                    // list-style: disc;
+                    h4{
+                        margin-top: .9rem;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        font-family: "Montserrat";
+                        color: #1d3858;
+                        @include responsive ($lg){
+                            font-size: .7rem;
+                        }
+                    }
+                    li{
+                        font-size: .9rem;
+                        margin-top: .5rem;
+                        font-family: "Montserrat";
+                        color: #1d3858;
+                        @include responsive ($lg){
+                            font-size: .6rem;
+                        }
+
+                    }
+                }
+    
+    
+            }
+        }
+    }
+}

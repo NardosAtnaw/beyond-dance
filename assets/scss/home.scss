@@ -22,9 +22,9 @@
 
       // }
       img {
-        width: 30vw;
+        width: 10rem;
         @include responsive($lg) {
-          width: 10vw;
+          width: 5rem;
         }
       }
     }
@@ -230,7 +230,7 @@
 .big-image {
   img {
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     object-fit: cover;
     @include responsive($lg) {
       width: 100%;
@@ -497,6 +497,19 @@ footer {
   }
 }
 .home-contact {
+  position: relative;
+  .contact-bg{
+    position: absolute;
+    bottom: 0;
+
+
+transform: rotate(0deg);
+
+    z-index: -1;
+    img{
+
+    }
+  }
   .container {
     h1 {
       font-size: 5vw;
@@ -516,6 +529,7 @@ footer {
       @include responsive($lg) {
         display: flex;
         justify-content: space-between;
+        align-items: center;
       }
       .form {
         form {
@@ -567,21 +581,23 @@ footer {
           // position: absolute;
           font-family: "Mochiy Pop One", sans-serif;
 
-          font-size: 6vw;
-          color: #1d3858;
+          font-size: 1rem;
+          color: #FFFFFF;
           text-align: center;
           @include responsive($lg) {
-            font-size: 3vw;
+            font-size: 2rem;
           }
         }
         p {
           text-align: center;
+          font-size: 0.8rem;
           font-family: "Montserrat";
-          color: #1d3858;
+          color: #FFFFFF;
         }
         .home-social-links {
           display: grid;
           place-items: center;
+
           .soc-links {
             display: flex;
             align-items: center;
@@ -593,11 +609,12 @@ footer {
 
             a {
               img {
+             
                 @include responsive($lg) {
                   display: flex;
-                  gap: 1rem;
-
-                  width: 2vw;
+                  gap: 0.5rem;
+              
+                  width: 1rem;
                 }
               }
             }

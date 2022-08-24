@@ -3,7 +3,7 @@
     <Navlink />
     <div class="about-us row-max-grid">
       <div class="container">
-        <h1 class="row-max-grid">About Us</h1>
+        <h1 >About Us</h1>
 
         <div class="desc-about">
           <div class="about-txt row-max-grid">
