@@ -1,6 +1,10 @@
 <template>
-  <div class="schedule-all row-max-grid">
+  <div class="schedule-all1 row-grid">
+     
     <div class="container">
+    
+      <h3>CLASS / PROGRAM SCHEDULE<br/>
+(August 29, 2022 - December 10, 2022)</h3>
       <table class="row-grid">
         <thead>
           <tr>
@@ -14,111 +18,98 @@
           </tr>
         </thead>
 
-        <tbody v-for="item in schedule " :key="item.id">
-          <tr>
-            <td rowspan="4" class="day-txt">{{item.day}}</td>
+        <tbody>
+          <tr >
+            <th class="day-txt">Monday</th>
 
-            <td data-label="Class Name">{{item.className}}</td>
-            <td data-label="Age">{{item.ageGroup}}</td>
-            <td data-label="Class Time">{{item.timeStart +"-"+ item.timeEnd}}</td>
-            <td data-label="Studio">{{item.studioNum}}</td>
-            <td data-label="Add Info">{{item.addInformation}}</td>
+            <tr  v-for="item in Monday" :key="item.id">
+                     <td class="freespace2" ></td>
+              <td data-label="Class Name">{{ item.className }}</td>
+              <td data-label="Age">{{ item.ageGroup }}</td>
+              <td data-label="Class Time">
+                {{ item.timeStart + "-" + item.timeEnd }}
+              </td>
+              <td data-label="Studio">{{ item.studioNum }}</td>
+              <td data-label="Add Info">{{ item.addInformation }}</td>
+            </tr>
           </tr>
-          <!-- <tr>
-            <td data-label="Class Name">{{item.className}}</td>
-            <td data-label="Age">{{item.agegroup}}</td>
-            <td data-label="Class Time">{{item.timeStart+ item.timeEnd}}</td>
-            <td data-label="Studio">{{item.studioNum}}</td>
-            <td data-label="Add Info">{{item.addInformation}}</td>
-          </tr> -->
-          <!-- <tr> -->
-            <!-- <td rowspan="2" class="time-txt" >Late</td> -->
-            <!-- <td data-label="Class Name" ></td>
-       <td data-label="Age" class="freespace"> </td>
-      <td data-label="Class Time" class="freespace"></td>
-     <td data-label="Studio" class="freespace" ></td> -->
-          <!-- </tr> -->
-          <!-- <tr>
-            <td data-label="Class Name">{{item.className}}</td>
-            <td data-label="Age">{{item.ageGroup}}</td>
-            <td data-label="Class time">{{item.timeStart+ item.timeEnd}}</td>
-            <td data-label="Studio">{{item.studioNum}}</td>
-            <td data-label="Add Info">{{item.addInformation}}</td>
-          </tr> -->
-          <!-- <tr>
-      <td rowspan="4" class="day-txt">Tuseday</td>
-     
+          <tr>
+            <th  class="day-txt">Tuesday</th>
 
-      <td data-label="Class Name" >Ballet</td>
-       <td data-label="Age" >(6-9)</td>
-      <td data-label="Class Time" >4:30pm-5:30pm</td>
-      <td data-label="Studio" >1</td>
-                 <td data-label="Add Info" >Once a Week</td>
-    </tr>
-    <tr>
-      <td data-label="Class Name" >Ballet</td>
-       <td data-label="Age" >(10-18)</td>
-      <td data-label="Class Time" >5:30pm-6:30pm</td>
-      <td data-label="Studio" >1</td>
-                 <td data-label="Add Info" >Once a Week</td>
-    </tr>
-    <tr>
-     
-       <td data-label="Class Name" >Ballet</td>
-       <td data-label="Age" >(6-9)</td>
-      <td data-label="Class Time" >4:30pm-5:30pm</td>
-      <td data-label="Studio" >1</td>
-                 <td data-label="Add Info" >Once a Week</td>
-    </tr>
-  <tr>
-   
-      <td data-label="Class Name" >Contemporary</td>
-       <td data-label="Age" >8+</td>
-      <td data-label="Class time" >6:30pm-7:30pm</td>
-      <td data-label="Studio" >3</td>
-                 <td data-label="Add Info" >Twice a Week</td>
-    </tr>
-    <tr>
-      <td rowspan="4" class="day-txt">Wednesday</td>
-     
+            <tr v-for="item in Tuesday" :key="item.id">
+                       <td class="freespace2" ></td>
+              <td data-label="Class Name">{{ item.className }}</td>
+              <td data-label="Age">{{ item.ageGroup }}</td>
+              <td data-label="Class Time">
+                {{ item.timeStart + "-" + item.timeEnd }}
+              </td>
+              <td data-label="Studio">{{ item.studioNum }}</td>
+              <td data-label="Add Info">{{ item.addInformation }}</td>
+            </tr>
+          </tr>
+              <tr>
+            <th  class="day-txt">Wednesday</th>
 
-      <td data-label="Class Name" >Ballet</td>
-       <td data-label="Age" >(6-9)</td>
-      <td data-label="Class Time" >4:30pm-5:30pm</td>
-      <td data-label="Studio" >1</td>
-                 <td data-label="Add Info" >Once a Week</td>
-    </tr>
-    <tr>
-      <td data-label="Class Name" >Ballet</td>
-       <td data-label="Age" >(10-18)</td>
-      <td data-label="Class Time" >5:30pm-6:30pm</td>
-      <td data-label="Studio" >1</td>
-                 <td data-label="Add Info" >Once a Week</td>
-    </tr>
-    <tr>
-     
-       <td data-label="Class Name" >Ballet</td>
-       <td data-label="Age" >(6-9)</td>
-      <td data-label="Class Time" >4:30pm-5:30pm</td>
-      <td data-label="Studio" >1</td>
-                 <td data-label="Add Info" >Once a Week</td>
-    </tr>
-  <tr>
-   
-      <td data-label="Class Name" >Contemporary</td>
-       <td data-label="Age" >8+</td>
-      <td data-label="Class time" >6:30pm-7:30pm</td>
-      <td data-label="Studio" >3</td>
-                 <td data-label="Add Info" >Twice a Week</td>
-    </tr> -->
+            <tr v-for="item in Wednesday" :key="item.id">
+            <td class="freespace2" ></td>
+              <td data-label="Class Name">{{ item.className }}</td>
+              <td data-label="Age">{{ item.ageGroup }}</td>
+              <td data-label="Class Time">
+                {{ item.timeStart + "-" + item.timeEnd }}
+              </td>
+              <td data-label="Studio">{{ item.studioNum }}</td>
+              <td data-label="Add Info">{{ item.addInformation }}</td>
+            </tr>
+          </tr>
+             <tr>
+            <th class="day-txt">Thursday</th>
+
+            <tr v-for="item in Thursday" :key="item.id">
+           <td class="freespace2" ></td>
+              <td data-label="Class Name">{{ item.className }}</td>
+              <td data-label="Age">{{ item.ageGroup }}</td>
+              <td data-label="Class Time">
+                {{ item.timeStart + "-" + item.timeEnd }}
+              </td>
+              <td data-label="Studio">{{ item.studioNum }}</td>
+              <td data-label="Add Info">{{ item.addInformation }}</td>
+            </tr>
+          </tr>
+               <tr>
+            <th class="day-txt">Friday</th>
+
+            <tr v-for="item in Friday" :key="item.id">
+                  <td class="freespace2" ></td>
+              <td data-label="Class Name">{{ item.className }}</td>
+              <td data-label="Age">{{ item.ageGroup }}</td>
+              <td data-label="Class Time">
+                {{ item.timeStart + "-" + item.timeEnd }}
+              </td>
+              <td data-label="Studio">{{ item.studioNum }}</td>
+              <td data-label="Add Info">{{ item.addInformation }}</td>
+            </tr>
+          </tr>
+              <tr>
+            <th class="day-txt">Saturday</th>
+
+            <tr  v-for="item in Saturday" :key="item.id">
+                <td class=" " ></td>
+              <td data-label="Class Name">{{ item.className }}</td>
+              <td data-label="Age">{{ item.ageGroup }}</td>
+              <td data-label="Class Time">
+                {{ item.timeStart + "-" + item.timeEnd }}
+              </td>
+              <td data-label="Studio">{{ item.studioNum }}</td>
+              <td data-label="Add Info">{{ item.addInformation }}</td>
+            </tr>
+          </tr>
         </tbody>
       </table>
-      <div class="sche-note row-max-grid">
+      <div class="sche-note row-grid">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum autem
-          facilis nesciunt esse adipisci voluptas similique delectus rem
-          asperiores repellendus cumque blanditiis quaerat et error, nihil magni
-          dicta laboriosam? Maxime.
+     Additional Notes:
+Team classes in color with additional information  which say twice a week meet twice a week
+Age group is in parenthesis next to class name
         </p>
         <button class="btn btn-secondary row-grid">Download Schedule</button>
       </div>
@@ -131,21 +122,13 @@ import axios from "axios";
 export default {
   data() {
     return {
-      schedule: [
-        // {
-        //   id: 1,
-        //   day: "Monday",
-        //   classname: "Ballet",
-        //   agegroup: "8",
-       
-        //   endDate: "",
-        //   startDate: "",
-        //   studioNum: "3",
-        //   timeEnd: "18:36",
-        //   timeStart: "17:35",
-        //      addInformation: "once a week ",
-        // },
-      ],
+      schedule: [],
+      Monday: [],
+      Tuesday: [],
+      Wednesday: [],
+      Thursday: [],
+      Friday: [],
+      Saturday: [],
     };
   },
   methods: {
@@ -153,12 +136,53 @@ export default {
       // console.log(this.form);
 
       await axios.get("http://localhost:3001/schedule").then((res) => {
-       this.schedule=res.data;
+        // this.schedule = res.data;
+        this.sortArray(res.data);
+        // console.log(this.sortArray(res.data));
       });
+    },
+    sortArray(ary) {
+      ary.forEach((item) => {
+        // console.log(item.day);
+        switch (item.day) {
+          case "Monday":
+            this.Monday.push(item);
+            break;
+          case "Tuesday":
+            this.Tuesday.push(item);
+            break;
+          case "Wednesday":
+            this.Wednesday.push(item);
+            break;
+          case "Thursday":
+            this.Thursday.push(item);
+            break;
+          case "Friday":
+            this.Friday.push(item);
+            // console.log(item.day);
+            break;
+          case "Saturday":
+            this.Saturday.push(item);
+            break;
+
+          default:
+            break;
+        }
+      });
+
+      this.schedule.push(this.Monday);
+      this.schedule.push(this.Tuesday);
+      this.schedule.push(this.Wednesday);
+      this.schedule.push(this.Thursday);
+      this.schedule.push(this.Friday);
+      this.schedule.push(this.Saturday);
+      console.log(this.schedule);
+      // return mergedAry
     },
   },
   created() {
     this.getSchedule();
+    // this.sortArray()
   },
 };
 </script>

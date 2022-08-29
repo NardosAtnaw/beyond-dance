@@ -3,7 +3,7 @@
     <Navlink />
     <div class="about-us row-max-grid">
       <div class="container">
-        <h1 >About Us</h1>
+        <h1>About Us</h1>
 
         <div class="desc-about">
           <div class="about-txt row-max-grid">
@@ -42,7 +42,7 @@
                   <input type="checkbox" checked />
                   <i></i>
                   <h2>
-                   <span class="ques-p">{{ items.question }}</span> 
+                    <span class="ques-p">{{ items.question }}</span>
                     <span class="plus-icon">+</span>
                   </h2>
                   <p>{{ items.answer }}</p>
@@ -53,9 +53,9 @@
         </div>
       </div>
     </div>
-        <section class="dance-wear row-bottom-grid row-max-grid">
+    <section class="dance-wear row-bottom-grid row-max-grid">
       <div class="container">
-        <h2 >Dancewear and Apparel</h2>
+        <h2>Dancewear and Apparel</h2>
         <p class="frist-p row-grid">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
           accumsan pretium tortor, in Lorem ipsum dolor sit amet, consectetur
@@ -104,10 +104,10 @@
     </div>
     <div class="safty row-max-grid">
       <div class="container">
-        <h2>Studio Safty</h2>
+        <h2>Studio Safety</h2>
         <div class="list-safty">
           <div class="studio-safty row-grid">
-            <h3>Dance Studio Safty Rule</h3>
+            <h3>Dance Studio Safety Rule</h3>
             <ul :data="studiosafty">
               <li v-for="item in studiosafty" :key="item.id">
                 <a href=""
@@ -117,7 +117,7 @@
             </ul>
           </div>
           <div class="covid-safty row-grid">
-            <h3>Studio Safty for Covid-19</h3>
+            <h3>Studio Safety for Covid-19</h3>
             <ul :data="covidsafty">
               <li v-for="item in covidsafty" :key="item.id">
                 <a href=""
@@ -141,12 +141,13 @@
       <div class="container">
         <h1>Dance Studios</h1>
         <div class="gallery-wrapper row-grid">
-          <div class="single-img row-grid" v-for="item in gallery" :key="item.id">
-           <img
-                    :src="require('@/assets/img/' + item.img + '')"
-                    alt=""
-                  />
-                  <p class="studio-name">{{item.studioname}}</p>
+          <div
+            class="single-img row-grid"
+            v-for="item in gallery"
+            :key="item.id"
+          >
+            <img :src="require('@/assets/img/' + item.img + '')" alt="" />
+            <p class="studio-name">{{ item.studioname }}</p>
           </div>
         </div>
       </div>
@@ -202,7 +203,7 @@ export default {
           answer:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         },
-                {
+        {
           id: 8,
           question: " How and where is Lorem ipsum ?",
           answer:
@@ -274,7 +275,7 @@ export default {
         },
       ],
       dancewear: [
-          {
+        {
           id: 1,
           itemname: "Athletic Leggings",
           itemdesc: "Lorem ipsum dolor sit amet, consectetur",
@@ -283,7 +284,7 @@ export default {
           img2: "legg2.jpg",
           img3: "legg1.jpg",
         },
-    
+
         {
           id: 2,
           itemname: "Waist Trainer",
@@ -302,7 +303,7 @@ export default {
           img2: "ath2.jpg",
           img3: "ath3.jpg",
         },
-          {
+        {
           id: 4,
           itemname: "Athletic Top Wear",
           itemdesc: "Lorem ipsum dolor sit amet, consectetur",
@@ -329,7 +330,7 @@ export default {
           img2: "zipjacket1.jpg",
           img3: "zipjacket1.jpg",
         },
-              {
+        {
           id: 7,
           itemname: "Ballet Tights",
           itemdesc: "Lorem ipsum dolor sit amet, consectetur",
@@ -338,7 +339,7 @@ export default {
           img2: "ballet3.jpg",
           img3: "ballet3.jpg",
         },
-                 {
+        {
           id: 8,
           itemname: "Jazz Shoes",
           itemdesc: "Lorem ipsum dolor sit amet, consectetur",
@@ -352,19 +353,18 @@ export default {
         {
           id: 1,
           img: "gal1.jpg",
-          studioname:"Studio 1"
+          studioname: "Studio 1",
         },
-          {
+        {
           id: 2,
           img: "gal2.jpg",
-            studioname:"Studio 2"
+          studioname: "Studio 2",
         },
-          {
+        {
           id: 3,
           img: "gal3.jpg",
-            studioname:"Studio 3"
+          studioname: "Studio 3",
         },
-    
       ],
     };
   },

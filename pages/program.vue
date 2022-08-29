@@ -6,14 +6,14 @@
         <img src="../assets/img/showcase2.JPG" alt="" />
       </div>
     </div>
-  <div class="schedule-all row-max-grid">
-    <div class="container">
-    <div class="sch-title">
-      
-            <h1>Schedule</h1>
-          
-          </div>
-    <Schedule /></div>
+    <div class="schedule-all1 row-max-grid">
+      <div class="container">
+        <div class="sch-title">
+          <h1>Schedule</h1>
+          <div class="decor-box1"></div>
+        </div>
+        <Schedule />
+      </div>
     </div>
 
     <div class="pro-gallery row-max-grid row-bottom-grid">

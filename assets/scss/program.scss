@@ -1,124 +1,140 @@
-.program-hero  {
-    img {
+.program-hero {
+  img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    @include responsive($lg) {
       width: 100%;
-      height: 30vh;
+      height: 25vh;
       object-fit: cover;
-      @include responsive($lg) {
-        width: 100%;
-        height: 25vh;
-        object-fit: cover;
-      }
     }
   }
-.schedule-all{
-  .container{
-    h1{
+}
+.schedule-all1 {
+  .container {
+    h1 {
+      position: relative;
       font-family: "mayoritte";
-          font-size: 2rem;
-          color: #876745;
-          @include responsive($md) {
-            font-size: 5.5vw;
-          }
+      font-size: 2.5rem;
+      color: #876745;
+
+      @include responsive($md) {
+        font-size: 4rem;
+      }
     }
-    .decor-box {
+    .decor-box1 {
       position: absolute;
-      width: 70%;
+      width: 50%;
       height: 25px;
-      left: 40px;
+      left: 65px;
       z-index: -1;
-      margin-top: -4vw;
+      margin-top: -6vw;
 
       background: rgba(247, 204, 163, 0.39);
       @include responsive($lg) {
         // width: 500px;
-        width: 40%;
+        width: 30%;
         height: 45px;
-        margin-top: -2vw;
-        left: 60px;
+        margin-top: -2.5vw;
+        left: 200px;
       }
     }
-    h2{
+    h2 {
       font-family: "Mochiy Pop One", sans-serif;
       font-size: 1rem;
       color: #662483;
       text-align: center;
     }
+    h3 {
+      position: relative;
+      font-family: "Mochiy Pop One", sans-serif;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #876745;
+      text-align: center;
+      @include responsive($md) {
+        font-size: 1.2rem;
+        margin-top: 0rem;
+      }
+    }
     table {
-  
-      border: 1px solid #1d3858;
+      border: 1px solid #662483;
       border-collapse: collapse;
-   
+
       width: 100%;
       table-layout: fixed;
     }
-    
-    table td {
 
-           border: 1px solid #1d3858;
-           padding: .35em;
-         }
-         table th{
-     
-               border: 1px solid #1d3858;
-               padding: .35em;
-             }
-    
+    table td {
+      border: 1px solid #1d3858;
+      padding: 0.35em;
+    }
+    table th {
+      border: 1px solid #1d3858;
+      padding: 0.35em;
+    }
+
     table tr {
-//  background-color: #662483;
+      //  background-color: #662483;
       border: 1px solid #1d3858;
-      padding: .35em;
+      padding: 0.35em;
     }
-  .freespace {
-      background-color: #662483;
-      border: 1px solid #1d3858;
-      width: 20rem;
-      padding: .35em;
+    .freespace {
+      border-bottom: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
     }
-    .day-txt{
-      font-size: 1.2rem;
+    .freespace2 {
+      background-color: #ffffff;
+
+      border-top: 1px solid #ffffff;
+      // border-bottom: 1px solid #FFFFFF;
+      padding: 0.35em;
+    }
+    .day-txt {
+      font-size: 0.8rem;
       text-align: center;
       font-weight: 600;
-
     }
-    .time-txt{
-      font-size: .9rem;
+    .time-txt {
+      font-family: "Mochiy Pop One", sans-serif;
+
+      font-size: 0.9rem;
       text-align: center;
       font-weight: 600;
       color: #876745;
     }
-    
-    table th{
-      padding: .625em;
-     
+
+    table th {
+      padding: 0.625em;
+
       color: #876745;
       font-family: "Montserrat";
       text-align: center;
       font-weight: 700;
-
     }
     table td {
-      padding: .625em;
-      font-size: .8rem;
+      padding: 0.625em;
+      font-size: 0.8rem;
       text-align: center;
       color: #1d3858;
       font-family: "Montserrat";
     }
-    
+
     table th {
-      font-size: .6rem;
-      letter-spacing: .1em;
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
     }
-    
+
     @media screen and (max-width: 600px) {
       table {
         border: 0;
       }
-    
+
       table caption {
         font-size: 1.3em;
       }
-      
+
       table thead {
         border: none;
         clip: rect(0 0 0 0);
@@ -129,100 +145,90 @@
         position: absolute;
         width: 1px;
       }
-      
+
       table tr {
-     
         // border-bottom: 2px solid #1d3858;
         // display: block;
-        margin-bottom: .625em;
+        margin-bottom: 0.625em;
       }
-      
+
       table td {
         border-bottom: 1px solid #1d3858;
         display: block;
-        font-size: .8em;
+        font-size: 0.8em;
         text-align: right;
       }
-      
-      table td::before {
 
+      table td::before {
         content: attr(data-label);
         float: left;
         font-weight: bold;
         text-transform: uppercase;
       }
-      
+
       table td:last-child {
         border-bottom: 0;
       }
     }
-    
-.sche-note{
-  display: grid;
-  place-items: center;
-  p{
-    text-align: center;
-    color: #876745;
-    font-family: "Montserrat";
-    font-size: .8rem;
 
-    @include responsive($lg){
-      width: 35rem;
-    }
-    
+    .sche-note {
+      display: grid;
+      place-items: center;
+      p {
+        text-align: center;
+        color: #876745;
+        font-family: "Montserrat";
+        font-size: 0.8rem;
 
-  }
-}
-  }
-}
-
-  .pro-gallery{
-    background-color:#1d3858;
-    padding-top: 2rem;
-    .container{
-      h1{
-        font-family: "mayoritte";
-        font-size: 8.5vw;
-        color: #FFFFFF;
-        @include responsive($md) {
-          font-size: 5.5vw;
-        }
         @include responsive($lg) {
-          font-size: 4.5vw;
+          width: 35rem;
         }
-      }
-      .gallery-wrapper{
-        @include responsive($md) {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          align-items: flex-end;
-          gap: 1rem;
-         }
-        @include responsive($lg) {
-         display: grid;
-         grid-template-columns: 1fr 1fr 1fr;
-         gap: 1rem;
-        }
-        .single-img{
-  display: grid;
-  place-items: center;
-          img{
-            width: 18rem;
-            height: 25rem;
-            object-fit: cover;
-          }
-          .studio-name{
-            text-align: center;
-            font-family: "Montserrat";
-        color: #1d3858;
-        font-size: 1.3rem;
-        margin-top: 1rem;
-        font-weight: 600;
-  
-  
-          }
-        }
-  
       }
     }
   }
+}
+
+.pro-gallery {
+  background-color: #1d3858;
+  padding-top: 2rem;
+  .container {
+    h1 {
+      font-family: "mayoritte";
+      font-size: 8.5vw;
+      color: #ffffff;
+      @include responsive($md) {
+        font-size: 2rem;
+      }
+    }
+    .gallery-wrapper {
+      @include responsive($md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-end;
+        gap: 1rem;
+      }
+      @include responsive($lg) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+      }
+      .single-img {
+        display: grid;
+        place-items: center;
+        img {
+          width: 18rem;
+          height: 25rem;
+          object-fit: cover;
+        }
+        .studio-name {
+          text-align: center;
+          font-family: "Montserrat";
+          color: #1d3858;
+          font-size: 1.3rem;
+          margin-top: 1rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
