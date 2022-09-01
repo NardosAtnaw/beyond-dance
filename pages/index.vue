@@ -1,7 +1,8 @@
 <template>
   <div>
     <Navlink />
-    <Herohome />
+
+    <Homevideo video="744959148" class="row-grid" />
     <div class="join-cta row-max-grid">
       <div class="container">
         <div class="bg-texture">
@@ -59,7 +60,7 @@
             <h2>Schedule</h2>
             <div class="decor-box"></div>
           </div>
-           <Schedule />
+          <Schedule />
         </div>
         <div class="class-all row-max-grid">
           <div class="class-title">
@@ -71,7 +72,7 @@
                 <h3 class="row-grid">TAEKWONDO</h3>
                 <p class="row-grid">
                   Taekwondo is a system of symmetrical body exercises or
-                  techniques designed for self-defense and counterattack in
+                  techniques designed for self-defense and counter attack in
                   unarmed combat
                 </p>
               </div>
@@ -131,6 +132,15 @@
         <div class="show-videos row-grid">
           <div class="single-video">
             <iframe
+              src="https://www.youtube.com/embed/uqEmLvvkg4k"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="single-video">
+            <iframe
               src="https://www.youtube.com/embed/hZsczpTkXj8"
               title="YouTube video player"
               frameborder="0"
@@ -147,6 +157,7 @@
               allowfullscreen
             ></iframe>
           </div>
+
           <div class="single-video">
             <iframe
               src="https://www.youtube.com/embed/7bRxWXRofeM"
@@ -159,7 +170,7 @@
         </div>
       </div>
     </div>
-  <Contactus />
+    <Contactus />
     <Footer />
   </div>
 </template>
@@ -167,8 +178,9 @@
 <script>
 import Footer from "../components/Footer.vue";
 import Schedule from "../components/Schedule.vue";
+import Homevideo from "../components/Homevideo.vue";
 export default {
   name: "IndexPage",
-  components: { Footer, Schedule },
+  components: { Footer, Schedule, Homevideo },
 };
 </script>

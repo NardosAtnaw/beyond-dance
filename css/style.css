@@ -387,7 +387,7 @@ template {
 }
 @media screen and (min-width: 992px) {
   .home-nav .container .logo img {
-    width: 5rem;
+    width: 8rem;
   }
 }
 .home-nav .container .mobile-link {
@@ -852,6 +852,23 @@ footer .footer-all .desc-foot p {
   }
 }
 
+.container .video-wrapper .vimeo-container {
+  padding: 56.25% 0 0 0;
+  position: relative;
+}
+.container .video-wrapper .vimeo-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 992px) {
+  .container .video-wrapper {
+    padding-top: 5rem;
+  }
+}
+
 .show-case .container h1 {
   font-size: 5vw;
   font-family: "Montserrat";
@@ -873,8 +890,15 @@ footer .footer-all .desc-foot p {
   place-items: center;
   gap: 2vw;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .show-case .container .show-videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .show-case .container .show-videos {
+    gap: 1vw;
     display: flex;
   }
 }
@@ -888,6 +912,12 @@ footer .footer-all .desc-foot p {
     height: 20vw;
   }
 }
+@media screen and (min-width: 1200px) {
+  .show-case .container .show-videos .single-video iframe {
+    width: 19vw;
+    height: 18vw;
+  }
+}
 
 .home-contact {
   position: relative;
@@ -895,8 +925,20 @@ footer .footer-all .desc-foot p {
 .home-contact .contact-bg {
   position: absolute;
   bottom: 0;
+  right: 0;
+  top: -8.5rem;
   transform: rotate(0deg);
   z-index: -1;
+}
+@media screen and (min-width: 1920px) {
+  .home-contact .contact-bg {
+    top: -1.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home-contact .contact-bg img {
+    width: 30rem;
+  }
 }
 .home-contact .container h1 {
   font-size: 5vw;
@@ -923,6 +965,12 @@ footer .footer-all .desc-foot p {
     justify-content: space-between;
     align-items: center;
   }
+}
+.home-contact .container .contact-list .form .little-txt {
+  font-family: "Montserrat";
+  color: 1d3858;
+  text-align: center;
+  font-size: 0.8rem;
 }
 .home-contact .container .contact-list .form form p {
   font-size: 3.8vw;
@@ -968,7 +1016,7 @@ footer .footer-all .desc-foot p {
 .home-contact .container .contact-list .contact-info h2 {
   font-family: "Mochiy Pop One", sans-serif;
   font-size: 1rem;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
 @media screen and (min-width: 992px) {
@@ -980,7 +1028,7 @@ footer .footer-all .desc-foot p {
   text-align: center;
   font-size: 0.8rem;
   font-family: "Montserrat";
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .home-contact .container .contact-list .contact-info .home-social-links {
   display: grid;
@@ -1547,17 +1595,17 @@ footer .footer-all .desc-foot p {
 
 .gallery .container h1 {
   font-family: "mayoritte";
-  font-size: 8.5vw;
+  font-size: 2rem;
   color: #876745;
 }
 @media screen and (min-width: 768px) {
   .gallery .container h1 {
-    font-size: 5.5vw;
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 992px) {
   .gallery .container h1 {
-    font-size: 4.5vw;
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1606,101 +1654,120 @@ footer .footer-all .desc-foot p {
   }
 }
 
-.schedule-all .container h1 {
+.schedule-all1 .container h1 {
+  position: relative;
   font-family: "mayoritte";
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #876745;
 }
 @media screen and (min-width: 768px) {
-  .schedule-all .container h1 {
-    font-size: 5.5vw;
+  .schedule-all1 .container h1 {
+    font-size: 4rem;
   }
 }
-.schedule-all .container .decor-box {
+.schedule-all1 .container .decor-box1 {
   position: absolute;
-  width: 70%;
+  width: 50%;
   height: 25px;
-  left: 40px;
+  left: 65px;
   z-index: -1;
-  margin-top: -4vw;
+  margin-top: -6vw;
   background: rgba(247, 204, 163, 0.39);
 }
 @media screen and (min-width: 992px) {
-  .schedule-all .container .decor-box {
-    width: 40%;
+  .schedule-all1 .container .decor-box1 {
+    width: 30%;
     height: 45px;
-    margin-top: -2vw;
-    left: 60px;
+    margin-top: -2.5vw;
+    left: 200px;
   }
 }
-.schedule-all .container h2 {
+.schedule-all1 .container h2 {
   font-family: "Mochiy Pop One", sans-serif;
   font-size: 1rem;
   color: #662483;
   text-align: center;
 }
-.schedule-all .container table {
-  border: 1px solid #1d3858;
+.schedule-all1 .container h3 {
+  position: relative;
+  font-family: "Mochiy Pop One", sans-serif;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #876745;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .schedule-all1 .container h3 {
+    font-size: 1.2rem;
+    margin-top: 0rem;
+  }
+}
+.schedule-all1 .container table {
+  border: 1px solid #662483;
   border-collapse: collapse;
   width: 100%;
   table-layout: fixed;
 }
-.schedule-all .container table td {
+.schedule-all1 .container table td {
   border: 1px solid #1d3858;
   padding: 0.35em;
 }
-.schedule-all .container table th {
+.schedule-all1 .container table th {
   border: 1px solid #1d3858;
   padding: 0.35em;
 }
-.schedule-all .container table tr {
+.schedule-all1 .container table tr {
   border: 1px solid #1d3858;
   padding: 0.35em;
 }
-.schedule-all .container .freespace {
-  background-color: #1d3858;
-  border: none;
-  width: 20rem;
+.schedule-all1 .container .freespace {
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+.schedule-all1 .container .freespace2 {
+  background-color: #ffffff;
+  border-top: 1px solid #ffffff;
   padding: 0.35em;
 }
-.schedule-all .container .day-txt {
+.schedule-all1 .container .day-txt {
   font-size: 0.8rem;
   text-align: center;
   font-weight: 600;
 }
-.schedule-all .container .time-txt {
+.schedule-all1 .container .time-txt {
+  font-family: "Mochiy Pop One", sans-serif;
   font-size: 0.9rem;
   text-align: center;
   font-weight: 600;
   color: #876745;
 }
-.schedule-all .container table th {
+.schedule-all1 .container table th {
   padding: 0.625em;
   color: #876745;
   font-family: "Montserrat";
   text-align: center;
   font-weight: 700;
 }
-.schedule-all .container table td {
+.schedule-all1 .container table td {
   padding: 0.625em;
   font-size: 0.8rem;
   text-align: center;
   color: #1d3858;
   font-family: "Montserrat";
 }
-.schedule-all .container table th {
+.schedule-all1 .container table th {
   font-size: 0.6rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 @media screen and (max-width: 600px) {
-  .schedule-all .container table {
+  .schedule-all1 .container table {
     border: 0;
   }
-  .schedule-all .container table caption {
+  .schedule-all1 .container table caption {
     font-size: 1.3em;
   }
-  .schedule-all .container table thead {
+  .schedule-all1 .container table thead {
     border: none;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -1710,37 +1777,37 @@ footer .footer-all .desc-foot p {
     position: absolute;
     width: 1px;
   }
-  .schedule-all .container table tr {
+  .schedule-all1 .container table tr {
     margin-bottom: 0.625em;
   }
-  .schedule-all .container table td {
+  .schedule-all1 .container table td {
     border-bottom: 1px solid #1d3858;
     display: block;
     font-size: 0.8em;
     text-align: right;
   }
-  .schedule-all .container table td::before {
+  .schedule-all1 .container table td::before {
     content: attr(data-label);
     float: left;
     font-weight: bold;
     text-transform: uppercase;
   }
-  .schedule-all .container table td:last-child {
+  .schedule-all1 .container table td:last-child {
     border-bottom: 0;
   }
 }
-.schedule-all .container .sche-note {
+.schedule-all1 .container .sche-note {
   display: grid;
   place-items: center;
 }
-.schedule-all .container .sche-note p {
+.schedule-all1 .container .sche-note p {
   text-align: center;
   color: #876745;
   font-family: "Montserrat";
   font-size: 0.8rem;
 }
 @media screen and (min-width: 992px) {
-  .schedule-all .container .sche-note p {
+  .schedule-all1 .container .sche-note p {
     width: 35rem;
   }
 }
@@ -1752,16 +1819,11 @@ footer .footer-all .desc-foot p {
 .pro-gallery .container h1 {
   font-family: "mayoritte";
   font-size: 8.5vw;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media screen and (min-width: 768px) {
   .pro-gallery .container h1 {
-    font-size: 5.5vw;
-  }
-}
-@media screen and (min-width: 992px) {
-  .pro-gallery .container h1 {
-    font-size: 4.5vw;
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1908,7 +1970,7 @@ footer .footer-all .desc-foot p {
 }
 
 body {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .container {
@@ -2388,7 +2450,7 @@ body {
 }
 
 .btn-primary {
-  color: #1D3858;
+  color: #1d3858;
   background: #fff;
   text-align: center;
 }
@@ -2405,31 +2467,37 @@ body {
   margin-top: 3vw;
   background: #876745;
   font-family: "Montserrat";
-  color: #FEF7F1;
+  color: #fef7f1;
 }
 @media screen and (min-width: 992px) {
   .btn-secondary {
-    width: 11rem;
+    width: 13rem;
     font-size: 0.7rem;
   }
 }
+@media screen and (min-width: 992px) and (min-width: 1200px) {
+  .btn-secondary {
+    width: 15rem;
+    font-size: 0.8rem;
+  }
+}
 .btn-secondary a {
-  color: #FEF7F1;
+  color: #fef7f1;
   font-size: 0.8rem;
 }
 .btn-thrid {
   margin-top: 3vw;
-  background: #1D3858;
+  background: #1d3858;
   font-family: "Montserrat";
-  color: #FEF7F1;
+  color: #fef7f1;
 }
 .btn-thrid a {
-  color: #FEF7F1;
+  color: #fef7f1;
   font-size: 0.8rem;
 }
 @media screen and (min-width: 992px) {
   .btn-thrid a {
-    width: 11rem;
+    width: 13rem;
   }
 }
 

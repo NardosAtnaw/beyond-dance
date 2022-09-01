@@ -461,6 +461,24 @@ footer {
     }
   }
 }
+.container {
+  .video-wrapper {
+    .vimeo-container {
+      padding: 56.25% 0 0 0;
+      position: relative;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    @include responsive($lg) {
+      // padding-top: 2rem;
+    }
+  }
+}
 .show-case {
   .container {
     h1 {
@@ -479,7 +497,12 @@ footer {
       display: grid;
       place-items: center;
       gap: 2vw;
-      @include responsive($lg) {
+      @include responsive($md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      @include responsive($xl) {
+        gap: 1vw;
         display: flex;
       }
 
@@ -491,6 +514,10 @@ footer {
             width: 25vw;
             height: 20vw;
           }
+          @include responsive($xl) {
+            width: 19vw;
+            height: 18vw;
+          }
         }
       }
     }
@@ -498,16 +525,23 @@ footer {
 }
 .home-contact {
   position: relative;
-  .contact-bg{
+  .contact-bg {
     position: absolute;
     bottom: 0;
+    right: 0;
+    // top: -10px;
+    top: -8.5rem;
+    @include responsive($xxl) {
+      top: -1.5rem;
+    }
 
-
-transform: rotate(0deg);
+    transform: rotate(0deg);
 
     z-index: -1;
-    img{
-
+    img {
+      @include responsive($xl) {
+        width: 30rem;
+      }
     }
   }
   .container {
@@ -532,6 +566,12 @@ transform: rotate(0deg);
         align-items: center;
       }
       .form {
+        .little-txt {
+          font-family: "Montserrat";
+          color: 1d3858;
+          text-align: center;
+          font-size: 0.8rem;
+        }
         form {
           p {
             font-size: 3.8vw;
@@ -582,7 +622,7 @@ transform: rotate(0deg);
           font-family: "Mochiy Pop One", sans-serif;
 
           font-size: 1rem;
-          color: #FFFFFF;
+          color: #ffffff;
           text-align: center;
           @include responsive($lg) {
             font-size: 2rem;
@@ -592,7 +632,7 @@ transform: rotate(0deg);
           text-align: center;
           font-size: 0.8rem;
           font-family: "Montserrat";
-          color: #FFFFFF;
+          color: #ffffff;
         }
         .home-social-links {
           display: grid;
@@ -609,10 +649,9 @@ transform: rotate(0deg);
 
             a {
               img {
-             
                 @include responsive($lg) {
                   display: flex;
-                  gap: 0.5rem;              
+                  gap: 0.5rem;
                   width: 1rem;
                 }
               }

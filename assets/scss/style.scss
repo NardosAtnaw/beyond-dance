@@ -1,4 +1,3 @@
-
 //mixins
 $sm: 576px;
 $md: 768px;
@@ -11,37 +10,27 @@ $xxl: 1920px;
     @media screen and (min-width: $screen-size) {
       @content;
     }
-  }
-
-  @else if $screen-size==$md {
+  } @else if $screen-size==$md {
     @media screen and (min-width: $screen-size) {
       @content;
     }
-  }
-
-  @else if $screen-size==$lg {
+  } @else if $screen-size==$lg {
     @media screen and (min-width: $screen-size) {
       @content;
     }
-  }
-
-  @else if $screen-size==$xl {
+  } @else if $screen-size==$xl {
     @media screen and (min-width: $screen-size) {
       @content;
     }
-  }
-
-  @else if $screen-size==$xxl {
+  } @else if $screen-size==$xxl {
     @media screen and (min-width: $screen-size) {
       @content;
     }
-  }
-
-  @else {
+  } @else {
     @error "#{$screen-size} is Invalid screen size";
   }
 }
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Mochiy+Pop+One&family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Mochiy+Pop+One&family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap");
 @import "reset";
 @import "home";
 @import "register";
@@ -73,33 +62,30 @@ $xxl: 1920px;
     url("@/assets/font/Montserrat/static/Montserrat-Regular.ttf") format("ttf");
 }
 
-
 //variables
-$beyond-white: #FEF7F1;
-$beyond-blue: #1D3858;
-$beyond-orange: #F7CCA3;
-$beyond-grey: #EDEDED;
+$beyond-white: #fef7f1;
+$beyond-blue: #1d3858;
+$beyond-orange: #f7cca3;
+$beyond-grey: #ededed;
 $beyond-black: #000000;
 $beyond-brown: #876745;
 $primary-color: #662483;
 
-.row-grid{
-  margin-top:2.9296875vw;
+.row-grid {
+  margin-top: 2.9296875vw;
 }
-.row-max-grid{
-  margin-top:5.859375vw;
+.row-max-grid {
+  margin-top: 5.859375vw;
 }
-.row-bottom-grid{
-  margin-bottom:5.859375vw;
+.row-bottom-grid {
+  margin-bottom: 5.859375vw;
 }
-.box-shadow{
-
-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
-
+.box-shadow {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
 }
-body{
+body {
   // overflow: hidden;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 // Variables
 $columns: 12;
@@ -238,7 +224,7 @@ $columns: 12;
 .btn-primary {
   @extend .btn-font;
   // font-size: 1rem;
-  color: #1D3858;
+  color: #1d3858;
   // padding: 0.7rem 1rem;
   background: #fff;
   // width: 15vw;
@@ -255,7 +241,6 @@ $columns: 12;
   border: none;
   // max-width: 24.5rem;
   text-align: center;
-
 }
 
 @include responsive($md) {
@@ -271,36 +256,39 @@ $columns: 12;
   background: #876745;
   // border: 1px #707070 solid;
   font-family: "Montserrat";
-  color: #FEF7F1;
-  @include responsive($lg){
-    width: 11rem;
-    font-size: .7rem;
-
+  color: #fef7f1;
+  @include responsive($lg) {
+    width: 13rem;
+    font-size: 0.7rem;
+    @include responsive($xl) {
+      width: 15rem;
+      font-size: 0.8rem;
+    }
   }
-  a{
-    color: #FEF7F1;
-    font-size:.8rem;
-    @include responsive($lg){
-      // font-size: .5rem; 
+  a {
+    color: #fef7f1;
+    font-size: 0.8rem;
+    @include responsive($lg) {
+      // font-size: .5rem;
       // // width: 10rem;
-    } 
+    }
   }
 }
 .btn-thrid {
   @extend .btn-cta;
   margin-top: 3vw;
-  background: #1D3858;
+  background: #1d3858;
   // border: 1px #707070 solid;
 
   font-family: "Montserrat";
-  color: #FEF7F1;
-  a{
-    color: #FEF7F1;
-    font-size: .8rem;
-    @include responsive($lg){
-      // font-size: 1vw; 
-      width: 11rem;
-    } 
+  color: #fef7f1;
+  a {
+    color: #fef7f1;
+    font-size: 0.8rem;
+    @include responsive($lg) {
+      // font-size: 1vw;
+      width: 13rem;
+    }
   }
 }
 
@@ -351,7 +339,7 @@ $columns: 12;
   display: inline-block;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     font-size: 0.8rem;
     top: 120%;
