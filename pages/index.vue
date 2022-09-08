@@ -2,28 +2,8 @@
   <div>
     <Navlink />
 
-    <Homevideo video="744959148" class="row-grid" />
-    <div class="join-cta row-max-grid">
-      <div class="container">
-        <div class="bg-texture">
-          <img src="../assets/img/texture.svg" alt="" />
-        </div>
-        <div class="join-txt">
-          <div class="join-title">
-            <h1>Join Us Today!</h1>
-          </div>
-          <div class="join-p">
-            <p>
-              If you are interested in joining Beyond Dance Studio, we encourage
-              you to pre-register to secure your spot with us!
-            </p>
-          </div>
-          <button class="btn btn-primary row-grid">Register Now</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="who-we-are row-max-grid">
+    <Homevideo video="744993912" class="row-grid" />
+    <div class="who-we-are row-grid">
       <div class="container">
         <div class="who-all">
           <div class="who-title">
@@ -43,83 +23,64 @@
               dancer looking to improve your technique, we guarantee you’ll find
               it here.
             </p>
-            <!-- <button class="btn btn-secondary">Discover More</button> -->
           </div>
         </div>
       </div>
     </div>
-
-    <div class="big-image row-grid">
-      <img src="../assets/img/showcase2.JPG" alt="" />
+    <div class="join-cta row-max-grid">
+      <div class="container">
+        <div class="join-txt">
+          <div class="join-title">
+            <h1>Join Us Today!</h1>
+          </div>
+          <div class="join-p">
+            <p>
+              If you are interested in joining Beyond Dance Studio, we encourage
+              you to pre-register to secure your spot with us!
+            </p>
+          </div>
+          <button class="btn btn-thrid row-grid">Register Now</button>
+        </div>
+        <div class="join-img">
+          <img src="../assets/img/showcase2.jpg" alt="" />
+        </div>
+      </div>
     </div>
     <div class="programs row-max-grid">
       <div class="container">
-        <h1>Programs</h1>
+        <!-- <h1>Programs</h1> -->
         <div class="schedule-all row-max-grid">
           <div class="sch-title">
             <h2>Schedule</h2>
-            <div class="decor-box"></div>
+            <!-- <div class="decor-box"></div> -->
           </div>
           <Schedule />
         </div>
         <div class="class-all row-max-grid">
           <div class="class-title">
             <h2>Classes</h2>
-            <div class="decor-box"></div>
+            <!-- <div class="decor-box"></div> -->
             <div class="class-list">
-              <div class="class-single row-max-grid">
-                <img src="../assets/img/takwalogo.svg" alt="" />
-                <h3 class="row-grid">TAEKWONDO</h3>
-                <p class="row-grid">
-                  Taekwondo is a system of symmetrical body exercises or
-                  techniques designed for self-defense and counter attack in
-                  unarmed combat
+              <div
+                class="class-single row-max-grid"
+                v-for="item in homeclass"
+                :key="item.id"
+              >
+                <img :src="require('@/assets/img/' + item.img + '')" alt="" />
+                <div class="decor-box"></div>
+                <h3 class="row-grid">{{ item.title }}</h3>
+                <p>
+                  {{ item.desc }}
                 </p>
               </div>
-              <div class="class-single row-max-grid">
-                <img src="../assets/img/hiphoplogo.svg" alt="" />
-                <h3 class="row-grid">HIP HOP</h3>
-                <p class="row-grid">
-                  Hip Hop is very unique, as it allows its dancers to perform
-                  with freedom of movement, adding in their own personalities.
-                </p>
-              </div>
-              <div class="class-single row-max-grid">
-                <img src="../assets/img/gymlogo.svg" alt="" />
-                <h3 class="row-grid">GYMNASTICS</h3>
-                <p class="row-grid">
-                  Gymnastics is a sport that includes physical exercises
-                  requiring balance, strength, flexibility, agility,
-                  coordination, dedication and endurance.
-                </p>
-              </div>
-              <div class="class-single row-max-grid">
-                <img src="../assets/img/yogalogo.svg" alt="" />
-                <h3 class="row-grid">YOGA</h3>
-                <p class="row-grid">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Necessitatibus, veniam! Commodi atque laboriosam officia.
-                  Doloribus animi perspiciatis nam, quod hic debitis .
-                </p>
-              </div>
-              <div class="class-single row-max-grid">
-                <img src="../assets/img/balletlogo.svg" alt="" />
-                <h3 class="row-grid">BALLET</h3>
-                <p class="row-grid">
-                  The focus will be set on placement, alignment, flexibility and
-                  musicality through a blend of traditional ballet techniques.
-                  As students’ progress through the levels
-                </p>
-              </div>
-              <div class="class-single row-max-grid">
-                <img src="../assets/img/painologo.svg" alt="" />
-                <h3 class="row-grid">PAINO</h3>
-                <p class="row-grid">
-                  Students learn basic piano skills and fundamentals of music
-                  literacy, including basic notation, rhythms, time signatures,
-                  and intervals.
-                </p>
-              </div>
+            </div>
+            <div class="class-note row-max-grid">
+              <p>
+                Click the button below to view all programs and classes as well as to register.
+              </p>
+              <button class="btn btn-secondary row-grid">
+                <a href="program"> See all the program</a>
+              </button>
             </div>
           </div>
         </div>
@@ -182,5 +143,42 @@ import Homevideo from "../components/Homevideo.vue";
 export default {
   name: "IndexPage",
   components: { Footer, Schedule, Homevideo },
+
+  data() {
+    return {
+      homeclass: [
+        {
+          img: "takwalogo.svg",
+          title: "Takewondo",
+          desc: "Taekwondo is a system of symmetrical body exercises or techniques designed for self-defense and counter...",
+        },
+        {
+          img: "hiphoplogo.svg",
+          title: "HIP HOP",
+          desc: " Hip Hop is very unique, as it allows its dancers to perform with freedom of movement, adding in ...",
+        },
+        {
+          img: "gymlogo.svg",
+          title: "Gymnastics",
+          desc: "Gymnastics is a sport that includes physical exercises requiring balance, strength, flexibility, agility,...",
+        },
+        {
+          img: "yogalogo.svg",
+          title: "Jazz",
+          desc: "Standard jazz combinations will be taught to a mixture of traditional jazz, Broadway and popular music.",
+        },
+        {
+          img: "balletlogo.svg",
+          title: "Ballet",
+          desc: "The focus will be set on placement, alignment, flexibility and musicality through a blend of traditional ",
+        },
+        {
+          img: "painologo.svg",
+          title: "Piano",
+          desc: " Students learn basic piano skills and fundamentals of music literacy, including basic notation, rhythms, ....",
+        },
+      ],
+    };
+  },
 };
 </script>

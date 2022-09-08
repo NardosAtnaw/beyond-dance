@@ -37,6 +37,7 @@ $xxl: 1920px;
 @import "dancestudio";
 @import "program";
 @import "events";
+@import "contact";
 
 @font-face {
   font-family: "Mochiy_Pop_One";
@@ -248,7 +249,32 @@ $columns: 12;
     // padding: 0.7rem 2rem;
   }
 }
+.btn-purple {
+  @extend .btn-cta;
+  width: 15rem;
+  margin-top: 3vw;
+  background: #662483;
+  // border: 1px #707070 solid;
+  font-family: "Montserrat";
+  color: #fef7f1;
+  @include responsive($lg) {
+    width: 13rem;
+    font-size: 0.7rem;
+  }
+  @include responsive($xl) {
+    width: 15rem;
+    font-size: 0.8rem;
+  }
 
+  a {
+    color: #fef7f1;
+    font-size: 0.8rem;
+    @include responsive($lg) {
+      // font-size: .5rem;
+      // // width: 10rem;
+    }
+  }
+}
 .btn-secondary {
   @extend .btn-cta;
   width: 15rem;
@@ -276,18 +302,27 @@ $columns: 12;
 }
 .btn-thrid {
   @extend .btn-cta;
+  width: 15rem;
   margin-top: 3vw;
   background: #1d3858;
   // border: 1px #707070 solid;
-
   font-family: "Montserrat";
   color: #fef7f1;
+  @include responsive($lg) {
+    width: 13rem;
+    font-size: 0.7rem;
+  }
+  @include responsive($xl) {
+    width: 15rem;
+    font-size: 0.8rem;
+  }
+
   a {
     color: #fef7f1;
     font-size: 0.8rem;
     @include responsive($lg) {
-      // font-size: 1vw;
-      width: 13rem;
+      // font-size: .5rem;
+      // // width: 10rem;
     }
   }
 }

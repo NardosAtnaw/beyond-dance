@@ -23,7 +23,7 @@
             <th class="day-txt">Monday</th>
 
             <tr  v-for="item in Monday" :key="item.id">
-                     <td class="freespace2" ></td>
+              <td class="freespace freespace2" ></td>
               <td data-label="Class Name">{{ item.className }}</td>
               <td data-label="Age">{{ item.ageGroup }}</td>
               <td data-label="Class Time">
@@ -37,7 +37,7 @@
             <th  class="day-txt">Tuesday</th>
 
             <tr v-for="item in Tuesday" :key="item.id">
-                       <td class="freespace2" ></td>
+              <td class="freespace freespace2" ></td>
               <td data-label="Class Name">{{ item.className }}</td>
               <td data-label="Age">{{ item.ageGroup }}</td>
               <td data-label="Class Time">
@@ -51,7 +51,7 @@
             <th  class="day-txt">Wednesday</th>
 
             <tr v-for="item in Wednesday" :key="item.id">
-            <td class="freespace2" ></td>
+              <td class="freespace freespace2" ></td>
               <td data-label="Class Name">{{ item.className }}</td>
               <td data-label="Age">{{ item.ageGroup }}</td>
               <td data-label="Class Time">
@@ -65,7 +65,7 @@
             <th class="day-txt">Thursday</th>
 
             <tr v-for="item in Thursday" :key="item.id">
-           <td class="freespace2" ></td>
+              <td class="freespace freespace2" ></td>
               <td data-label="Class Name">{{ item.className }}</td>
               <td data-label="Age">{{ item.ageGroup }}</td>
               <td data-label="Class Time">
@@ -79,7 +79,7 @@
             <th class="day-txt">Friday</th>
 
             <tr v-for="item in Friday" :key="item.id">
-                  <td class="freespace2" ></td>
+              <td class="freespace freespace2" ></td>
               <td data-label="Class Name">{{ item.className }}</td>
               <td data-label="Age">{{ item.ageGroup }}</td>
               <td data-label="Class Time">
@@ -93,7 +93,7 @@
             <th class="day-txt">Saturday</th>
 
             <tr  v-for="item in Saturday" :key="item.id">
-                <td class=" " ></td>
+              <td class="freespace freespace2" ></td>
               <td data-label="Class Name">{{ item.className }}</td>
               <td data-label="Age">{{ item.ageGroup }}</td>
               <td data-label="Class Time">
@@ -111,9 +111,59 @@
 Team classes in color with additional information  which say twice a week meet twice a week
 Age group is in parenthesis next to class name
         </p>
-        <button class="btn btn-secondary row-grid">Download Schedule</button>
+        <button class="btn btn-secondary row-grid">
+          <a href="../static/Schedule.png" target="_blank" >
+          Download Schedule</a></button>
       </div>
     </div>
+    <div class="container-sm">
+    
+    <h3>CLASS / PROGRAM SCHEDULE<br/>
+(August 29, 2022 - December 10, 2022)</h3>
+    <table class="row-grid">
+      <thead>
+        <tr>
+          <th scope="col">Days</th>
+
+          <th scope="col">Class Name</th>
+          <th scope="col">Age Group</th>
+          <th scope="col">Class Time</th>
+          <th scope="col">Studio</th>
+          <th scope="col">Additional Information</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr >
+          <th class="day-txt">Monday</th>
+
+          <tr  v-for="item in Monday" :key="item.id">
+            <td class="freespace freespace2" ></td>
+            <td data-label="Class Name">{{ item.className }}</td>
+            <td data-label="Age">{{ item.ageGroup }}</td>
+            <td data-label="Class Time">
+              {{ item.timeStart + "-" + item.timeEnd }}
+            </td>
+            <td data-label="Studio">{{ item.studioNum }}</td>
+            <td data-label="Add Info">{{ item.addInformation }}</td>
+          </tr>
+        </tr>
+        <tr>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div class="sche-note row-grid">
+      <p>
+   Additional Notes:
+Team classes in color with additional information  which say twice a week meet twice a week
+Age group is in parenthesis next to class name
+      </p>
+      <button class="btn btn-secondary row-grid">
+        <a href="../static/Schedule.png" target="_blank" >
+        Download Schedule</a></button>
+    </div>
+  </div>
   </div>
 </template>
 

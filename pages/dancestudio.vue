@@ -1,6 +1,7 @@
 <template>
   <div>
     <Navlink />
+    <Homevideo video="744993912" class="row-grid" />
     <div class="about-all row-grid">
       <div class="container">
         <div class="about-wrapper">
@@ -93,6 +94,12 @@
         </div>
       </div>
     </div>
+
+    <div class="separt row-grid">
+      <div class="container">
+        <div class="box"></div>
+      </div>
+    </div>
     <div class="faq row-max-grid">
       <div class="container">
         <div class="faq-texture">
@@ -121,14 +128,14 @@
     <section class="dance-wear row-bottom-grid row-max-grid">
       <div class="container">
         <h2>Dancewear and Apparel</h2>
-        <p class="frist-p row-grid">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-          accumsan pretium tortor, in Lorem ipsum dolor sit amet, consectetur
+        <p class="frist-p">
+          See the Dancewear and Apparel below to get your and contact us at
+          +25165757474 if you have any
         </p>
         <div class="dance-wear-wrapper">
           <div class="dance-wear-items">
             <div
-              class="single-item row-max-grid"
+              class="single-item row-grid"
               v-for="item in dancewear"
               :key="item.id"
             >
@@ -140,7 +147,7 @@
 
               <div class="right-table">
                 <h4>{{ item.itemname }}</h4>
-                <p>{{ item.itemdesc }}</p>
+                <!-- <p>{{ item.itemdesc }}</p> -->
                 <div class="images">
                   <img
                     :src="require('@/assets/img/' + item.img1 + '')"
@@ -251,6 +258,15 @@ export default {
 
       dancewear: [
         {
+          id: 8,
+          itemname: "Leotard",
+          itemdesc: "Lorem ipsum dolor sit amet, consectetur",
+          bigimage: "DanceWear.jpg",
+          img1: "Leotard.jpg",
+          img2: "DanceWear.jpg",
+          img3: "Leotard.jpg",
+        },
+        {
           id: 1,
           itemname: "Athletic Leggings",
           itemdesc: "Lorem ipsum dolor sit amet, consectetur",
@@ -314,30 +330,21 @@ export default {
           img2: "ballet3.jpg",
           img3: "ballet3.jpg",
         },
-        {
-          id: 8,
-          itemname: "Jazz Shoes",
-          itemdesc: "Lorem ipsum dolor sit amet, consectetur",
-          bigimage: "jazz1.jpg",
-          img1: "jazz1.jpg",
-          img2: "jazz2.webp",
-          img3: "jazz1.jpg",
-        },
       ],
       gallery: [
         {
           id: 1,
-          img: "gal1.jpg",
+          img: "Studio1.jpg",
           studioname: "Studio 1",
         },
         {
           id: 2,
-          img: "gal2.jpg",
+          img: "Studio2.jpg",
           studioname: "Studio 2",
         },
         {
           id: 3,
-          img: "gal3.jpg",
+          img: "Studio3.jpg",
           studioname: "Studio 3",
         },
       ],

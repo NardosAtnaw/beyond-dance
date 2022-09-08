@@ -4,11 +4,11 @@
       <img src="../assets/img/contactbg.svg" alt="" />
     </div>
     <div class="container">
-      <h1>Contact Us</h1>
+      <!-- <h1>Contact Us</h1> -->
 
       <div class="contact-list">
         <div class="form row-grid">
-          <h3 class="little-txt">Make contact with us through the following form</h3>
+          <h3 class="little-txt">Use the form below to get in touch with us, or click on the links to do so.</h3>
           <form action="">
             <p>Name</p>
             <input class="input" type="text" />

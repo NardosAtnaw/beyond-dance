@@ -36,7 +36,7 @@ position: relative;
                 img{
                  width: 1.25rem;
                  @include responsive($lg){
-                    width: 1.8rem;
+                    width: 1rem;
                  }
 
                 }
@@ -68,6 +68,10 @@ position: relative;
         }
 
         .full-form{
+            // @include responsive($lg){
+            //     display: grid;
+            //     grid-template-columns: 1fr 1fr;
+            // }
             .input{
     border: none;
     border-bottom: 1px solid #7e7979;

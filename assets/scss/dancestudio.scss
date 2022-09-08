@@ -116,6 +116,10 @@
 
     .faq-texture {
       position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0.6;
+      left: 0;
       display: grid;
       place-content: center;
       @include responsive($lg) {
@@ -126,7 +130,7 @@
     h1 {
       font-family: "mayoritte";
       font-size: 2rem;
-      text-align: center;
+      // text-align: center;
       color: #876745;
       @include responsive($lg) {
         font-size: 3rem;
@@ -311,7 +315,7 @@
   .container {
     .box {
       width: 100%;
-      height: 0.3rem;
+      height: 0.07rem;
       background-color: #876745;
     }
   }
@@ -323,7 +327,7 @@
       font-family: "mayoritte";
       color: #1d3858;
       text-align: center;
-     
+
       @include responsive($lg) {
         font-size: 3rem;
       }
@@ -339,7 +343,7 @@
           @include responsive($lg) {
             display: grid;
             place-items: center;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
           }
           p {
             font-family: "Montserrat";
@@ -408,8 +412,8 @@
 }
 .dance-wear {
   background-color: #1d3858;
-  padding-top: 5.859375vw;
-  padding-bottom: 5.859375vw;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   .container {
     display: grid;
     place-items: center;
@@ -419,15 +423,13 @@
       font-size: 2rem;
       color: #ffffff;
       text-align: center;
-      @include responsive($lg) {
-        font-size: 3rem;
-      }
     }
     .frist-p {
       text-align: center;
       color: #ffffff;
       font-size: 0.8rem;
       font-family: "Montserrat";
+      margin-top: 1rem;
 
       @include responsive($md) {
         width: 35rem;
@@ -475,6 +477,9 @@
               font-family: "Montserrat";
               @include responsive($md) {
                 font-size: 0.8rem;
+              }
+              @include responsive($lg) {
+                font-size: 1.2rem;
               }
             }
             p {
@@ -543,6 +548,10 @@
           width: 15rem;
           height: 20rem;
           object-fit: cover;
+          @include responsive($xl) {
+            width: 100%;
+            height: 25rem;
+          }
         }
         .studio-name {
           text-align: center;

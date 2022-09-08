@@ -1,0 +1,193 @@
+.contact-page {
+  position: relative;
+  .contact-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    // top: -10px;
+    top: -8.5rem;
+    @include responsive($xxl) {
+      top: -1.5rem;
+    }
+
+    transform: rotate(0deg);
+
+    z-index: -1;
+    img {
+      @include responsive($xl) {
+        width: 30rem;
+      }
+    }
+  }
+  .container {
+    h1 {
+      font-size: 5vw;
+      font-family: "Montserrat";
+      color: #1d3858;
+      text-align: center;
+      @include responsive($md) {
+        font-size: 3vw;
+      }
+      @include responsive($lg) {
+        font-size: 2vw;
+      }
+    }
+    .contact-list {
+      display: grid;
+
+      @include responsive($lg) {
+        display: flex;
+
+        gap: 2rem;
+      }
+      @include responsive($xl) {
+        display: flex;
+        align-items: center;
+        gap: 6rem;
+      }
+      .form {
+        h2 {
+          font-family: "mayoritte";
+          font-size: 2rem;
+          color: #662483;
+          @include responsive($lg) {
+            font-size: 3rem;
+          }
+        }
+        .little-txt {
+          font-family: "Montserrat";
+          color: #662483;
+          margin-top: 1rem;
+          font-size: 0.8rem;
+        }
+        form {
+          p {
+            font-size: 3.8vw;
+            margin-top: 6vw;
+
+            font-family: "Montserrat";
+            color: #876745;
+            width: 60%;
+            @include responsive($md) {
+              font-size: 2.8vw;
+            }
+            @include responsive($lg) {
+              font-size: 0.8vw;
+              margin-top: 2vw;
+            }
+          }
+          .input {
+            border: none;
+            border-bottom: 1px solid #876745;
+            background-color: transparent;
+            margin-top: 2vw;
+            width: 85vw;
+            font-size: 0.8vw;
+            outline: none;
+            font-family: "Montserrat";
+            color: #876745;
+            @include responsive($lg) {
+              width: 40vw;
+            }
+          }
+        }
+      }
+      .contact-info {
+    
+       
+        h2 {
+         
+          font-family: "Mochiy Pop One", sans-serif;
+
+          font-size: 1rem;
+          color: #662483;
+          text-align: center;
+          margin-top: 1rem;
+          @include responsive($lg) {
+            font-size: 1.2rem;
+          }
+        }
+        p {
+          text-align: center;
+          font-size: 0.8rem;
+          font-family: "Montserrat";
+          color: #662483;
+          margin-top: 1rem;
+          @include responsive($xl) {
+            font-size: 1rem;
+          }
+        }
+        .home-social-links {
+          display: grid;
+          place-content: center;
+
+          .soc-links {
+            display: flex;
+            align-items: center;
+            margin-top: 2vw;
+            @include responsive($lg) {
+              margin-top: 0vw;
+            }
+            gap: 1.5vw;
+
+            a {
+              img {
+                @include responsive($lg) {
+                  display: flex;
+                  gap: 0.5rem;
+                  width: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.map {
+  background: rgba(135, 103, 69, 0.1);
+
+  padding: 2rem 0 3rem;
+  overflow: hidden;
+  height: 40.94rem;
+
+  h1 {
+    font-family: "mayoritte";
+    color: #1d3858;
+    font-size: 2rem;
+    @include responsive($lg) {
+      font-size: 3rem;
+    }
+  }
+  p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-family: "Montserrat";
+    text-align: center;
+    color: #1d3858;
+  }
+  .map-container {
+    margin-top: 3rem;
+    .location {
+      .map-responsive {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+
+        iframe {
+          left: 50%;
+          transform: translate(-50%);
+          top: 0;
+          max-height: 27.94rem;
+          max-width: 69.25rem;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
