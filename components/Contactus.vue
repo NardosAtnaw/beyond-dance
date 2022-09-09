@@ -8,7 +8,11 @@
 
       <div class="contact-list">
         <div class="form row-grid">
-          <h3 class="little-txt">Use the form below to get in touch with us, or click on the links to do so.</h3>
+          <h2 class="big-txt">Get in touch with us!</h2>
+          <h3 class="little-txt">
+            Use the form below to get in touch with us, or click on the links to
+            do so.
+          </h3>
           <form action="">
             <p>Name</p>
             <input class="input" type="text" />
@@ -21,7 +25,7 @@
             <button class="btn btn-secondary">Submit</button>
           </form>
         </div>
-        <div class="contact-info row-grid">
+        <div class="contact-info ">
           <h2 class="">Write Us Now!</h2>
           <p class="row-grid">
             Africa Ave, Addis Ababa, Ethiopia<br /><br />

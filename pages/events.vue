@@ -57,6 +57,19 @@
             <div class="box"></div>
           </div>
         </div>
+       
+        
+      </div>
+    </div>
+    <div class="events2 row-grid">
+      <div class="separt2 row-grid">
+        <div class="container">
+       
+    
+        </div>
+      </div>
+      <div class="container">
+        
         <div class="event-wrapper">
           <div
             class="single-event row-grid"

@@ -28,7 +28,9 @@
           font-family: "Montserrat";
           text-align: center;
           @include responsive($lg) {
-            font-size: 1rem;
+            // width: 70%;
+            line-height: 2rem;
+            font-size: 0.9rem;
           }
         }
         button {
@@ -37,14 +39,9 @@
         }
       }
       @include responsive($xl) {
-        display: flex;
-        align-items: center;
+        display: grid;
         gap: 1rem;
-        .video {
-          width: 50%;
-        }
         .about-txt {
-          width: 60%;
           height: 24rem;
           margin-top: 0rem;
         }
@@ -111,6 +108,9 @@
   }
 }
 .faq {
+  background: rgba(135, 103, 69, 0.1);
+  padding: 2rem;
+
   .container {
     position: relative;
 
@@ -130,7 +130,7 @@
     h1 {
       font-family: "mayoritte";
       font-size: 2rem;
-      // text-align: center;
+      text-align: center;
       color: #876745;
       @include responsive($lg) {
         font-size: 3rem;
@@ -178,7 +178,7 @@
         display: table;
 
         font-weight: bolder;
-        border-bottom: 2px solid #000;
+        border-bottom: 2px solid #876745;
       }
 
       h2 {
@@ -208,7 +208,6 @@
         color: #876745;
         font-size: 0.8rem;
         line-height: 20px;
-
         position: relative;
         overflow: hidden;
         font-family: "Montserrat";
@@ -220,11 +219,12 @@
         transition: all 500ms ease;
       }
       ul {
-        @include responsive($md) {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
+        @include responsive($lg) {
+          // display: grid;
+          // grid-template-columns: 1fr 1fr;
           place-items: center;
-          gap: 0.5rem;
+          gap: 3rem;
+          width: 50rem;
         }
       }
       p,
@@ -241,7 +241,7 @@
           position: relative;
           padding: 0;
           margin: 0;
-          padding-bottom: 4px;
+          padding-bottom: 50px;
           // padding-top: 20px;
           // border-top: 1px solid #e4eaec;
           & i {
@@ -253,7 +253,8 @@
             &:after {
               content: "";
               position: absolute;
-              background-color: #0000;
+              background-color: #876745;
+              // margin-left: 1rem;
               width: 3px;
               height: 16px;
             }
@@ -281,6 +282,7 @@
               margin-top: 9px;
               color: #1d3858;
               height: 9px;
+
               transform: translate(2px, 0) rotate(45deg);
             }
             &:checked ~ i:after {
@@ -351,10 +353,11 @@
             color: #1d3858;
             line-height: 1.2rem;
             font-weight: 500;
+            text-align: center;
 
             @include responsive($lg) {
               line-height: 1rem;
-              font-size: 1rem;
+              font-size: 0.9rem;
               line-height: 0rem;
             }
           }
@@ -373,7 +376,7 @@
             margin-top: 0rem;
           }
           @include responsive($lg) {
-            font-size: 1rem;
+            font-size: 0.9rem;
           }
         }
         p {
@@ -398,9 +401,10 @@
         text-align: center;
         font-size: 0.9rem;
         color: #876745;
-        width: 50%;
+
         @include responsive($lg) {
           width: 30rem;
+          width: 50%;
         }
         @include responsive($xl) {
           font-size: 0.8rem;
@@ -436,27 +440,37 @@
       }
     }
     .dance-wear-wrapper {
+      display: grid;
+      place-items: center;
       .dance-wear-items {
         @include responsive($md) {
           display: grid;
           align-items: flex-start;
           grid-template-columns: 1fr 1fr;
-          gap: 2rem;
+          gap: 1rem;
+        }
+        @include responsive($lg) {
+          display: grid;
+          align-items: flex-start;
+          grid-template-columns: 1fr 1fr;
+          gap: 3rem;
         }
 
         .single-item {
           display: grid;
           place-items: center;
-          @include responsive($md) {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+          @include responsive($lg) {
+            display: flex;
+            place-items: center;
             gap: 1rem;
           }
           .bigimg {
-            width: 15rem;
-            height: 20rem;
+            width: 10rem;
+            height: 15rem;
             object-fit: cover;
-            @include responsive($md) {
+            @include responsive($lg) {
+              width: 15rem;
+              height: 20rem;
             }
           }
           .right-table {
@@ -501,15 +515,20 @@
                 place-items: left;
                 margin-top: 1.5rem;
               }
+              img {
+                margin-top: 1rem;
+                height: 8rem;
+              }
               @include responsive($lg) {
                 img {
-                  height: 10rem;
+                  height: 8rem;
+                  margin-top: 0rem;
                   object-fit: cover;
                 }
               }
             }
             button {
-              margin-top: 2rem;
+              margin-top: 1rem;
               font-size: 0.6rem;
             }
           }
@@ -519,6 +538,8 @@
   }
 }
 .gallery {
+  background: rgba(135, 103, 69, 0.1);
+  padding: 2rem;
   .container {
     h1 {
       font-family: "mayoritte";

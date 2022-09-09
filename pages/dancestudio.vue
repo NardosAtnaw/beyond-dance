@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navlink />
-    <Homevideo video="744993912" class="row-grid" />
+    <!-- <Homevideo video="744993912" class="row-grid" /> -->
     <div class="about-all row-grid">
       <div class="container">
         <div class="about-wrapper">
@@ -28,34 +28,28 @@
       </div>
     </div>
 
-    <!-- <div class="about-us row-max-grid">
+    <div class="faq row-max-grid">
       <div class="container">
-        <h1>About Us</h1>
-
-        <div class="desc-about">
-          <div class="about-txt row-max-grid">
-            <p>
-              Beyond Dance Studio is the first of its kind in Ethiopia offering
-              a wide range of kids to young adult dance classes from ballet,
-              jazz, hip hop, technique and beyond. We as a company are committed
-              to grow your dancers at an accelerated rate through dedication and
-              discipline. Beyond Dance’s vision is to introduce the joy of dance
-              to hundreds of children across Addis Ababa. When you decide to
-              join us at Beyond Dance, you too will be able to take advantage of
-              our professional staff at our fully-equipped and recently
-              renovated studio. Whether you’re a beginner or an experienced
-              dancer looking to improve your technique, we guarantee you’ll find
-              it here.
-            </p>
-            <button class="btn btn-primary">Contact Us</button>
-          </div>
-          <div class="about-image">
-            <img src="../assets/img/Takewoado.jpg" alt="" />
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-wrapper">
+          <div class="faq-accordo row-grid">
+            <div id="wrapper" :data="accordion">
+              <ul>
+                <li v-for="items in accordion" :key="items.id">
+                  <input type="checkbox" checked />
+                  <i></i>
+                  <h2>
+                    <span class="ques-p">{{ items.question }}</span>
+                  </h2>
+                  <p>{{ items.answer }}</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div> -->
-    <div class="separt row-grid">
+    </div>
+    <div class="separt row-max-grid">
       <div class="container">
         <div class="box"></div>
       </div>
@@ -90,47 +84,18 @@
             questions. Click the link below to get a PDF of our safety and
             regulation to learn about the security of our studio.
           </p>
-          <button class="btn btn-secondary row-grid">Download PDF</button>
+          <button class="btn btn-secondary row-grid">
+            <a href="Safety.docx" target="_blank" download> Download Safety</a>
+          </button>
         </div>
       </div>
     </div>
 
-    <div class="separt row-grid">
-      <div class="container">
-        <div class="box"></div>
-      </div>
-    </div>
-    <div class="faq row-max-grid">
-      <div class="container">
-        <div class="faq-texture">
-          <img src="../assets/img/faqbg.svg" alt="" />
-        </div>
-        <h1>Frequently Asked Questions</h1>
-        <div class="faq-wrapper">
-          <div class="faq-accordo">
-            <div id="wrapper" :data="accordion">
-              <ul>
-                <li v-for="items in accordion" :key="items.id">
-                  <input type="checkbox" checked />
-                  <i></i>
-                  <h2>
-                    <span class="ques-p">{{ items.question }}</span>
-                    <span class="plus-icon">+</span>
-                  </h2>
-                  <p>{{ items.answer }}</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="dance-wear row-bottom-grid row-max-grid">
+    <section class="dance-wear row-max-grid">
       <div class="container">
         <h2>Dancewear and Apparel</h2>
         <p class="frist-p">
-          See the Dancewear and Apparel below to get your and contact us at
-          +25165757474 if you have any
+          See the Dancewear and Apparel below to get your and contact us.
         </p>
         <div class="dance-wear-wrapper">
           <div class="dance-wear-items">
@@ -170,7 +135,7 @@
       </div>
     </section>
 
-    <div class="gallery row-max-grid row-bottom-grid">
+    <div class="gallery row-bottom-grid">
       <div class="container">
         <h1>Dance Studios</h1>
         <div class="gallery-wrapper row-grid">
@@ -185,6 +150,7 @@
         </div>
       </div>
     </div>
+    <Contactus />
     <Footer />
   </div>
 </template>

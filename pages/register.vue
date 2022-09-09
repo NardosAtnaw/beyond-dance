@@ -21,20 +21,22 @@
     <div class="register-form row-max-grid">
       <div class="container row-max-grid">
         <h1>Beyond Dance Pre-Registration Form</h1>
-        <p class="row-grid">
+
+        <p class="small-txt">
           REGISTER YOUR CHILD TODAY! - Limited Space Available
         </p>
-        <p class="row-grid">
+        <p class="small-txt">
           *Due to COVID capacity constraints registration is not fully confirmed
           until pre-registration form is completed and registration is payed in
           person*
         </p>
+        <div class="separt1 row-grid">
+          <div class="container">
+            <div class="box"></div>
+          </div>
+        </div>
 
-        <form
-          action=""
-          @submit.prevent="submitForm"
-          class="full-form row-max-grid"
-        >
+        <form action="" @submit.prevent="submitForm" class="full-form row-grid">
           <p>Student's Name *</p>
           <input class="input" v-model="form.student_name" type="text" />
           <p>

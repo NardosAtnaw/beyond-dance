@@ -47,17 +47,19 @@
         </div>
       </div>
     </div>
-    <div class="schedule-all1 row-max-grid">
+
+    <div class="programs row-max-grid">
       <div class="container">
-        <div class="sch-title">
-          <h1>Schedule</h1>
-          <!-- <div class="decor-box1"></div> -->
+        <div class="schedule-all row-max-grid">
+          <div class="sch-title">
+            <h2>Schedule</h2>
+          </div>
+          <Schedule />
         </div>
-        <Schedule />
       </div>
     </div>
 
-    <div class="pro-gallery row-max-grid row-bottom-grid">
+    <div class="pro-gallery row-bottom-grid">
       <div class="container">
         <h1>Gallery</h1>
         <div class="gallery-wrapper row-grid">
@@ -71,12 +73,14 @@
         </div>
       </div>
     </div>
+
     <Footer />
   </div>
 </template>
 
 <script>
 import Schedule from "../components/Schedule.vue";
+import Contactus from "./contactus.vue";
 export default {
   data() {
     return {
@@ -130,7 +134,7 @@ export default {
           title: "Gymnastics",
           desc: "Gymnastics is a sport that includes physical exercises requiring balance, strength, flexibility, agility, coordination, dedication and endurance. The movements involved in gymnastics contribute to the development of the arms, legs, shoulders, back, chest, and abdominal muscle groups ",
           img1: "Studio1.jpg",
-          img2: "gal9.JPG",
+          img2: "gym3.jpg",
           img3: "gym2.webp",
           img4: "Studio2.jpg",
           title2: "Drawing",
@@ -195,22 +199,22 @@ export default {
           id: 9,
           img: "gal9.JPG",
         },
-        // {
-        //   id: 10,
-        //   img: "gal10.jpg",
-        // },
-        // {
-        //   id: 11,
-        //   img: "gal11.JPG",
-        // },
-        // {
-        //   id: 12,
-        //   img: "gal12.jpg",
-        // },
+        {
+          id: 10,
+          img: "gal10.jpg",
+        },
+        {
+          id: 11,
+          img: "gall13.jpg",
+        },
+        {
+          id: 12,
+          img: "gal12.jpg",
+        },
       ],
     };
   },
   mounted() {},
-  components: { Schedule },
+  components: { Schedule, Contactus },
 };
 </script>

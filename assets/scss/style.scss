@@ -73,13 +73,13 @@ $beyond-brown: #876745;
 $primary-color: #662483;
 
 .row-grid {
-  margin-top: 2.9296875vw;
+  margin-top: 2rem;
 }
 .row-max-grid {
-  margin-top: 5.859375vw;
+  margin-top: 4rem;
 }
 .row-bottom-grid {
-  margin-bottom: 5.859375vw;
+  margin-bottom: 4rem;
 }
 .box-shadow {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
@@ -252,7 +252,7 @@ $columns: 12;
 .btn-purple {
   @extend .btn-cta;
   width: 15rem;
-  margin-top: 3vw;
+  margin-top: 2vw;
   background: #662483;
   // border: 1px #707070 solid;
   font-family: "Montserrat";
@@ -278,7 +278,7 @@ $columns: 12;
 .btn-secondary {
   @extend .btn-cta;
   width: 15rem;
-  margin-top: 3vw;
+  margin-top: 2vw;
   background: #876745;
   // border: 1px #707070 solid;
   font-family: "Montserrat";
@@ -303,7 +303,7 @@ $columns: 12;
 .btn-thrid {
   @extend .btn-cta;
   width: 15rem;
-  margin-top: 3vw;
+  margin-top: 2vw;
   background: #1d3858;
   // border: 1px #707070 solid;
   font-family: "Montserrat";

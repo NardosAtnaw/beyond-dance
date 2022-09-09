@@ -3,30 +3,7 @@
     <Navlink />
 
     <Homevideo video="744993912" class="row-grid" />
-    <div class="who-we-are row-grid">
-      <div class="container">
-        <div class="who-all">
-          <div class="who-title">
-            <h1>Who We Are</h1>
-          </div>
-          <div class="who-desc">
-            <p>
-              Beyond Dance Studio is the first of its kind in Ethiopia offering
-              a wide range of kids to young adult dance classes from ballet,
-              jazz, hip hop, technique and beyond. We as a company are committed
-              to grow your dancers at an accelerated rate through dedication and
-              discipline. Beyond Dance’s vision is to introduce the joy of dance
-              to hundreds of children across Addis Ababa. When you decide to
-              join us at Beyond Dance, you too will be able to take advantage of
-              our professional staff at our fully-equipped and recently
-              renovated studio. Whether you’re a beginner or an experienced
-              dancer looking to improve your technique, we guarantee you’ll find
-              it here.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <div class="join-cta row-max-grid">
       <div class="container">
         <div class="join-txt">
@@ -39,54 +16,109 @@
               you to pre-register to secure your spot with us!
             </p>
           </div>
-          <button class="btn btn-thrid row-grid">Register Now</button>
+          <button class="btn btn-purple row-grid">Register Now</button>
         </div>
         <div class="join-img">
           <img src="../assets/img/showcase2.jpg" alt="" />
         </div>
       </div>
     </div>
-    <div class="programs row-max-grid">
+    <div class="who-we-are row-max-grid">
       <div class="container">
-        <!-- <h1>Programs</h1> -->
-        <div class="schedule-all row-max-grid">
-          <div class="sch-title">
-            <h2>Schedule</h2>
-            <!-- <div class="decor-box"></div> -->
-          </div>
-          <Schedule />
-        </div>
-        <div class="class-all row-max-grid">
-          <div class="class-title">
-            <h2>Classes</h2>
-            <!-- <div class="decor-box"></div> -->
-            <div class="class-list">
-              <div
-                class="class-single row-max-grid"
-                v-for="item in homeclass"
-                :key="item.id"
-              >
-                <img :src="require('@/assets/img/' + item.img + '')" alt="" />
-                <div class="decor-box"></div>
-                <h3 class="row-grid">{{ item.title }}</h3>
-                <p>
-                  {{ item.desc }}
-                </p>
+        <div class="who-all">
+          <div class="who-title">
+            <h1>Who We Are</h1>
+            <div class="separt1">
+              <div class="container">
+                <div class="box"></div>
               </div>
             </div>
-            <div class="class-note row-max-grid">
+          </div>
+          <div class="who-desc">
+            <img src="../assets/img/showcasse10.jpg" alt="" />
+            <div class="desc-p">
               <p>
-                Click the button below to view all programs and classes as well as to register.
+                Beyond Dance Studio is the first of its kind in Ethiopia
+                offering a wide range of kids to young adult dance classes from
+                ballet, jazz, hip hop, technique and beyond. We as a company are
+                committed to grow your dancers at an accelerated rate through
+                dedication and discipline. Beyond Dance’s vision is to introduce
+                the joy of dance to hundreds of children across Addis Ababa.
+                When you decide to join us at Beyond Dance, you too will be able
+                to take advantage of our professional staff at our
+                fully-equipped and recently renovated studio. Whether you’re a
+                beginner or an experienced dancer looking to improve your
+                technique, we guarantee you’ll find it here.
               </p>
-              <button class="btn btn-secondary row-grid">
-                <a href="program"> See all the program</a>
+              <button class="btn btn-secondary">
+                <a href="dancestudio">Discover More</a>
               </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="show-case row-max-grid">
+    <div class="class-all row-max-grid">
+      <div class="container">
+        <div class="class-title">
+          <h2>Classes</h2>
+          <!-- <div class="decor-box"></div> -->
+          <!-- <div class="separt">
+            <div class="container">
+              <div class="box"></div>
+            </div>
+          </div> -->
+          <div class="class-list">
+            <div
+              class="class-single row-grid"
+              v-for="item in homeclass"
+              :key="item.id"
+            >
+              <img :src="require('@/assets/img/' + item.img + '')" alt="" />
+
+              <h3 class="row-grid">{{ item.title }}</h3>
+              <p>
+                {{ item.desc }}
+              </p>
+            </div>
+          </div>
+          <div class="class-note row-max-grid">
+            <p>
+              Click the button below to view all programs and classes as well as
+              to register.
+            </p>
+            <button class="btn btn-secondary row-grid">
+              <a href="program"> See all the program</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="schedule-show row-max-grid">
+      <div class="container">
+        <h2>Schedule</h2>
+        <!-- <div class="decor-box"></div> -->
+        <div class="separt1">
+          <div class="container">
+            <div class="box"></div>
+          </div>
+        </div>
+        <img class="row-grid" src="../assets/img/Sumemrcamp.jpg" alt="" />
+        <div class="sche-note row-grid">
+          <p>
+            Please click the button below to download the schedule, which is
+            displayed in full in an image.
+          </p>
+          <button class="btn btn-secondary row-grid">
+            <a href="Schedule.png" target="_blank" download>
+              Download Schedule</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="show-case row-max-grid row-bottom-grid">
       <div class="container">
         <h1>Show Case 2022</h1>
 
@@ -131,6 +163,37 @@
         </div>
       </div>
     </div>
+
+    <section class="map">
+      <div class="container">
+        <h1 class="title center">Get Our Location</h1>
+        <p class="text center">
+          If you want to register or contact us in person here is the link for
+          our location.
+        </p>
+        <div class="separt1">
+          <div class="container">
+            <div class="box"></div>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <div class="location">
+            <div class="map-responsive">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.7979184031483!2d38.78157451478621!3d8.9907343935474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85365f26ad5b%3A0x9f836f1aa87df253!2sBeyond%20Dance%20Studio!5e0!3m2!1sen!2set!4v1662642722811!5m2!1sen!2set"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <Contactus />
     <Footer />
   </div>

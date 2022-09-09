@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navlink />
-    
+
     <div class="contact-page row-max-grid row-bottom-grid">
       <div class="container">
         <div class="contact-list">
@@ -12,7 +12,6 @@
               to do so.
             </h3>
             <form action="">
-              
               <p>Name</p>
               <input class="input" type="text" />
               <p>Email</p>
@@ -63,8 +62,8 @@
       <div class="container">
         <h1 class="title center">Get Our Location</h1>
         <p class="text center">
-          Inorder you want to register or contact us in person here is the link
-          for our location.
+          If you want to register or contact us in person here is the link for
+          our location.
         </p>
         <div class="separt1">
           <div class="container">

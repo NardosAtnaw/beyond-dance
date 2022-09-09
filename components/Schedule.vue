@@ -1,7 +1,7 @@
 <template>
   <div class="schedule-all1 row-grid">
      
-    <div class="container">
+    <div class="container1">
     
       <h3>CLASS / PROGRAM SCHEDULE<br/>
 (August 29, 2022 - December 10, 2022)</h3>
@@ -149,6 +149,20 @@ Age group is in parenthesis next to class name
           </tr>
         </tr>
         <tr>
+            <th  class="day-txt">Tuesday</th>
+
+            <tr v-for="item in Tuesday" :key="item.id">
+              <td class="freespace freespace2" ></td>
+              <td data-label="Class Name">{{ item.className }}</td>
+              <td data-label="Age">{{ item.ageGroup }}</td>
+              <td data-label="Class Time">
+                {{ item.timeStart + "-" + item.timeEnd }}
+              </td>
+              <td data-label="Studio">{{ item.studioNum }}</td>
+              <td data-label="Add Info">{{ item.addInformation }}</td>
+            </tr>
+          </tr>
+        <tr>
           
         </tr>
       </tbody>
@@ -160,7 +174,7 @@ Team classes in color with additional information  which say twice a week meet t
 Age group is in parenthesis next to class name
       </p>
       <button class="btn btn-secondary row-grid">
-        <a href="../static/Schedule.png" target="_blank" >
+        <a href="Schedule.png" target="_blank" download>
         Download Schedule</a></button>
     </div>
   </div>
