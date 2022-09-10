@@ -22,7 +22,9 @@
               dancer looking to improve your technique, we guarantee you’ll find
               it here.
             </p>
-            <button class="btn btn-thrid">Contact Us</button>
+            <button class="btn btn-thrid">
+              <a href="contactus">Contact Us</a>
+            </button>
           </div>
         </div>
       </div>
@@ -127,7 +129,9 @@
                     alt=""
                   />
                 </div>
-                <button class="btn btn-primary">Contact Us for Order</button>
+                <button class="btn btn-primary">
+                  <nuxt-link to="/contactus">Contact Us to Order </nuxt-link>
+                </button>
               </div>
             </div>
           </div>

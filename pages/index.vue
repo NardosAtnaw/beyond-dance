@@ -88,7 +88,7 @@
               to register.
             </p>
             <button class="btn btn-secondary row-grid">
-              <a href="program"> See all the program</a>
+              <nuxt-link to="/program">See all the program </nuxt-link>
             </button>
           </div>
         </div>
@@ -109,11 +109,16 @@
             Please click the button below to download the schedule, which is
             displayed in full in an image.
           </p>
-          <button class="btn btn-secondary row-grid">
-            <a href="Schedule.png" target="_blank" download>
-              Download Schedule</a
-            >
-          </button>
+          <div>
+            <button class="btn btn-thrid row-grid">
+              <nuxt-link to="/program">See all the program </nuxt-link>
+            </button>
+            <button class="btn btn-secondary row-grid">
+              <a href="Schedule.png" target="_blank" download>
+                Download Schedule</a
+              >
+            </button>
+          </div>
         </div>
       </div>
     </div>

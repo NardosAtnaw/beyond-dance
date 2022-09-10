@@ -1,6 +1,23 @@
-.home-nav {
+header {
+  position: sticky;
+  top: -0.01rem;
+  background-color: #ffffff;
+  padding-bottom: 1rem;
+  z-index: 9999999;
+}
+
+.menu-trigger {
   display: grid;
-  place-content: center;
+  span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #662483;
+  }
+}
+
+.home-nav {
   .container {
     display: grid;
     place-content: center;
@@ -9,18 +26,6 @@
       display: grid;
       place-content: center;
       object-fit: cover;
-      // .logo-img{
-      //   background: url(../img/balletlogo.svg) no-repeat;
-      //   display: block;
-      //   width: 100px;
-      //   height: 100px;
-      //      object-fit: cover;
-      // }
-      // .logo-mask{
-      // width: 100px;
-      // height: 100px;
-
-      // }
       img {
         width: 10rem;
         @include responsive($lg) {
@@ -30,7 +35,122 @@
     }
     .mobile-link {
       display: grid;
-      place-content: center;
+      place-items: center;
+      // justify-content: space-between;
+      align-items: center;
+      gap: 5rem;
+      margin-top: -1.5rem;
+      #menuToggle {
+        display: block;
+
+        position: relative;
+        // top: 50px;
+        // left: 50px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+      #menuToggle a {
+        text-decoration: none;
+        color: #232323;
+        transition: color 0.3s ease;
+      }
+      #menuToggle a:hover {
+        color: tomato;
+      }
+      #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        opacity: 0; /* hide this */
+        z-index: 2; /* and place it over the hamburger */
+
+        -webkit-touch-callout: none;
+      }
+      #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #876745;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+          background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+      }
+
+      #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+      }
+
+      #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+      }
+      #menuToggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #662483;
+      }
+
+      #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+      }
+
+      #menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+      }
+
+      #menu {
+        position: absolute;
+        width: 26rem;
+        margin: -50px 0 0 -200px;
+        @include responsive($md) {
+          width: 50rem;
+          margin: -50px 0 0 -400px;
+        }
+        padding: 2rem;
+        padding-top: 5rem;
+        background: #eae7e4;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      }
+      #menu li {
+        padding: 10px 0;
+        font-size: 0.8rem;
+        text-align: center;
+      }
+      #menuToggle input:checked ~ ul {
+        transform: none;
+      }
+      .ul-links1 {
+        display: grid;
+        align-items: center;
+        width: 100%;
+        gap: 6vw;
+        margin-top: -2rem;
+        li {
+          font-size: 0.8rem;
+          color: #1d3858;
+          font-family: "Montserrat";
+          .box-form {
+            background-color: #662483;
+            padding: 1.25vw;
+            padding-left: 2.2vw;
+            padding-right: 2.2vw;
+            color: #ffff;
+          }
+        }
+      }
       .ul-links {
         display: flex;
         align-items: center;
@@ -51,13 +171,10 @@
         }
       }
       @include responsive($lg) {
-        .ul-links {
-          display: none;
-        }
+        display: none;
       }
     }
     .links {
-      margin-top: -1.5rem;
       .ul-links {
         display: none;
       }
@@ -128,7 +245,7 @@
           font-size: 3rem;
           color: #662483;
           text-align: center;
-          @include responsive($lg) {
+          @include responsive($xl) {
             font-size: 4rem;
           }
         }
@@ -141,8 +258,11 @@
           margin-top: 1rem;
           color: #662483;
           font-size: 0.8rem;
-
           @include responsive($lg) {
+            font-size: 0.9rem;
+            width: 30rem;
+          }
+          @include responsive($xl) {
             font-size: 0.9rem;
             width: 35rem;
           }
@@ -155,6 +275,9 @@
     .join-img {
       img {
         @include responsive($lg) {
+          width: 45rem;
+        }
+        @include responsive($xl) {
           width: 40rem;
         }
       }
@@ -221,7 +344,7 @@
             text-align: center;
             @include responsive($lg) {
               margin-top: 0rem;
-              width:70%;
+              width: 70%;
               font-size: 0.9rem;
               line-height: 1.5vw;
             }
@@ -286,7 +409,8 @@ footer {
     .desc-foot {
       width: 100%;
       @include responsive($lg) {
-        width: 50%;
+        padding: 1rem;
+        width: 60%;
       }
       p {
         font-size: 0.8rem;
@@ -635,7 +759,7 @@ footer {
       width: 25rem;
       transform: rotate(90deg);
     }
-    @include responsive($xl) {
+    @include responsive($lg) {
       top: -3.5rem;
       width: 28rem;
       transform: rotate(0deg);
@@ -740,7 +864,7 @@ footer {
         }
         img {
           width: 2rem;
-        
+
           @include responsive($lg) {
             // position: absolute;
             // top: 0;

@@ -13,7 +13,9 @@
                 {{ item.desc }}
               </p>
 
-              <button class="btn row-grid btn-purple">Register Now</button>
+              <button class="btn row-grid btn-purple">
+                <nuxt-link to="/register">Register Now </nuxt-link>
+              </button>
             </div>
             <div class="separt-line"></div>
             <div class="class-desc">
@@ -41,7 +43,9 @@
                 {{ item.desc2 }}
               </p>
 
-              <button class="btn row-grid btn-purple">Register Now</button>
+              <button class="btn row-grid btn-purple">
+                <nuxt-link to="/register">Register Now </nuxt-link>
+              </button>
             </div>
           </div>
         </div>

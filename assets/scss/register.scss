@@ -44,9 +44,8 @@
     // background: rgba(135, 103, 69, 0.1);
     // padding: .2rem;
     // z-index: -.5;
-    
+
     .container {
-     
       h1 {
         margin-top: 5vw;
         font-size: 1.25rem;
@@ -55,29 +54,28 @@
         color: #1d3858;
         text-align: center;
       }
-      .small-txt{
+      .small-txt {
         font-size: 0.8rem;
 
-     text-align: center;
+        text-align: center;
         font-family: "Montserrat";
         color: #876745;
         width: 100%;
         @include responsive($lg) {
           margin-top: 2vw;
           font-size: 0.8vw;
-       
-        } 
+        }
       }
       p {
         font-size: 0.8rem;
         margin-top: 2rem;
-     
+
         font-family: "Montserrat";
         color: #876745;
         width: 100%;
         @include responsive($lg) {
           margin-top: 2vw;
-          font-size: .8rem;
+          font-size: 0.8rem;
           width: 60%;
         }
       }
@@ -88,7 +86,10 @@
         //     grid-template-columns: 1fr 1fr;
         // }
         background: rgba(135, 103, 69, 0.1);
-        padding: 2rem;
+        padding: 1rem;
+        @include responsive($lg) {
+          padding: 3rem;
+        }
         .input {
           border: none;
           border-bottom: 1px solid #7e7979;
