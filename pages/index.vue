@@ -19,7 +19,7 @@
           <button class="btn btn-purple row-grid">Register Now</button>
         </div>
         <div class="join-img">
-          <img src="../assets/img/showcase2.jpg" alt="" />
+          <img src="../assets/img/showcase2.JPG" alt="" />
         </div>
       </div>
     </div>
