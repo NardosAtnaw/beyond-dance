@@ -1,15 +1,11 @@
 <template>
-<div class="hero-vid">
+  <div class="hero-vid">
     <div class="container">
-        <div class="video row-grid">
-            <img src="@/assets/img/showcase5.jpg" alt="">
-        </div>
+      <div class="video row-grid"></div>
     </div>
-</div>
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>

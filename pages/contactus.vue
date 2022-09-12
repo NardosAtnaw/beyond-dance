@@ -25,7 +25,7 @@
           </div>
           <div class="contact-info row-grid">
             <div class="contact-img">
-              <img src="../assets/img/contactus.jpg" alt="" />
+              <img src="../assets/img/program/gal11.webp" alt="" />
             </div>
 
             <h2>Reach out to Us!</h2>

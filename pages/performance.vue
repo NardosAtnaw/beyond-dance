@@ -51,7 +51,7 @@
       <div class="container">
         <h1>Register Now</h1>
         <div class="separt-line"></div>
-        <img src="../assets/img/gal11.JPG" alt="" />
+        <img src="../assets/img/program/gal11.webp" alt="" />
         <p>
           Join Us Today! If you are interested in joining Beyond Dance Studio,
           we encourage you to pre-register to secure your spot with us!

@@ -19,27 +19,27 @@
             </div>
             <div class="small-offer">
               <div class="single-offer">
-                <img src="../assets/img/slowdance.jpg" alt="" />
+                <img src="../assets/img/events/slowdance.webp" alt="" />
                 <h4>Slow Dance</h4>
                 <p>Couples choreographed & Group practice</p>
               </div>
               <div class="single-offer">
-                <img src="../assets/img/wedtraditional.webp" alt="" />
+                <img src="../assets/img/events/wedtraditional.webp" alt="" />
                 <h4>Traditional Dance</h4>
                 <p>Couples Practice & Group Practice</p>
               </div>
               <div class="single-offer">
-                <img src="../assets/img/briddance.jpeg" alt="" />
+                <img src="../assets/img/events/briddance.webp" alt="" />
                 <h4>Bridal Group Performance</h4>
                 <p>Group & 4 sessions (1 hour each)</p>
               </div>
               <div class="single-offer">
-                <img src="../assets/img/groomdance.jpg" alt="" />
+                <img src="../assets/img/events/groomdance.webp" alt="" />
                 <h4>Groomsman Group Performance</h4>
                 <p>Group & 3 sessions (1 hour each)</p>
               </div>
               <div class="single-offer">
-                <img src="../assets/img/bgworkout.jpg" alt="" />
+                <img src="../assets/img/events/bgworkout.webp" alt="" />
                 <h4>Bride/Groom 1 month/3 month Fitness Program</h4>
                 <p>
                   Waist trainer (Bride)<br />
@@ -57,19 +57,13 @@
             <div class="box"></div>
           </div>
         </div>
-       
-        
       </div>
     </div>
     <div class="events2 row-grid">
       <div class="separt2 row-grid">
-        <div class="container">
-       
-    
-        </div>
+        <div class="container"></div>
       </div>
       <div class="container">
-        
         <div class="event-wrapper">
           <div
             class="single-event row-grid"
@@ -123,7 +117,7 @@ export default {
           eventtitle: "Birthday",
           eventdesc:
             "Celebrate your special day with a Birthday Dance Party! 3 Hours of Dancing & Fun!",
-          eventimg: "gal6.jpg",
+          eventimg: "program/gal6.webp",
           offer1: "Party clean-up",
           offer2: "3 hours of party time",
           offer3:
@@ -137,30 +131,30 @@ export default {
           id: 2,
           eventtitle: "Graduation",
           eventdesc: "Celebrate your special day with Fun!",
-          eventimg: "ICS.jpg",
+          eventimg: "events/ICS.webp",
         },
         {
           id: 3,
           eventtitle: "Corporate Events ",
           eventdesc: "Corporate Events (KEFITA)",
-          eventimg: "coporate.jpg",
+          eventimg: "events/coporate.webp",
         },
         {
           id: 6,
           eventtitle: "Wedding",
           eventdesc: "Celebrate your special event with a Dancing & Fun!",
-          eventimg: "wed.webp",
+          eventimg: "events/wed.webp",
         },
         {
           id: 4,
           eventtitle: "Sip and Paint",
-          eventimg: "sip.jpg",
+          eventimg: "events/sip.webp",
         },
         {
           id: 5,
           eventtitle: "Yoga",
 
-          eventimg: "yoga.jpg",
+          eventimg: "events/yoga.webp",
         },
       ],
     };

@@ -199,7 +199,7 @@
       </div>
     </div>
     <div class="big-image row-grid">
-      <img src="../assets/img/showcase2.JPG" alt="" />
+      <img src="../assets/img/home/jointoday.webp" alt="" />
     </div>
     <Footer />
   </div>

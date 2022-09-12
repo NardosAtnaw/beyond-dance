@@ -418,22 +418,42 @@ footer {
       }
       p {
         font-size: 0.8rem;
-        margin-bottom: 2vw;
-        margin-left: 3rem;
-        margin-right: 3rem;
+        margin-bottom: 8rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: -2rem;
         //  width:80%;
         font-family: "Montserrat";
         color: #fef7f1;
         text-align: center;
-        @include responsive($lg) {
-          margin-left: 5rem;
-          margin-right: 5rem;
-        }
+
         @include responsive($lg) {
           font-size: 0.8rem;
           text-align: left;
           line-height: 1.25vw;
-          margin-bottom: 0vw;
+          margin-bottom: 2rem;
+          margin-left: 5rem;
+          margin-right: 5rem;
+        }
+      }
+      a {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        //  width:80%;
+        font-family: "Montserrat";
+        color: #fef7f1;
+        text-align: center;
+
+        @include responsive($lg) {
+          font-size: 0.8rem;
+          text-align: left;
+          line-height: 1.25vw;
+          margin-bottom: -3rem;
+          margin-left: 5rem;
+          margin-right: 5rem;
         }
       }
     }
