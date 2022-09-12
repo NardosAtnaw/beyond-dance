@@ -19,7 +19,7 @@
           <button class="btn btn-purple row-grid">Register Now</button>
         </div>
         <div class="join-img">
-          <img src="../assets/img/showcase2.JPG" alt="" />
+          <img src="../assets/img/home/jointoday.webp" alt="" />
         </div>
       </div>
     </div>
@@ -35,7 +35,7 @@
             </div>
           </div>
           <div class="who-desc">
-            <img src="../assets/img/showcasse10.jpg" alt="" />
+            <img src="../assets/img/home/whoweare.webp" alt="" />
             <div class="desc-p">
               <p>
                 Beyond Dance Studio is the first of its kind in Ethiopia
@@ -103,7 +103,7 @@
             <div class="box"></div>
           </div>
         </div>
-        <img class="row-grid" src="../assets/img/Sumemrcamp.jpg" alt="" />
+        <img class="row-grid" src="../assets/img/home/Summercamp.webp" alt="" />
         <div class="sche-note row-grid">
           <p>
             Please click the button below to download the schedule, which is

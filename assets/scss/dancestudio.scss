@@ -518,12 +518,12 @@
               img {
                 margin-top: 1rem;
                 height: 8rem;
+                object-fit: cover;
               }
               @include responsive($lg) {
                 img {
                   height: 8rem;
                   margin-top: 0rem;
-                  object-fit: cover;
                 }
               }
             }

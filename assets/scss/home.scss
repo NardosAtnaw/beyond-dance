@@ -59,7 +59,7 @@ header {
         transition: color 0.3s ease;
       }
       #menuToggle a:hover {
-        color: tomato;
+        color: #662483;
       }
       #menuToggle input {
         display: block;
@@ -906,10 +906,11 @@ footer {
             @include responsive($lg) {
               margin-top: 0vw;
             }
-            gap: 1.5vw;
+            gap: 1rem;
 
             a {
               img {
+                width: 1.2rem;
                 @include responsive($lg) {
                   display: flex;
                   gap: 0.5rem;
