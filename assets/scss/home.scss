@@ -2,7 +2,10 @@ header {
   position: sticky;
   top: -0.01rem;
   background-color: #ffffff;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  @include responsive($lg) {
+    padding-bottom: 0rem;
+  }
   z-index: 9999999;
 }
 
@@ -95,7 +98,7 @@ header {
       #menuToggle input:checked ~ span {
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
-        background: #662483;
+        background: #876745;
       }
 
       #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -184,6 +187,7 @@ header {
           align-items: center;
           width: 100%;
           gap: 6vw;
+          margin-top: -2rem;
           li {
             font-size: 0.8vw;
             color: #1d3858;

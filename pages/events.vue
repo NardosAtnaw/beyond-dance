@@ -143,7 +143,7 @@ export default {
           id: 3,
           eventtitle: "Corporate Events ",
           eventdesc: "Corporate Events (KEFITA)",
-          eventimg: "grad.jpg",
+          eventimg: "coporate.jpg",
         },
         {
           id: 6,
@@ -154,7 +154,6 @@ export default {
         {
           id: 4,
           eventtitle: "Sip and Paint",
-
           eventimg: "sip.jpg",
         },
         {
