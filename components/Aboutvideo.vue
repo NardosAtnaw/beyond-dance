@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="video" class="video-wrapper">
+    <div v-if="video" class="video-wrapper1">
       <div class="vimeo-container">
         <iframe
           :src="

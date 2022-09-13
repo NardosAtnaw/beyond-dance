@@ -2,19 +2,19 @@
   <div class="register-body">
     <Navlink />
     <div class="social-media">
-      <img class="bg-back" src="../assets/img/texture.svg" alt="" />
+      <!-- <img class="bg-back" src="../assets/img/texture.svg" alt="" /> -->
       <div class="soc-links">
         <a href="https://www.facebook.com/beyonddancers">
-          <img src="../assets/img/facebookwhite.svg" alt="" />
+          <img src="../assets/img/faceblue.svg" alt="" />
         </a>
         <a href="https://www.instagram.com/beyonddancers/">
-          <img src="../assets/img/instawhite.svg" alt="" />
+          <img src="../assets/img/instablue.svg" alt="" />
         </a>
         <a href="https://www.youtube.com/channel/UC53ryMIGEZptZToOvmBgLWQ">
-          <img src="../assets/img/youtubewhite.svg" alt="" />
+          <img src="../assets/img/youblue.svg" alt="" />
         </a>
         <a href="https://www.tiktok.com/@beyonddancestudio">
-          <img src="../assets/img/tiktokwhite.svg" alt="" />
+          <img src="../assets/img/tiktokblue.svg" alt="" />
         </a>
       </div>
     </div>
@@ -199,7 +199,10 @@
       </div>
     </div>
     <div class="big-image row-grid">
-      <img src="../assets/img/home/jointoday.webp" alt="" />
+      <div class="container">
+
+        <img src="../assets/img/Takewoado.jpg" alt="" />
+      </div>
     </div>
     <Footer />
   </div>

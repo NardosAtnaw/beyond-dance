@@ -3,8 +3,9 @@
     <Navlink />
 
     <Homevideo video="744993912" class="row-grid" />
-
+    <!-- <img class="bg-back" src="../assets/img/texture.svg" alt="" /> -->
     <div class="join-cta row-max-grid">
+
       <div class="container">
         <div class="join-txt">
           <div class="join-title">
@@ -16,7 +17,9 @@
               you to pre-register to secure your spot with us!
             </p>
           </div>
-          <button class="btn btn-purple row-grid">Register Now</button>
+          <button class="btn row-grid btn-purple">
+            <nuxt-link to="/register">Register Now </nuxt-link>
+          </button>
         </div>
         <div class="join-img">
           <img src="../assets/img/home/jointoday.webp" alt="" />
@@ -216,8 +219,13 @@ export default {
     return {
       homeclass: [
         {
+          img: "balletlogo.svg",
+          title: "Ballet",
+          desc: "The focus will be set on placement, alignment, flexibility and musicality through a blend of traditional ",
+        },
+        {
           img: "takwalogo.svg",
-          title: "Takewondo",
+          title: "Taekwondo",
           desc: "Taekwondo is a system of symmetrical body exercises or techniques designed for self-defense and counter...",
         },
         {
@@ -235,11 +243,7 @@ export default {
           title: "Jazz",
           desc: "Standard jazz combinations will be taught to a mixture of traditional jazz, Broadway and popular music.",
         },
-        {
-          img: "balletlogo.svg",
-          title: "Ballet",
-          desc: "The focus will be set on placement, alignment, flexibility and musicality through a blend of traditional ",
-        },
+
         {
           img: "painologo.svg",
           title: "Piano",

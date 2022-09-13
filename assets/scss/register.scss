@@ -4,10 +4,10 @@
   .social-media {
     .bg-back {
       position: absolute;
-      top: -1vw;
+      top: 10rem;
       z-index: -1;
       width: 250vw;
-
+opacity: .7;
       right: -28vw;
       transform: rotate(90deg);
       @include responsive($lg) {
@@ -21,9 +21,10 @@
       gap: 1.5vw;
       position: absolute;
       z-index: 9;
-      top: 17vw;
-      right: 9.5vw;
+      top: 11rem;
+      right: 10.5vw;
       @include responsive($lg) {
+        top: 13rem;
         display: flex;
         align-items: center;
         gap: 1vw;
@@ -31,8 +32,9 @@
       a {
         display: grid;
         place-items: center;
+       margin-top: .5rem;
         img {
-          width: 1.25rem;
+          width: 1rem;
           @include responsive($lg) {
             width: 1rem;
           }

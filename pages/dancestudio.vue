@@ -87,7 +87,7 @@
             regulation to learn about the security of our studio.
           </p>
           <button class="btn btn-secondary row-grid">
-            <a href="Safety.docx" target="_blank" download> Download Safety</a>
+            <a href="Safety.pdf" target="_blank" download> Download Safety</a>
           </button>
         </div>
       </div>
@@ -123,10 +123,12 @@
                   <img
                     :src="require('@/assets/img/' + item.img2 + '')"
                     alt=""
+                    v-if="item.img2"
                   />
                   <img
                     :src="require('@/assets/img/' + item.img3 + '')"
                     alt=""
+                    v-if="item.img3"
                   />
                 </div>
                 <button class="btn btn-primary">
@@ -234,7 +236,7 @@ export default {
           bigimage: "dancestudio/DanceWear.webp",
           img1: "dancestudio/Leotard.webp",
           img2: "dancestudio/DanceWear.webp",
-          img3: "dancestudio/Leotard.webp",
+        
         },
         {
           id: 1,
@@ -243,7 +245,7 @@ export default {
           bigimage: "dancestudio/leggingbig.webp",
           img1: "dancestudio/legg1.webp",
           img2: "dancestudio/legg2.webp",
-          img3: "dancestudio/legg1.webp",
+      
         },
 
         {
@@ -279,8 +281,7 @@ export default {
           itemdesc: "Lorem ipsum dolor sit amet, consectetur",
           bigimage: "dancestudio/bigtop.webp",
           img1: "dancestudio/1top.webp",
-          img2: "dancestudio/2top.webp",
-          img3: "dancestudio/1top.webp",
+          
         },
         {
           id: 6,
@@ -288,17 +289,6 @@ export default {
           itemdesc: "Lorem ipsum dolor sit amet, consectetur",
           bigimage: "dancestudio/zipjacketbig.webp",
           img1: "dancestudio/zipjacket1.webp",
-          img2: "dancestudio/zipjacket1.webp",
-          img3: "dancestudio/zipjacket1.webp",
-        },
-        {
-          id: 7,
-          itemname: "Ballet Tights",
-          itemdesc: "Lorem ipsum dolor sit amet, consectetur",
-          bigimage: "dancestudio/ballet3.webp",
-          img1: "dancestudio/ballet3.webp",
-          img2: "dancestudio/ballet2.webp",
-          img3: "dancestudio/ballet3.webp",
         },
       ],
       gallery: [

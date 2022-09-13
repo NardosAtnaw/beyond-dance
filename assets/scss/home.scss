@@ -4,7 +4,7 @@ header {
   background-color: #ffffff;
   padding-bottom: 0.5rem;
   @include responsive($lg) {
-    padding-bottom: 0rem;
+    padding-bottom: 0.2rem;
   }
   z-index: 9999999;
 }
@@ -19,8 +19,21 @@ header {
     background-color: #662483;
   }
 }
-
+.bg-back {
+  position: absolute;
+  top: 10rem;
+  z-index: -1;
+  width: 250vw;
+// opacity: .7;
+  right: -28vw;
+  transform: rotate(90deg);
+  @include responsive($lg) {
+    width: 75vw;
+    right: -23vw;
+  }
+}
 .home-nav {
+
   .container {
     display: grid;
     place-content: center;
@@ -30,7 +43,8 @@ header {
       place-content: center;
       object-fit: cover;
       img {
-        width: 10rem;
+        width: 9rem;
+        object-fit: cover;
         @include responsive($lg) {
           width: 8rem;
         }
@@ -120,7 +134,7 @@ header {
         }
         padding: 2rem;
         padding-top: 5rem;
-        background: #eae7e4;
+        background: #f2efeb;
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
         transform-origin: 0% 0%;
@@ -339,18 +353,17 @@ header {
           place-items: center;
           align-items: center;
           p {
-            // color: #1d3858;
-            color: #1d3858;
+            margin-top: 1rem;
             font-size: 0.8rem;
-            font-weight: 500;
+            line-height: 1.2rem;
+            // color: #ffffff;
+            color: #1d3858;
             font-family: "Montserrat";
-            margin-top: 2rem;
             text-align: center;
             @include responsive($lg) {
-              margin-top: 0rem;
-              width: 70%;
+              width: 60%;
+              line-height: 2rem;
               font-size: 0.9rem;
-              line-height: 1.5vw;
             }
           }
         }
@@ -380,11 +393,17 @@ header {
   }
   img {
     width: 100%;
-    height: 30vh;
+    height: 25vh;
     object-fit: cover;
+    margin-bottom: 2rem;
     @include responsive($lg) {
       width: 100%;
-      height: 30vh;
+      height: 50vh;
+      object-fit: cover;
+    }
+    @include responsive($xl) {
+      width: 100%;
+      height: 55vh;
       object-fit: cover;
     }
   }
@@ -711,6 +730,7 @@ footer {
   .video-wrapper {
     .vimeo-container {
       padding: 56.25% 0 0 0;
+
       position: relative;
       iframe {
         position: absolute;
@@ -719,9 +739,28 @@ footer {
         width: 100%;
         height: 100%;
       }
+      @include responsive($lg) {
+        padding: 56.25% 0 0 0;
+        margin-top: -10rem;
+      }
     }
-    @include responsive($lg) {
-      // padding-top: 2rem;
+  }
+  .video-wrapper1 {
+    .vimeo-container {
+      padding: 56.25% 0 0 0;
+
+      position: relative;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      @include responsive($lg) {
+        padding: 46.25% 0 0 0;
+  
+      }
     }
   }
 }
@@ -845,6 +884,7 @@ footer {
           }
         }
         form {
+          margin-top: 2rem;
           p {
             font-size: 3.8vw;
             margin-top: 6vw;
@@ -857,20 +897,22 @@ footer {
             }
             @include responsive($lg) {
               font-size: 0.8vw;
-              margin-top: 2vw;
+              margin-top: 1vw;
             }
           }
+
           .input {
             border: none;
             border-bottom: 1px solid #1d3858;
             background-color: transparent;
-            margin-top: 2vw;
+            margin-top: 2rem;
             width: 85vw;
             font-size: 0.8vw;
             outline: none;
             font-family: "Montserrat";
             color: #876745;
             @include responsive($lg) {
+              margin-top: 1.2rem;
               width: 35vw;
             }
             @include responsive($xl) {
@@ -880,13 +922,21 @@ footer {
         }
       }
       .contact-info {
-        // position: relative;
-        // width: 10%;
+        // background: rgba(135, 103, 69, 0.1);
+
+        padding-bottom: 2rem;
         margin-top: 3rem;
         @include responsive($lg) {
           margin-top: 0rem;
         }
-        img {
+        .cont-img {
+          padding: 1rem;
+          object-fit: cover;
+          @include responsive($lg) {
+            width: 28rem;
+          }
+        }
+        .soc-img {
           width: 2rem;
 
           @include responsive($lg) {
@@ -903,17 +953,20 @@ footer {
           font-family: "Mochiy Pop One", sans-serif;
 
           font-size: 1rem;
-          color: #ffffff;
+          color: #662483;
           text-align: center;
           @include responsive($lg) {
-            font-size: 2rem;
+            font-size: 1.2rem;
           }
         }
         p {
           text-align: center;
           font-size: 0.8rem;
           font-family: "Montserrat";
-          color: #ffffff;
+          color: #662483;
+          @include responsive($lg) {
+            font-size: 1rem;
+          }
         }
         .home-social-links {
           display: grid;

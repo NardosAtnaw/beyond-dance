@@ -110,7 +110,7 @@ export default {
           img1: "program/hiphop.webp",
           img2: "program/gal2.webp",
           img3: "program/hiphop2.webp",
-          img4: "program/hiphop.webp",
+          img4: "program/hiphop3.webp",
           title2: "Lyrical / CO",
           desc2:
             " The focus will be set on placement, alignment, flexibility and musicality through a blend of traditional ballet techniques. As students’ progress through the levels, the exercises will increase in length and difficulty and more emphasis will be placed on retention of choreography and performance quality.",
@@ -120,7 +120,7 @@ export default {
           img42: "program/showcase11.webp",
         },
         {
-          title: "Takewando",
+          title: "Taekwondo",
           desc: " Taekwondo is a system of symmetrical body exercises or techniques designed for self-defense and counterattack in unarmed combat, making use of the hands and feet as weapons and defenses. However, Taekwondo is not merely a physical skill; it is also a way of thought and life. Through strict discipline, Taekwondo trains both the body and the mind placing great emphasis on the development of moral character. ",
           img1: "program/gal4.webp",
           img2: "program/gal9.webp",
@@ -137,10 +137,10 @@ export default {
         {
           title: "Gymnastics",
           desc: "Gymnastics is a sport that includes physical exercises requiring balance, strength, flexibility, agility, coordination, dedication and endurance. The movements involved in gymnastics contribute to the development of the arms, legs, shoulders, back, chest, and abdominal muscle groups ",
-          img1: "dancestudio/Studio1.webp",
+          img1: "program/gym1.webp",
           img2: "program/gym3.webp",
           img3: "program/gym2.webp",
-          img4: "dancestudio/Studio2.webp",
+          img4: "program/gym4.webp",
           title2: "Drawing",
           desc2:
             "A form of visual art in which our students use instruments to mark paper or other two-dimensional surface. It is generally concerned with the marking of lines and areas of tone onto paper/other material, where the accurate representation of the visual world is expressed upon a plane surface.",
@@ -153,15 +153,15 @@ export default {
           title: "Traditional Dance",
           desc: " Each of the Ethiopian traditional dances has unique body movements and steps. Our students will be able to explore different cultural dances.",
           img1: "program/traditional.webp",
-          img2: "program/traditional2.webp",
+          img2: "program/traditional4.webp",
           img3: "program/traditional3.webp",
-          img4: "program/traditional4.webp",
+          img4: "program/traditional2.webp",
           title2: "Piano",
           desc2:
             "students learn basic piano skills and fundamentals of music literacy, including basic notation, rhythms, time signatures, and intervals.",
           img12: "program/paino.webp",
           img22: "program/paino2.webp",
-          img32: "dancestudio/Studio1.webp",
+          img32: "program/paino4.webp",
           img42: "program/paino3.webp",
         },
       ],
@@ -209,7 +209,7 @@ export default {
         },
         {
           id: 11,
-          img: "program/gall13.webp",
+          img: "program/gal11.webp",
         },
         {
           id: 12,

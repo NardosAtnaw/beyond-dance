@@ -27,6 +27,11 @@
                 </li>
                 <li><nuxt-link to="/events">Events</nuxt-link></li>
                 <li><nuxt-link to="/contactus">Contact Us</nuxt-link></li>
+                <li>
+              <nuxt-link to="/register"
+                >Register Now
+              </nuxt-link>
+            </li>
               </ul>
             </div>
           </nav>
