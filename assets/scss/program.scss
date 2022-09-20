@@ -572,8 +572,10 @@
       }
     }
     img {
+      object-fit: cover;
       @include responsive($lg) {
         width: 40rem;
+        height: 25rem;
       }
     }
     p {

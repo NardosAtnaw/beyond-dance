@@ -27,8 +27,8 @@
             <div class="contact-img">
               <img src="../assets/img/program/gal11.webp" alt="" />
             </div>
-
-            <h2>Reach out to Us!</h2>
+<!-- 
+            <h2>Reach out to Us!</h2> -->
             <p>
               Africa Ave, Addis Ababa, Ethiopia<br /><br />
 

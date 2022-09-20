@@ -66,12 +66,12 @@
       <div class="container">
         <div class="class-title">
           <h2>Classes</h2>
-          <!-- <div class="decor-box"></div> -->
-          <!-- <div class="separt">
+          <!-- <div class="separt1">
             <div class="container">
               <div class="box"></div>
             </div>
           </div> -->
+     
 
           <div>
             <a class="grid" href="/program">
@@ -85,7 +85,7 @@
                   :src="require('@/assets/img/' + item.img + '')"
                   alt=""
                 />
-          
+
                 <figcaption>
                   <h2>{{ item.title }}</h2>
                   <p>
@@ -98,10 +98,9 @@
 
           <div class="class-note row-max-grid">
             <p>
-              Click the button below to view all programs and classes as well as
-              to register.
+              Click the button below to register for classes and view descriptions of all programs, including ballet, taekwondo, jazz, and other classes..
             </p>
-            <button class="btn btn-secondary row-grid">
+            <button class="btn btn-thrid row-grid">
               <nuxt-link to="/program">See all the program </nuxt-link>
             </button>
           </div>

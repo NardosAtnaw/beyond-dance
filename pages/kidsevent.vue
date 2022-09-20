@@ -51,6 +51,11 @@
                 <h2>Graduation</h2>
             </div>
             <div class="small-offer">
+                <div class="single-offer1">
+                <img src="../assets/img/events/grad.jpg" alt="" />
+                <h4></h4>
+                <p></p>
+              </div>
               <div class="single-offer1">
                 <img src="../assets/img/events/ICS GRADUATION (2).jpg" alt="" />
                 <h4></h4>
@@ -80,7 +85,20 @@
         <h4>Book Now</h4>
       </div>
     </div> -->
-
+    <div class="cta-register row-max-grid">
+      <div class="container">
+        <h1>Book Now</h1>
+        <div class="separt-line"></div>
+        <img src="../assets/img/events/grad.jpg" alt="" />
+        <p>
+          Join Us Today! If you are interested in joining Beyond Dance Studio,
+          events and classes contact us to secure your spot with us!
+        </p>
+        <button class="btn btn-thrid">
+          <nuxt-link to="/contactus">Book Now </nuxt-link>
+        </button>
+      </div>
+    </div>
     <Contactus />
     <Footer />
   </div>

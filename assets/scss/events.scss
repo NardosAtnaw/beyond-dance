@@ -37,6 +37,49 @@
             color: #1d3858;
           }
         }
+        .big-offer{
+          @include responsive($md){
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            gap: 1rem;
+            }
+          .one-offer{
+            margin-top: 2rem;
+            @include responsive($lg){
+            display: flex;
+            gap: 2rem;
+            place-items: center;
+            align-items: flex-end;
+            }
+            div{
+              img{
+                width: 20rem;
+                height: 30rem;
+                object-fit: cover;
+                @include responsive($lg){
+                  width: 55rem;
+         
+                }
+              }
+            }
+            div{
+              h4 {
+                font-family: "Mochiy Pop One", sans-serif;
+                font-weight: 100;
+                font-size: 1rem;
+                color: #1d3858;
+                margin-top: 1rem;
+              }
+              p {
+                font-size: 0.9rem;
+  // width: 20rem;
+                margin-top: 0.5rem;
+                font-family: "Montserrat";
+                color: #1d3858;
+              }
+            }
+          }
+        }
         .small-offer {
           margin-top: 2rem;
           @include responsive($lg) {
