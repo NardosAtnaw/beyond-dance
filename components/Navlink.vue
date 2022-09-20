@@ -25,17 +25,28 @@
                     >Performance Information and Videos</nuxt-link
                   >
                 </li>
-                <li><nuxt-link to="/events">Events</nuxt-link></li>
+                <li>
+                  <nuxt-link to="/events">Events</nuxt-link>
+                  <ul class="dropdown">
+                    <li><nuxt-link to="/kidsevent">Kids Event</nuxt-link></li>
+                    <li>
+                      <nuxt-link to="/adultevent">Adult Events</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link to="/adultclass">Adult Classes</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link to="/wedding">Wedding Packages</nuxt-link>
+                    </li>
+                  </ul>
+                </li>
                 <li><nuxt-link to="/contactus">Contact Us</nuxt-link></li>
                 <li>
-              <nuxt-link to="/register"
-                >Register Now
-              </nuxt-link>
-            </li>
+                  <nuxt-link to="/register">Register Now </nuxt-link>
+                </li>
               </ul>
             </div>
           </nav>
-         
         </div>
         <div class="links">
           <ul class="ul-links">
@@ -47,7 +58,21 @@
                 >Performance Information and Videos</nuxt-link
               >
             </li>
-            <li><nuxt-link to="/events">Events</nuxt-link></li>
+            <li>
+              <nuxt-link to="/events">Events</nuxt-link>
+              <ul class="dropdown">
+                <li><nuxt-link to="/kidsevent">Kids Event</nuxt-link></li>
+                <li>
+                  <nuxt-link to="/adultevent">Adult Events</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/adultclass">Adult Classes</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/wedding">Wedding Packages</nuxt-link>
+                </li>
+              </ul>
+            </li>
             <li><nuxt-link to="/contactus">Contact Us</nuxt-link></li>
             <li>
               <nuxt-link to="/register"

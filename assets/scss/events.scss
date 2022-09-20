@@ -2,6 +2,20 @@
   .container {
     // display: grid;
     // place-items: center;
+    .wed-img{
+      width: 100%;
+      height:60vh;
+      object-fit: cover;
+   
+    }
+    .wed-img1{
+      width: 100%;
+      height:60vh;
+      object-fit: cover;
+      @include responsive($lg){
+        height: 40vh;
+      }
+    }
     .wedding-event {
       .wrapper {
         .wed-offer {
@@ -39,6 +53,34 @@
             margin-top: 1rem;
             img {
               width: 100%;
+              object-fit: cover;
+              @include responsive($lg) {
+                height: 20rem;
+              }
+              @include responsive($xl) {
+                height: 30rem;
+              }
+            }
+            h4 {
+              font-family: "Mochiy Pop One", sans-serif;
+              font-weight: 100;
+              font-size: 1rem;
+              color: #1d3858;
+              margin-top: 1rem;
+            }
+            p {
+              font-size: 0.9rem;
+
+              margin-top: 0.5rem;
+              font-family: "Montserrat";
+              color: #1d3858;
+            }
+          }
+          .single-offer1 {
+            margin-top: 1rem;
+            img {
+              width: 100%;
+              height: 30rem;
               object-fit: cover;
               @include responsive($lg) {
                 height: 20rem;

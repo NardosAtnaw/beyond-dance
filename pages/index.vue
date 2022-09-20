@@ -5,7 +5,6 @@
     <Homevideo video="744993912" class="row-grid" />
     <!-- <img class="bg-back" src="../assets/img/texture.svg" alt="" /> -->
     <div class="join-cta row-max-grid">
-
       <div class="container">
         <div class="join-txt">
           <div class="join-title">
@@ -42,10 +41,12 @@
             <div class="desc-p">
               <p>
                 Beyond Dance Studio is the first of its kind in Ethiopia
-                offering a wide range of kids to young adult dance classes from
-                ballet, jazz, hip hop, technique and beyond. We as a company are
-                committed to grow your dancers at an accelerated rate through
-                dedication and discipline. Beyond Dance’s vision is to introduce
+                offering a wide range of kids dance, martial arts and
+                instrumental classes from Ballet, Jazz, Taekwondo, Piano and
+                Beyond. Our vision is to introduce the joy of dance to hundreds
+                of children across Addis Ababa. We grow our students to become
+                confident, creative and courageous individuals who make lasting
+                memories along the way. Beyond Dance’s vision is to introduce
                 the joy of dance to hundreds of children across Addis Ababa.
                 When you decide to join us at Beyond Dance, you too will be able
                 to take advantage of our professional staff at our
@@ -71,20 +72,30 @@
               <div class="box"></div>
             </div>
           </div> -->
-          <div class="class-list">
-            <div
-              class="class-single row-grid"
-              v-for="item in homeclass"
-              :key="item.id"
-            >
-              <img :src="require('@/assets/img/' + item.img + '')" alt="" />
 
-              <h3 class="row-grid">{{ item.title }}</h3>
-              <p>
-                {{ item.desc }}
-              </p>
-            </div>
+          <div>
+            <a class="grid" href="/program">
+              <figure
+                class="effect-bubba"
+                v-for="item in homeclass"
+                :key="item.id"
+              >
+                <img
+                  class="img-logo"
+                  :src="require('@/assets/img/' + item.img + '')"
+                  alt=""
+                />
+          
+                <figcaption>
+                  <h2>{{ item.title }}</h2>
+                  <p>
+                    {{ item.desc }}
+                  </p>
+                </figcaption>
+              </figure></a
+            >
           </div>
+
           <div class="class-note row-max-grid">
             <p>
               Click the button below to view all programs and classes as well as
@@ -203,6 +214,8 @@
       </div>
     </section>
     <Contactus />
+    <div class="try-hover"></div>
+
     <Footer />
   </div>
 </template>

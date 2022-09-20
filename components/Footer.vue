@@ -8,11 +8,12 @@
           </div>
           <div class="desc-foot">
             <p>
-              Beyond Dance Studio is the first of its kind in Ethiopia offering
-              a wide range of kids to young adult dance classes from ballet,
-              jazz, hip hop, technique and beyond. We as a company are committed
-              to grow your dancers at an accelerated rate through dedication and
-              discipline.
+               Beyond Dance Studio is the first of its kind in Ethiopia offering
+              a wide range of kids dance, martial arts and instrumental classes
+              from Ballet, Jazz, Taekwondo, Piano and Beyond. Our vision is to
+              introduce the joy of dance to hundreds of children across Addis
+              Ababa. We grow our students to become confident, creative and
+              courageous individuals who make lasting memories along the way.
             </p>
             <br />
             <a href="https://versavvymedia.com/">

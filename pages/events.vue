@@ -1,9 +1,8 @@
 <template>
   <div>
     <Navlink />
-
-    <Homevideo video="744993912" class="row-grid" />
-
+    <!-- <Homevideo video="744993912" class="row-grid" />
+    -->
     <div class="events row-grid">
       <div class="separt2 row-grid">
         <div class="container">

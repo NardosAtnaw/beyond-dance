@@ -1,11 +1,12 @@
 <template>
   <div>
     <Navlink />
-    <Homevideo video="744993912" class="row-grid" />
+    <!-- <Homevideo video="751212036" class="row-grid" /> -->
 
-    <div class="show-case row-max-grid">
+    <div class="show-case row-grid">
       <div class="container">
-        <h1>Show Case 2022</h1>
+        <Aboutvideo video="751212036" class="video" />
+        <h1 class="row-max-grid">Show Case 2022</h1>
 
         <div class="show-videos row-grid">
           <div class="single-video">

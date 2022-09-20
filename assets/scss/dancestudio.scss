@@ -29,7 +29,9 @@
           text-align: center;
           @include responsive($lg) {
             // width: 70%;
-            line-height: 2rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            line-height: 1.8rem;
             font-size: 0.9rem;
           }
         }

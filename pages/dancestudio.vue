@@ -11,16 +11,17 @@
             <h2>About Us</h2>
             <p>
               Beyond Dance Studio is the first of its kind in Ethiopia offering
-              a wide range of kids to young adult dance classes from ballet,
-              jazz, hip hop, technique and beyond. We as a company are committed
-              to grow your dancers at an accelerated rate through dedication and
-              discipline. Beyond Dance’s vision is to introduce the joy of dance
-              to hundreds of children across Addis Ababa. When you decide to
-              join us at Beyond Dance, you too will be able to take advantage of
-              our professional staff at our fully-equipped and recently
-              renovated studio. Whether you’re a beginner or an experienced
-              dancer looking to improve your technique, we guarantee you’ll find
-              it here.
+              a wide range of kids dance, martial arts and instrumental classes
+              from Ballet, Jazz, Taekwondo, Piano and Beyond. Our vision is to
+              introduce the joy of dance to hundreds of children across Addis
+              Ababa. We grow our students to become confident, creative and
+              courageous individuals who make lasting memories along the
+              way. Beyond Dance's vision is to introduce the joy of dance to
+              hundreds of children across Addis Ababa. When you decide to join
+              us at Beyond Dance, you too will be able to take advantage of our
+              professional staff at our fully-equipped and recently renovated
+              studio. Whether you're a beginner or an experienced dancer looking
+              to improve your technique, we guarantee you'll find it here. 
             </p>
             <button class="btn btn-thrid">
               <a href="contactus">Contact Us</a>
@@ -236,7 +237,6 @@ export default {
           bigimage: "dancestudio/DanceWear.webp",
           img1: "dancestudio/Leotard.webp",
           img2: "dancestudio/DanceWear.webp",
-        
         },
         {
           id: 1,
@@ -245,7 +245,6 @@ export default {
           bigimage: "dancestudio/leggingbig.webp",
           img1: "dancestudio/legg1.webp",
           img2: "dancestudio/legg2.webp",
-      
         },
 
         {
@@ -281,7 +280,6 @@ export default {
           itemdesc: "Lorem ipsum dolor sit amet, consectetur",
           bigimage: "dancestudio/bigtop.webp",
           img1: "dancestudio/1top.webp",
-          
         },
         {
           id: 6,

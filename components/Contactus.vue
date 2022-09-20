@@ -32,12 +32,12 @@
             alt=""
           />
           <h2 class="">Write Us Now!</h2>
-          <p class="row-grid">
-            Africa Ave, Addis Ababa, Ethiopia<br /><br />
+          <p class="">
+            Africa Ave, Addis Ababa, Ethiopia<br />
 
-            Beyonddancers.com<br /><br />
+            Beyonddancers.com<br />
 
-            +251965757474<br /><br />
+            +251965757474<br />
           </p>
           <div class="home-social-links row-grid">
             <div class="soc-links">
