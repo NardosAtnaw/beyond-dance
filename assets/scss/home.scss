@@ -1,12 +1,13 @@
 header {
   position: sticky;
   top: -0.01rem;
+height: 7rem;
   background-color: #ffffff;
   padding-bottom: 0.5rem;
   @include responsive($lg) {
     padding-bottom: 0.2rem;
   }
-  z-index: 9999999;
+  z-index: 99999;
 }
 
 .menu-trigger {
@@ -42,17 +43,57 @@ header {
       display: grid;
       place-content: center;
       object-fit: cover;
-      img {
-        width: 9rem;
-        object-fit: cover;
-        @include responsive($lg) {
-          width: 8rem;
+      // position: relative;
+
+      .top {
+        animation-name: fade;
+        animation-iteration-count: infinite ease-in-out;
+     animation-duration: 3s;
+        animation-delay: 0s;
+        animation-direction: alternate;
+      }
+      .bottom {
+        animation-delay: 3s;
+      }
+      // .mid{
+      //   animation-delay: 6s;
+      // }
+
+      div {
+        display: grid;
+        place-items: center;
+
+        img {
+          width: 9rem;
+          object-fit: cover;
+  position: absolute;
+  margin-top: 1rem;
+          top: 0;
+          animation: fade 3s infinite alternate ease-in-out;
+          @include responsive($lg) {
+            width: 8rem;
+          }
+          @keyframes fade {
+            0% {
+              opacity: 1;
+            }
+            25% {
+              opacity: 1;
+            }
+            75% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
         }
       }
     }
     .mobile-link {
       display: grid;
       place-items: center;
+      // position: absolute;
       // justify-content: space-between;
       align-items: center;
       gap: 5rem;
@@ -176,7 +217,7 @@ header {
         align-items: center;
         width: 100%;
         gap: 6vw;
-        margin-top: -2rem;
+        // margin-top: -2rem;
         li {
           font-size: 1rem;
           color: #1d3858;
@@ -204,7 +245,7 @@ header {
           align-items: center;
           width: 100%;
           gap: 6vw;
-          margin-top: -2rem;
+          margin-top: 5rem;
           li {
             font-size: 0.8vw;
             color: #1d3858;
@@ -645,7 +686,7 @@ footer {
         font-size: 0.9rem;
         line-height: 1.2rem;
         opacity: 0;
-        font-weight: 600;
+        // font-weight: 600;
         font-family: "Montserrat";
         color: #662483;
         -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -834,7 +875,7 @@ footer {
       }
       @include responsive($lg) {
         padding: 56.25% 0 0 0;
-        margin-top: -9rem;
+        margin-top: -10rem;
       }
     }
   }

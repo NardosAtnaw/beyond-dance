@@ -4,7 +4,13 @@
       <div class="container">
         <div class="logo">
           <nuxt-link to="/">
-            <img src="@/assets/img/logopng.png" alt="" />
+            <div>
+              <img class="bottom" src="@/assets/img/logoballet.svg" alt="" />
+              <img class="top" src="@/assets/img/takwalogo.svg" alt="" />
+              <!-- <img class="mid" src="../assets/img/gymlogo.svg" alt="" /> -->
+              <!--
+              <img class="mid2" src="../assets/img/hiphoplogo.svg" alt="" /> -->
+            </div>
           </nuxt-link>
         </div>
 

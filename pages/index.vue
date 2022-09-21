@@ -116,7 +116,7 @@
             <div class="box"></div>
           </div>
         </div>
-        <img class="row-grid" src="../assets/img/home/Summercamp.webp" alt="" />
+        <img class="row-grid" src="../assets/img/home/sum.webp" alt="" />
         <div class="sche-note row-grid">
           <p>
             Please click the button below to download the schedule, which is
