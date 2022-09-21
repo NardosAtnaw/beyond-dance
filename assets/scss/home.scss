@@ -1,7 +1,7 @@
 header {
   position: sticky;
   top: -0.01rem;
-height: 7rem;
+  height: 7rem;
   background-color: #ffffff;
   padding-bottom: 0.5rem;
   @include responsive($lg) {
@@ -48,7 +48,7 @@ height: 7rem;
       .top {
         animation-name: fade;
         animation-iteration-count: infinite ease-in-out;
-     animation-duration: 3s;
+        animation-duration: 3s;
         animation-delay: 0s;
         animation-direction: alternate;
       }
@@ -66,8 +66,8 @@ height: 7rem;
         img {
           width: 9rem;
           object-fit: cover;
-  position: absolute;
-  margin-top: 1rem;
+          position: absolute;
+          margin-top: 1rem;
           top: 0;
           animation: fade 3s infinite alternate ease-in-out;
           @include responsive($lg) {
@@ -391,22 +391,6 @@ height: 7rem;
       .who-title {
         display: grid;
         place-content: center;
-        h1 {
-          // font-family: "Mochiy Pop One", sans-serif;
-          font-family: "mayoritte";
-          font-size: 3rem;
-          color: #1d3858;
-          line-height: 4rem;
-          letter-spacing: 0.5vw;
-          text-align: center;
-          margin-bottom: 1rem;
-          @include responsive($md) {
-            font-size: 2rem;
-          }
-          @include responsive($xl) {
-            font-size: 4rem;
-          }
-        }
       }
       .who-desc {
         width: 100%;
@@ -427,6 +411,30 @@ height: 7rem;
           display: grid;
           place-items: center;
           align-items: center;
+          h1 {
+            font-family: "mayoritte";
+            font-size: 3rem;
+            color: #1d3858;
+            line-height: 4rem;
+            letter-spacing: 0.5vw;
+            text-align: center;
+            margin-bottom: 1rem;
+            @include responsive($md) {
+              font-size: 2rem;
+            }
+            @include responsive($xl) {
+              font-size: 4rem;
+            }
+          }
+          .separt1 {
+            .container {
+              .box {
+                width: 100%;
+                height: 0.02rem;
+                background-color: #f7cca3;
+              }
+            }
+          }
           p {
             margin-top: 1rem;
             font-size: 0.8rem;

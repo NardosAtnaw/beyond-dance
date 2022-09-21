@@ -28,17 +28,12 @@
     <div class="who-we-are row-max-grid">
       <div class="container">
         <div class="who-all">
-          <div class="who-title">
-            <h1>Who We Are</h1>
-            <div class="separt1">
-              <div class="container">
-                <div class="box"></div>
-              </div>
-            </div>
-          </div>
+          <div class="who-title"></div>
           <div class="who-desc">
             <img src="../assets/img/home/whoweare.webp" alt="" />
             <div class="desc-p">
+              <h1>Who We Are</h1>
+
               <p>
                 Beyond Dance Studio is the first of its kind in Ethiopia
                 offering a wide range of kids dance, martial arts and
@@ -54,7 +49,7 @@
                 beginner or an experienced dancer looking to improve your
                 technique, we guarantee you’ll find it here.
               </p>
-              <button class="btn btn-secondary">
+              <button class="btn btn-thrid">
                 <a href="dancestudio">Discover More</a>
               </button>
             </div>
@@ -71,7 +66,6 @@
               <div class="box"></div>
             </div>
           </div> -->
-     
 
           <div>
             <a class="grid" href="/program">
@@ -98,7 +92,9 @@
 
           <div class="class-note row-max-grid">
             <p>
-              Click the button below to register for classes and view descriptions of all programs, including ballet, taekwondo, jazz, and other classes..
+              Click the button below to register for classes and view
+              descriptions of all programs, including ballet, taekwondo, jazz,
+              and other classes..
             </p>
             <button class="btn btn-thrid row-grid">
               <nuxt-link to="/program">See all the program </nuxt-link>
