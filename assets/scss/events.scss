@@ -57,7 +57,7 @@
                 height: 30rem;
                 object-fit: cover;
                 @include responsive($lg){
-                  width: 55rem;
+                  width: 50rem;
          
                 }
               }
@@ -101,7 +101,7 @@
                 height: 20rem;
               }
               @include responsive($xl) {
-                height: 30rem;
+                height: 20rem;
               }
             }
             h4 {
@@ -129,6 +129,7 @@
                 height: 20rem;
               }
               @include responsive($xl) {
+                width: 50rem;
                 height: 30rem;
               }
             }

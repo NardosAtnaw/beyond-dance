@@ -134,8 +134,6 @@
 
     <div class="show-case row-max-grid row-bottom-grid">
       <div class="container">
-        <h1>Show Case 2022</h1>
-
         <div class="show-videos row-grid">
           <div class="single-video">
             <iframe
@@ -175,6 +173,12 @@
             ></iframe>
           </div>
         </div>
+        <!-- <h1 class="row-grid">Show Case 2022</h1> -->
+        <p class="row-max-grid">
+          Please click the button below to view the program's highlights. This
+          is the show case for 2022.
+        </p>
+        <button class="btn btn-secondary">Performances & Videos</button>
       </div>
     </div>
 

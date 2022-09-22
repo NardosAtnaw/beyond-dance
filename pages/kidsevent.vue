@@ -6,11 +6,11 @@
       <div class="separt2 row-grid">
         <div class="container">
           <h1>Kids Events</h1>
-          <img
+          <!-- <img
             class="wed-img1 row-grid row-bottom-grid"
             src="../assets/img/program/gal6.webp"
             alt=""
-          />
+          /> -->
           <div class="box"></div>
         </div>
       </div>
@@ -31,7 +31,7 @@
                 </p>
             </div>
             <div class="small-offer">
-              <div class="single-offer1">
+              <div class="single-offer">
                 <img src="../assets/img/events/bd1.jpg" alt="" />
                 <h4></h4>
                 <p></p>
@@ -51,12 +51,12 @@
                 <h2>Graduation</h2>
             </div>
             <div class="small-offer">
-                <div class="single-offer1">
+                <div class="single-offer">
                 <img src="../assets/img/events/grad.jpg" alt="" />
                 <h4></h4>
                 <p></p>
               </div>
-              <div class="single-offer1">
+              <div class="single-offer">
                 <img src="../assets/img/events/ICS GRADUATION (2).jpg" alt="" />
                 <h4></h4>
                 <p></p>

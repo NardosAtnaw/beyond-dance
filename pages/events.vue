@@ -98,7 +98,7 @@ export default {
           id: 1,
           eventtitle: "Kids Event",
           eventdesc:
-            "Celebrate your Birthday Party, Graduation and other events with fun and Dance!",
+            "Celebrate your Birthday Party with fun and Dance!",
           eventimg: "program/gal6.webp",
           link: "Kids Event",
         },

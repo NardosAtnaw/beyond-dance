@@ -6,11 +6,11 @@
       <div class="separt2 row-grid">
         <div class="container">
           <h1>Adults Events</h1>
-          <img
+          <!-- <img
             class="wed-img1 row-grid row-bottom-grid"
             src="../assets/img/events/Corporate Cocktail Event (2).jpg"
             alt=""
-          />
+          /> -->
           <div class="box"></div>
         </div>
       </div>
