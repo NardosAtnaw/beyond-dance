@@ -422,7 +422,6 @@ header {
         place-content: center;
       }
       .who-desc {
-        width: 90%;
         margin-top: 2rem;
         display: grid;
         place-items: center;
@@ -435,6 +434,9 @@ header {
         @include responsive($lg) {
           display: flex;
           gap: 2rem;
+        }
+        @include responsive($xxl) {
+          width: 90%;
         }
         .desc-p {
           display: grid;
