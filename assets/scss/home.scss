@@ -191,7 +191,7 @@ header {
       #menu {
         position: absolute;
         width: 26rem;
-        margin: -50px 0 0 -200px;
+        margin: -37px 0 0 -200px;
         @include responsive($md) {
           width: 50rem;
           margin: -50px 0 0 -400px;

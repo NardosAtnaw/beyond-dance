@@ -83,9 +83,8 @@
         </div>
         <div class="download-mid row-max-grid">
           <p class="">
-            Please contact us at +25165757474 if you have any concerns or
-            questions. Click the link below to get a PDF of our safety and
-            regulation to learn about the security of our studio.
+            Click the link below to get a PDF of our safety and regulation to
+            learn about the security of our studio.
           </p>
           <button class="btn btn-secondary row-grid">
             <a href="Safety.pdf" target="_blank" download> Download Safety</a>

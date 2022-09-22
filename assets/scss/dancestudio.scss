@@ -401,8 +401,9 @@
       p {
         font-family: "Montserrat";
         text-align: center;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         color: #876745;
+      // margin-top: 1rem;
 
         @include responsive($lg) {
           width: 30rem;
