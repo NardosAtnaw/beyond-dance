@@ -22,7 +22,7 @@
             <input class="input" type="text" />
             <p class="">Message</p>
             <input class="input big-margin" type="text" /><br />
-            <button class="btn btn-secondary">Submit</button>
+            <button class="btn btn-secondary row-grid">Submit</button>
           </form>
         </div>
         <div class="contact-info">

@@ -267,7 +267,7 @@ header {
           justify-content: space-between;
           align-items: center;
           width: 100%;
-          gap: 7vw;
+          gap: 3.5vw;
           margin-top: 0.5rem;
 
           li {
@@ -275,7 +275,7 @@ header {
             font-family: "Montserrat";
 
             a {
-              font-size: 0.82rem;
+              font-size: 0.7rem;
               color: #1d3858;
 
               &:hover {
@@ -317,6 +317,17 @@ header {
           color: #1d3858;
           clear: both;
           width: 100%;
+        }
+      }
+      @include responsive($xl) {
+        .ul-links{
+
+          gap: 7vw;
+          li{
+            a{
+              font-size: .8rem;
+            }
+          }
         }
       }
     }
@@ -916,6 +927,7 @@ footer {
     }
   }
   .video-wrapper1 {
+
     .vimeo-container {
       padding: 56.25% 0 0 0;
 
@@ -944,6 +956,7 @@ footer {
       color: #876745;
       text-align: center;
     }
+   
     p {
       text-align: center;
       font-size: 0.8rem;

@@ -2,12 +2,13 @@
   <div>
     <Navlink />
     <!-- <Homevideo video="751212036" class="row-grid" /> -->
+    <div class="container">
+      <p class="row-grid"></p>
+      <Aboutvideo video="751212036" class="video" />
+    </div>
 
     <div class="show-case row-grid">
       <div class="container">
-        <Aboutvideo video="751212036" class="video" />
-        <h1 class="row-max-grid">Show Case 2022</h1>
-
         <div class="show-videos row-grid">
           <div class="single-video">
             <iframe

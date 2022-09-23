@@ -89,10 +89,9 @@
       <div class="container">
         <h1>Book Now</h1>
         <div class="separt-line"></div>
-        <img src="../assets/img/events/grad.jpg" alt="" />
+        <img src="../assets/img/contactus.jpg" alt="" />
         <p>
-          Join Us Today! If you are interested in joining Beyond Dance Studio,
-          events and classes contact us to secure your spot with us!
+         If you are interested in kids event and classes contact us to secure your spot with us!
         </p>
         <button class="btn btn-thrid">
           <nuxt-link to="/contactus">Book Now </nuxt-link>

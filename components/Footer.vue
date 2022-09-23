@@ -8,7 +8,7 @@
           </div>
           <div class="desc-foot">
             <p>
-               Beyond Dance Studio is the first of its kind in Ethiopia offering
+              Beyond Dance Studio is the first of its kind in Ethiopia offering
               a wide range of kids dance, martial arts and instrumental classes
               from Ballet, Jazz, Taekwondo, Piano and Beyond. Our vision is to
               introduce the joy of dance to hundreds of children across Addis

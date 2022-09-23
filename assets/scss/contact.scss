@@ -93,10 +93,7 @@
         }
       }
       .contact-info {
-    
-       
         h2 {
-         
           font-family: "Mochiy Pop One", sans-serif;
 
           font-size: 1rem;
@@ -151,7 +148,9 @@
 
   padding: 2rem 0 3rem;
   overflow: hidden;
-  height: 40.94rem;
+  @include responsive($lg) {
+    height: 40.94rem;
+  }
 
   h1 {
     font-family: "mayoritte";
@@ -174,7 +173,13 @@
     .location {
       .map-responsive {
         overflow: hidden;
-        padding-bottom: 56.25%;
+        padding-bottom: 126.25%;
+        @include responsive($md) {
+          padding-bottom: 58.25%;
+        }
+        @include responsive($lg) {
+          padding-bottom: 56.25%;
+        }
         position: relative;
 
         iframe {

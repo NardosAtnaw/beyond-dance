@@ -70,7 +70,7 @@
       <div class="container">
         <h1>Book Now</h1>
         <div class="separt-line"></div>
-        <img src="../assets/img/events/wedtraditional.webp" alt="" />
+        <img src="../assets/img/events/Wedding.webp" alt="" />
         <p>
           Join Us Today! If you are interested in joining Beyond Dance Studio,
           events and classes contact us to secure your spot with us!

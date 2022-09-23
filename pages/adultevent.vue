@@ -48,7 +48,6 @@
 
                 <p></p>
               </div>
-            
             </div>
           </div>
         </div>
@@ -59,6 +58,7 @@
         </div>
       </div>
     </div>
+
     <!-- <div class="events2 row-grid">
         <div class="separt2 row-grid">
           <div class="container"></div>
@@ -67,14 +67,15 @@
           <h4>Book Now</h4>
         </div>
       </div> -->
-  <div class="cta-register row-max-grid">
-      <div class="container">
+    <div class="cta-register row-max-grid">
+      <div class="container2">
         <h1>Book Now</h1>
         <div class="separt-line"></div>
-        <img src="../assets/img/events/coporate.webp" alt="" />
+        <Videocop video="746055968" />
+        <!-- <img src="../assets/img/events/coporate.webp" alt="" /> -->
+       
         <p>
-          Join Us Today! If you are interested in joining Beyond Dance Studio,
-          events and classes contact us to secure your spot with us!
+          If you are interested in our adults events and wants to book, contact us to secure your spot with us!
         </p>
         <button class="btn btn-thrid">
           <nuxt-link to="/contactus">Book Now </nuxt-link>

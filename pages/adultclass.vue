@@ -22,12 +22,12 @@
             </div>
             <div class="small-offer">
               <div class="single-offer1">
-                <img src="../assets/img/events/YogaFlyer.jpg" alt="" />
+                <img src="../assets/img/events/yoga.webp" alt="" />
 
                 <p></p>
               </div>
               <div class="single-offer1">
-                <img src="../assets/img/events/yoga.webp" alt="" />
+                <img src="../assets/img/events/YogaFlyer.jpg" alt="" />
 
                 <p></p>
               </div>
@@ -45,10 +45,10 @@
       <div class="container">
         <h1>Book Now</h1>
         <div class="separt-line"></div>
-        <img src="../assets/img/events/yoga.webp" alt="" />
+        <img src="../assets/img/events/yoga.png" alt="" />
         <p>
-          Join Us Today! If you are interested in joining Beyond Dance Studio,
-          events and classes contact us to secure your spot with us!
+          Join Us Today! If you are interested in joining on our adult classes,
+          contact us to secure your spot with us!
         </p>
         <button class="btn btn-thrid">
           <nuxt-link to="/contactus">Book Now </nuxt-link>
