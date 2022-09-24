@@ -173,7 +173,7 @@
             ></iframe>
           </div>
         </div>
-       
+
         <p class="row-max-grid">
           Please click the button below to view the program's highlights. This
           is the show case for 2022.
@@ -214,7 +214,59 @@
     </section>
     <Contactus />
     <div class="try-hover"></div>
-
+    <div class="rate-us">
+      <div class="container">
+        <div class="wrapper">
+          <h4>Rate Us Now</h4>
+          <div class="separt1">
+            <div class="container">
+              <div class="box"></div>
+            </div>
+          </div>
+          <div class="rating-stars row-grid">
+            <input type="radio" name="rating" id="rs0" checked /><label
+              for="rs0"
+            ></label>
+            <input type="radio" name="rating" id="rs1" /><label
+              for="rs1"
+            ></label>
+            <input type="radio" name="rating" id="rs2" /><label
+              for="rs2"
+            ></label>
+            <input type="radio" name="rating" id="rs3" /><label
+              for="rs3"
+            ></label>
+            <input type="radio" name="rating" id="rs4" /><label
+              for="rs4"
+            ></label>
+            <input type="radio" name="rating" id="rs5" /><label
+              for="rs5"
+            ></label>
+            <span class="rating-counter"></span>
+          </div>
+          <p class="row-max-grid">
+            Click the links below to check our reviews and give us a rating on
+            Google Reviews.
+          </p>
+          <div class="btn-review">
+            <button class="btn btn-secondary">
+              <a
+                href="https://www.google.com/search?q=beyond+dance+studio&oq=beyond+dance+studio&aqs=chrome..69i57j69i60l3.14601j0j1&sourceid=chrome&ie=UTF-8#lrd=0x164b85365f26ad5b:0x9f836f1aa87df253,1,,,"
+              >
+                View Our Review
+              </a>
+            </button>
+            <button class="btn btn-thrid">
+              <a
+                href="https://www.google.com/search?q=beyond+dance+studio&oq=beyond+dance+studio&aqs=chrome..69i57j69i60l3.14601j0j1&sourceid=chrome&ie=UTF-8#lrd=0x164b85365f26ad5b:0x9f836f1aa87df253,3,,,"
+              >
+                Review Us now</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <Footer />
   </div>
 </template>
