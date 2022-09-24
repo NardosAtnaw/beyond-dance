@@ -178,7 +178,9 @@
           Please click the button below to view the program's highlights. This
           is the show case for 2022.
         </p>
-        <button class="btn btn-secondary">Performances & Videos</button>
+        <button class="btn btn-secondary">
+          <nuxt-link to="/program">Performances & Videos</nuxt-link>
+        </button>
       </div>
     </div>
 
