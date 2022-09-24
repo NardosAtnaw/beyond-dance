@@ -255,14 +255,14 @@
               <a
                 href="https://www.google.com/search?q=beyond+dance+studio&oq=beyond+dance+studio&aqs=chrome..69i57j69i60l3.14601j0j1&sourceid=chrome&ie=UTF-8#lrd=0x164b85365f26ad5b:0x9f836f1aa87df253,1,,,"
               >
-                View Our Review
+                View Our Reviews
               </a>
             </button>
             <button class="btn btn-thrid">
               <a
                 href="https://www.google.com/search?q=beyond+dance+studio&oq=beyond+dance+studio&aqs=chrome..69i57j69i60l3.14601j0j1&sourceid=chrome&ie=UTF-8#lrd=0x164b85365f26ad5b:0x9f836f1aa87df253,3,,,"
               >
-                Review Us now</a
+                Review Us Now</a
               >
             </button>
           </div>
