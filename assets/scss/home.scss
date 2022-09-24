@@ -947,7 +947,16 @@ footer {
   .container {
     display: grid;
     place-items: center;
-
+h4{
+  font-family: "mayoritte";
+  color: #662483;
+  text-align: center;
+  font-size:2rem;
+  margin-bottom: 1rem;
+  @include responsive($lg) {
+    font-size: 3rem;
+  }
+}
     h1 {
       font-size: 0.8rem;
       font-family: "Montserrat";
