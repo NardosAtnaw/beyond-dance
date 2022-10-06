@@ -322,6 +322,9 @@ header {
       @include responsive($xl) {
         .ul-links {
           gap: 7vw;
+          @include responsive($xxl) {
+            gap: 5vw;
+          }
           li {
             a {
               font-size: 0.8rem;
