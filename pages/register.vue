@@ -237,7 +237,7 @@ export default {
       // console.log(this.form);
 
       await axios
-        .post("http://localhost:3001/register", {
+        .post("https://www.beyonddancers.com/register", {
           form: this.form,
         })
         .then((res) => {

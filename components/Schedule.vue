@@ -199,7 +199,7 @@ export default {
     async getSchedule() {
       // console.log(this.form);
 
-      await axios.get("http://localhost:3001/schedule").then((res) => {
+      await axios.get("https://www.beyonddancers.com/schedule").then((res) => {
         // this.schedule = res.data;
         this.sortArray(res.data);
         // console.log(this.sortArray(res.data));
