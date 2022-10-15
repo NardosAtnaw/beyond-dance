@@ -86,8 +86,8 @@
                 height: 10rem;
               }
               @include responsive($xl) {
-                width: 12rem;
-                height: 12rem;
+                width: 15rem;
+                height: 15rem;
               }
             }
           }
@@ -167,8 +167,8 @@
                 height: 10rem;
               }
               @include responsive($xl) {
-                width: 12rem;
-                height: 12rem;
+                width: 15rem;
+                height: 15rem;
               }
             }
           }
@@ -616,6 +616,7 @@
 .pro-gallery {
   background-color: #1d3858;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   .container {
     h1 {
       font-family: "mayoritte";

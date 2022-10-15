@@ -13,15 +13,15 @@
             Use the form below to get in touch with us, or click on the links to
             do so.
           </h3>
-          <form action="">
+          <form action="https://formsubmit.co/your@email.com" method="POST">
             <p>Name</p>
-            <input class="input" type="text" />
+            <input class="input" type="text" name="Name" />
             <p>Email</p>
-            <input class="input" type="text" />
+            <input class="input" type="text" name="Email" />
             <p>Phone Number</p>
-            <input class="input" type="text" />
+            <input class="input" type="text" name="Phone Number" />
             <p class="">Message</p>
-            <input class="input big-margin" type="text" /><br />
+            <input class="input big-margin" type="text" name="Message" /><br />
             <button class="btn btn-secondary row-grid">Submit</button>
           </form>
         </div>

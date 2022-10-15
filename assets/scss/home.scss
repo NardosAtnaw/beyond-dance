@@ -6,6 +6,7 @@ header {
   padding-bottom: 0.5rem;
   @include responsive($lg) {
     padding-bottom: 0.2rem;
+    height: 6.5rem;
   }
   z-index: 99999;
 }
@@ -46,7 +47,7 @@ header {
       // position: relative;
 
       .bg-block img {
-        width: 9rem;
+        width: 7rem;
         object-fit: cover;
         position: absolute;
         top: 0;
@@ -268,7 +269,7 @@ header {
           align-items: center;
           width: 100%;
           gap: 3.5vw;
-          margin-top: 0.5rem;
+          margin-top: -0.5rem;
 
           li {
             color: #1d3858;
@@ -633,7 +634,7 @@ footer {
       }
 
       .grid figure {
-        background: rgba(255, 255, 255, 0.51);
+        background: rgba(255, 255, 255, 0.71);
         opacity: 0.8;
         box-shadow: 0px 0px 46px -8px rgba(0, 0, 0, 0.03);
         position: relative;
@@ -694,19 +695,7 @@ footer {
         -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
         transition: opacity 0.35s, transform 0.35s;
       }
-      figure.effect-bubba figcaption::before {
-        // border-top: 1px solid #1d3858;
-        // border-bottom: 1px solid #1d3858;
-        // -webkit-transform: scale(0, 1);
-        // transform: scale(0, 1);
-      }
-      figure.effect-bubba figcaption::after {
-        // border-right: 1px solid #1d3858;
-        // border-left: 1px solid #1d3858;
-        // -webkit-transform: scale(1, 0);
-        // transform: scale(1, 0);
-        // opacity: 0.5;
-      }
+   
       figure.effect-bubba h2 {
         font-size: 1.4rem;
         color: #662483;
@@ -718,10 +707,10 @@ footer {
         -webkit-transform: translate3d(0, -20px, 0);
         transform: translate3d(0, -20px, 0);
         @include responsive($lg) {
-          padding-top: 50%;
+          padding-top: 45%;
         }
         @include responsive($xxl) {
-          padding-top: 35%;
+          padding-top: 30%;
         }
       }
       figure.effect-bubba p {
@@ -754,8 +743,8 @@ footer {
         transform: translate3d(0, 0, 0);
       }
       .img-logo {
-        width: 10rem;
-        height: 10rem;
+        width: 8rem;
+        height: 8rem;
         margin-top: -6rem;
       }
       .class-note {

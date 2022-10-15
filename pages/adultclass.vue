@@ -27,7 +27,7 @@
                 <p></p>
               </div>
               <div class="single-offer1">
-                <img src="../assets/img/events/YogaFlyer.jpg" alt="" />
+                <img src="../assets/img/program/yoga3.webp" alt="" />
 
                 <p></p>
               </div>
