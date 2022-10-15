@@ -12,7 +12,10 @@
               to do so.
             </h3>
 
-            <form action="https://formsubmit.co/your@email.com" method="POST">
+            <form
+              action="https://formsubmit.co/contact@beyonddancers.com"
+              method="POST"
+            >
               <p>Name</p>
               <input class="input" type="text" name="Name" />
               <p>Email</p>
