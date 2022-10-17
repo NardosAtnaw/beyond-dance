@@ -13,7 +13,8 @@
             </h3>
 
             <form
-              action="https://formsubmit.co/contact@beyonddancers.com"
+              action="https://formsubmit.co/	
+info@beyonddancers.com"
               class="myform"
               method="POST"
             >
