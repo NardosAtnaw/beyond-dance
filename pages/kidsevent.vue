@@ -18,17 +18,20 @@
         <div class="wedding-event">
           <div class="wrapper">
             <div class="wed-offer">
-                <h2>Birthday</h2>
-                <p>Celebrate your special day with a Birthday Dance Party! 3 Hours of Dancing & Fun!
-                    <br/>  Party clean-up    <br/>
-        3 hours of party time    <br/>
-     1 hour of enthusiastic, positive and high-quality dance instruction    <br/>
-        
-          A final show at the end of the party to entertain parents with all we've learned    <br/>
-      Special gift for the birthday star    <br/>
-         Party Table, cake table and table covering
+              <h2>Birthday</h2>
+              <p>
+                Celebrate your special day with a Birthday Dance Party! 3 Hours
+                of Dancing & Fun! <br />
+                Party clean-up <br />
+                3 hours of party time <br />
+                1 hour of enthusiastic, positive and high-quality dance
+                instruction <br />
 
-                </p>
+                A final show at the end of the party to entertain parents with
+                all we've learned <br />
+                Special gift for the birthday star <br />
+                Party Table, cake table and table covering
+              </p>
             </div>
             <div class="small-offer">
               <div class="single-offer">
@@ -48,25 +51,24 @@
               </div>
             </div>
             <div class="wed-offer">
-                <h2>Graduation</h2>
+              <h2>Graduation</h2>
             </div>
             <div class="small-offer">
-                <div class="single-offer">
-                <img src="../assets/img/events/grad.jpg" alt="" />
+              <div class="single-offer">
+                <img src="../assets/img/events/grad.webp" alt="" />
                 <h4></h4>
                 <p></p>
               </div>
               <div class="single-offer">
-                <img src="../assets/img/events/ICS GRADUATION (2).jpg" alt="" />
+                <img src="../assets/img/events/ICS.webp" alt="" />
                 <h4></h4>
                 <p></p>
               </div>
               <div class="single-offer">
-                <img src="../assets/img/events/ICS GRADUATION.jpg" alt="" />
+                <img src="../assets/img/events/ICS GRADUATION.webp" alt="" />
                 <h4></h4>
                 <p></p>
               </div>
-             
             </div>
           </div>
         </div>
@@ -91,7 +93,8 @@
         <div class="separt-line"></div>
         <img src="../assets/img/contactus.jpg" alt="" />
         <p>
-         If you are interested in kids event and classes contact us to secure your spot with us!
+          If you are interested in kids event and classes contact us to secure
+          your spot with us!
         </p>
         <button class="btn btn-thrid">
           <nuxt-link to="/contactus">Book Now </nuxt-link>
