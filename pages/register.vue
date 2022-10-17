@@ -212,7 +212,7 @@
             type="text"
             required
           /><br />
-          <button type="submit" class="btn btn-thrid">Submit</button>
+          <button type="submit" class="btn btn-thrid"><a href="/thankyou">Submit</a> </button>
         </form>
       </div>
     </div>
