@@ -35,17 +35,17 @@
             </div>
             <div class="small-offer">
               <div class="single-offer">
-                <img src="../assets/img/events/bd1.jpg" alt="" />
+                <img src="../assets/img/events/bd1.webp" alt="" />
                 <h4></h4>
                 <p></p>
               </div>
               <div class="single-offer">
-                <img src="../assets/img/events/bd3.jpg" alt="" />
+                <img src="../assets/img/events/bd3.webp" alt="" />
                 <h4></h4>
                 <p></p>
               </div>
               <div class="single-offer">
-                <img src="../assets/img/events/bd2.jpg" alt="" />
+                <img src="../assets/img/events/bd2.webp" alt="" />
                 <h4></h4>
                 <p></p>
               </div>

@@ -13,7 +13,11 @@
             Use the form below to get in touch with us, or click on the links to
             do so.
           </h3>
-          <form action="https://formsubmit.co/contact@beyonddancers.com" method="POST">
+          <form
+            action="https://formsubmit.co/contact@beyonddancers.com"
+            class="myform"
+            method="POST"
+          >
             <p>Name</p>
             <input class="input" type="text" name="Name" />
             <p>Email</p>

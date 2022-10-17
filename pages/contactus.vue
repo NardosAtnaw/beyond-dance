@@ -14,6 +14,7 @@
 
             <form
               action="https://formsubmit.co/contact@beyonddancers.com"
+              class="myform"
               method="POST"
             >
               <p>Name</p>
