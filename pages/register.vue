@@ -38,32 +38,44 @@
 
         <form action="" @submit.prevent="submitForm" class="full-form row-grid">
           <p>Student's Name *</p>
-          <input class="input" v-model="form.student_name" required type="text" />
+          <input
+            class="input"
+            v-model="form.student_name"
+            required
+            type="text"
+          />
           <p>
             Parent/Guardian Name<br />
             Required for Children Ages 18 and Under
           </p>
-          <input class="input" v-model="form.parent_name" required type="text" />
+          <input
+            class="input"
+            v-model="form.parent_name"
+            required
+            type="text"
+          />
           <p>Student's Gender *</p>
           <p>
             <input
               type="radio"
               class="mg-left"
               v-model="form.gender"
-              value="female" required
+              value="female"
+              required
             />
             Female
             <input
               type="radio"
               class="mg-left"
               v-model="form.gender"
-              value="male" required
+              value="male"
+              required
             />
             Male
           </p>
           <p></p>
           <p>Date of Birth</p>
-          <input class="input" v-model="form.dob" type="date" required/>
+          <input class="input" v-model="form.dob" type="date" required />
           <p>Age Group *</p>
           <p>
             <input
@@ -102,14 +114,14 @@
               type="radio"
               value="other"
               v-model="form.age_group"
-              class="mg-left" 
+              class="mg-left"
             />Other
           </p>
           <p>School (if applicable)</p>
-              class="mg-left" 
+
           <input class="input" v-model="form.school" type="text" required />
           <p>Email Address *</p>
-          <input class="input" v-model="form.email" type="text" required/>
+          <input class="input" v-model="form.email" type="text" required />
           <p>Phone Number *</p>
           <input class="input" v-model="form.phone" type="text" required />
           <p>Instagram Account (if applicable)</p>
@@ -120,7 +132,7 @@
               type="checkbox"
               value="children"
               v-model="form.interest"
-              class="mg-left" 
+              class="mg-left"
             />
             Children's Dance Classes (Ballet, Jazz, Hip Hop, Lyrical Etc.)
           </p>
@@ -194,14 +206,18 @@
           <p>Dancer's Shoe Size (Euro Measurements)</p>
           <input class="input" v-model="form.shoe" type="text" required />
           <p>Additional Information</p>
-          <input class="input" v-model="form.add_info" type="text" required/><br />
+          <input
+            class="input"
+            v-model="form.add_info"
+            type="text"
+            required
+          /><br />
           <button type="submit" class="btn btn-thrid">Submit</button>
         </form>
       </div>
     </div>
     <div class="big-image row-grid">
       <div class="container">
-
         <img src="../assets/img/Takewoado.jpg" alt="" />
       </div>
     </div>
