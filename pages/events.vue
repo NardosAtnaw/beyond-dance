@@ -26,41 +26,11 @@
                   <h4>{{ items.eventtitle }}</h4>
                   <p>{{ items.eventdesc }}</p>
                   <button class="btn btn-thrid">
-                    <nuxt-link to="/wedding">{{ items.link }}</nuxt-link>
+                    <nuxt-link to="items.url">{{ items.link }}</nuxt-link>
                   </button>
                 </div>
               </div>
             </div>
-            <!-- <div class="small-offer">
-              <div class="single-offer">
-                <img src="../assets/img/events/slowdance.webp" alt="" />
-                <h4>Wedding Packages</h4>
-                <button class="btn btn-thrid">
-                  <nuxt-link to="/wedding">Wedding Packages</nuxt-link>
-                </button>
-              </div>
-              <div class="single-offer">
-                <img src="../assets/img/program/gal6.webp" alt="" />
-                <h4>Kids Event</h4>
-                <button class="btn btn-thrid">
-                  <nuxt-link to="/kidsevent">Kids Event</nuxt-link>
-                </button>
-              </div>
-              <div class="single-offer">
-                <img src="../assets/img/events/sip.webp" alt="" />
-                <h4>Adult Events</h4>
-                <button class="btn btn-thrid">
-                  <nuxt-link to="/adultevent">Adult Events</nuxt-link>
-                </button>
-              </div>
-              <div class="single-offer">
-                <img src="../assets/img/events/yoga.webp" alt="" />
-                <h4>Adult Classes</h4>
-                <button class="btn btn-thrid">
-                  <nuxt-link to="/adultclass">Adult Classes</nuxt-link>
-                </button>
-              </div>
-            </div> -->
           </div>
         </div>
         <div class="separt2 row-grid">
@@ -97,9 +67,9 @@ export default {
         {
           id: 1,
           eventtitle: "Kids Event",
-          eventdesc:
-            "Celebrate your Birthday Party with fun and Dance!",
+          eventdesc: "Celebrate your Birthday Party with fun and Dance!",
           eventimg: "program/gal6.webp",
+          url: "/kidsevent",
           link: "Kids Event",
         },
 
@@ -108,6 +78,7 @@ export default {
           eventtitle: "Wedding Packages",
           eventdesc: "Celebrate your special event with a Dancing & Fun!",
           eventimg: "events/slowdance.webp",
+          url: "/wedding",
           link: "Wedding Packages",
         },
         {
@@ -115,6 +86,7 @@ export default {
           eventtitle: "Adult Events",
           eventdesc: "Celebrate your special event with a Fun!",
           eventimg: "events/sip.webp",
+          url: "/adultevent",
           link: "Adult Events",
         },
         {
@@ -122,6 +94,7 @@ export default {
           eventtitle: "Adult Classes",
           eventdesc: "Enjoy special classes  with us!",
           eventimg: "events/yoga.webp",
+          url: "/adultclass",
           link: "Adult Classes",
         },
       ],

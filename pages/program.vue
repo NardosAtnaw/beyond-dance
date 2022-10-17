@@ -94,7 +94,7 @@ export default {
           title2: "Taekwondo",
           desc2:
             " Taekwondo is a system of symmetrical body exercises or techniques designed for self-defense and counterattack in unarmed combat, making use of the hands and feet as weapons and defenses. However, Taekwondo is not merely a physical skill; it is also a way of thought and life. Through strict discipline, Taekwondo trains both the body and the mind placing great emphasis on the development of moral character. ",
-          img12: "program/gal4.webp",
+          img12: "program/Take4.webp",
           img22: "program/Take3.webp",
         },
         {
