@@ -112,7 +112,7 @@ Team classes in color with additional information  which say twice a week meet t
 Age group is in parenthesis next to class name
         </p>
         <button class="btn btn-secondary row-grid">
-          <a href="../static/Schedule.png" target="_blank" >
+          <a href="Schedule.png" target="_blank" >
           Download Schedule</a></button>
       </div>
     </div>
@@ -199,7 +199,7 @@ export default {
     async getSchedule() {
       // console.log(this.form);
 
-      await axios.get("https://www.beyonddancers.com/admin/schedule").then((res) => {
+      await axios.get("https://beyonddancers.com/admin/schedule").then((res) => {
         // this.schedule = res.data;
         this.sortArray(res.data);
         // console.log(this.sortArray(res.data));

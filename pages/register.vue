@@ -254,7 +254,7 @@ export default {
       // console.log(this.form);
 
       await axios
-        .post("https://www.beyonddancers.com/admin/register", {
+        .post("https://beyonddancers.com/admin/register", {
           form: this.form,
         })
         .then((res) => {
