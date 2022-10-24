@@ -3,6 +3,9 @@ export default {
   head: {
     title: 'Beyond Dance',
     target: 'static',
+    router: {
+      base: '/'
+    },
     htmlAttrs: {
       lang: 'en'
     },

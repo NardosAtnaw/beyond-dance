@@ -212,7 +212,9 @@
             type="text"
             required
           /><br />
-          <button type="submit" class="btn btn-thrid"><a href="/thankyou">Submit</a> </button>
+          <button type="submit" class="btn btn-thrid" @click="submitForm">
+            <a href="">Submit</a>
+          </button>
         </form>
       </div>
     </div>
@@ -259,6 +261,8 @@ export default {
         })
         .then((res) => {
           console.log(res.data);
+          // this.$router.push("/thankyou");
+          window.location.href = "/thankyou";
         });
     },
   },
