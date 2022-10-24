@@ -245,11 +245,7 @@ $columns: 12;
   text-align: center;
 }
 
-@include responsive($md) {
-  .btn-cta {
-    // padding: 0.7rem 2rem;
-  }
-}
+
 .btn-purple {
   @extend .btn-cta;
   width: 15rem;
