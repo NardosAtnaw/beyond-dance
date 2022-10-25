@@ -439,8 +439,12 @@ header {
         place-items: center;
         img {
           @include responsive($lg) {
-            width: 35rem;
+            width: 28rem;
             object-fit: cover;
+          }
+          @include responsive($xl) {
+            width: 32rem;
+   
           }
         }
         @include responsive($lg) {
@@ -480,7 +484,7 @@ header {
             text-align: center;
             @include responsive($lg) {
               // width: 60%;
-              line-height: 1.8rem;
+              line-height: 1.5rem;
               font-size: 0.9rem;
             }
           }
@@ -1182,7 +1186,7 @@ h4{
 }
 
 .rate-us {
-  background: rgba(135, 103, 69, 0.1);
+  background:mayoritte rgba(135, 103, 69, 0.1);
   padding: 2rem 0 3rem;
  
   .container {
