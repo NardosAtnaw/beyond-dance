@@ -112,8 +112,9 @@ Team classes in color with additional information  which say twice a week meet t
 Age group is in parenthesis next to class name
         </p>
         <button class="btn btn-secondary row-grid">
-          <a href="Schedule.pdf" target="_blank" >
-          Download Schedule</a></button>
+          <a href="Schedule.pdf" target="_blank" download>
+                Download Schedule</a
+              ></button>
       </div>
     </div>
     <div class="container-sm">

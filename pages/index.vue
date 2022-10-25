@@ -123,7 +123,7 @@
               <nuxt-link to="/program">See all the program </nuxt-link>
             </button>
             <button class="btn btn-secondary row-grid">
-              <a href="Schedule.png" target="_blank" download>
+              <a href="Schedule.pdf" target="_blank" download>
                 Download Schedule</a
               >
             </button>
