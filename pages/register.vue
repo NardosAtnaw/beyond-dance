@@ -213,7 +213,7 @@
             required
           /><br />
           <button type="submit" class="btn btn-thrid" @click="submitForm">
-            <a href="">Submit</a>
+            <a href="#">Submit</a>
           </button>
         </form>
       </div>
@@ -254,7 +254,6 @@ export default {
   methods: {
     async submitForm() {
       // console.log(this.form);
-
       await axios
         .post("https://beyonddancers.com/admin/register", {
           form: this.form,
