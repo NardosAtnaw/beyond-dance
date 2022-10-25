@@ -26,7 +26,7 @@
                   <h4>{{ items.eventtitle }}</h4>
                   <p>{{ items.eventdesc }}</p>
                   <button class="btn btn-thrid">
-                    <nuxt-link to="items.url">{{ items.link }}</nuxt-link>
+                    <nuxt-link :to="items.url">{{ items.link }}</nuxt-link>
                   </button>
                 </div>
               </div>
