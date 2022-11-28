@@ -43,6 +43,8 @@
             v-model="form.student_name"
             required
             type="text"
+            data-required
+            data-error-message="First Name is required"
           />
           <p>
             Parent/Guardian Name<br />
@@ -212,7 +214,12 @@
             type="text"
             required
           /><br />
-          <button type="submit" class="btn btn-thrid" @click="submitForm">
+          <button
+            type="submit"
+            class="btn btn-thrid"
+            @click="submitForm"
+            @submit="validateForm"
+          >
             <a href="#">Submit</a>
           </button>
         </form>
@@ -251,7 +258,39 @@ export default {
       },
     };
   },
+  computed: {},
   methods: {
+    validateForm: function (e) {
+      this.formErrors = []; // Empty Errors To Start Fresh
+
+      // [1] Check If Username Is Empty
+      if (!this.username) {
+        this.formErrors.push("Username Cant Be Empty");
+      }
+
+      // [2] Check If Subject Is Empty
+      if (!this.subject) {
+        this.formErrors.push("Subject Cant Be Empty");
+      }
+
+      // [3] Check If Message Is Empty
+      if (!this.message) {
+        this.formErrors.push("Message Cant Be Empty");
+      }
+
+      // [4] Check Username Characters Count
+      if (this.username && this.username.length > this.maxChars) {
+        this.formErrors.push(
+          `Username Cant Be More Than ${this.maxChars} Characters`
+        );
+      }
+
+      // If No Errors Return True
+      if (!this.formErrors.length) {
+        return true;
+      }
+      e.preventDefault();
+    },
     async submitForm() {
       // console.log(this.form);
       await axios
