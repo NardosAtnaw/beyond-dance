@@ -87,7 +87,7 @@
             learn about the security of our studio.
           </p>
           <button class="btn btn-secondary row-grid">
-            <a href="Safety.pdf" target="_blank" download> Download Safety</a>
+            <a href="../../Safety.pdf" target="_blank" download> Download Safety</a>
           </button>
         </div>
       </div>
