@@ -38,6 +38,7 @@
 
         <form action="" @submit.prevent="submitForm" class="full-form row-grid">
           <p>Student's Name *</p>
+          <p class="red-text">{{ formErrors.student_name }}</p>
           <input
             class="input"
             v-model="form.student_name"
@@ -50,13 +51,10 @@
             Parent/Guardian Name<br />
             Required for Children Ages 18 and Under
           </p>
-          <input
-            class="input"
-            v-model="form.parent_name"
-            required
-            type="text"
-          />
+
+          <input class="input" v-model="form.parent_name" type="text" />
           <p>Student's Gender *</p>
+          <p class="red-text">{{ formErrors.gender }}</p>
           <p>
             <input
               type="radio"
@@ -77,6 +75,7 @@
           </p>
           <p></p>
           <p>Date of Birth</p>
+          <p class="red-text">{{ formErrors.dob }}</p>
           <input class="input" v-model="form.dob" type="date" required />
           <p>Age Group *</p>
           <p>
@@ -120,15 +119,17 @@
             />Other
           </p>
           <p>School (if applicable)</p>
-
           <input class="input" v-model="form.school" type="text" required />
           <p>Email Address *</p>
+          <p class="red-text">{{ formErrors.email }}</p>
           <input class="input" v-model="form.email" type="text" required />
           <p>Phone Number *</p>
-          <input class="input" v-model="form.phone" type="text" required />
+          <p class="red-text">{{ formErrors.phone }}</p>
+          <input class="input" v-model="form.phone" type="text" />
           <p>Instagram Account (if applicable)</p>
           <input class="input" v-model="form.instagram" type="text" required />
           <p>What are you interested in? (Check all that applies) *</p>
+          <p class="red-text">{{ formErrors.interest }}</p>
           <p>
             <input
               type="checkbox"
@@ -206,21 +207,16 @@
             Other
           </p>
           <p>Dancer's Shoe Size (Euro Measurements)</p>
-          <input class="input" v-model="form.shoe" type="text" required />
+          <input class="input" v-model="form.shoe" type="text" />
           <p>Additional Information</p>
-          <input
-            class="input"
-            v-model="form.add_info"
-            type="text"
-            required
-          /><br />
+          <input class="input" v-model="form.add_info" type="text" /><br />
           <button
             type="submit"
             class="btn btn-thrid"
             @click="submitForm"
             @submit="validateForm"
           >
-            <a href="#">Submit</a>
+            Submit
           </button>
         </form>
       </div>
@@ -242,6 +238,15 @@ export default {
   components: { Footer },
   data() {
     return {
+      formErrors: {
+        student_name: "",
+
+        gender: "",
+        dob: "",
+
+        email: "",
+        phone: "",
+      },
       form: {
         student_name: "",
         parent_name: "",
@@ -261,38 +266,51 @@ export default {
   computed: {},
   methods: {
     validateForm: function (e) {
-      this.formErrors = []; // Empty Errors To Start Fresh
-
       // [1] Check If Username Is Empty
-      if (!this.username) {
-        this.formErrors.push("Username Cant Be Empty");
+      if (!this.form.student_name) {
+        this.formErrors.student_name = "Name Cant Be Empty";
+      }
+      if (!this.form.gender) {
+        this.formErrors.gender = "Gender Cant Be Empty";
+      }
+
+      if (!this.form.dob) {
+        this.formErrors.dob = "Date of Birth Cant Be Empty";
+      }
+      if (!this.form.email) {
+        this.formErrors.email = "Email Cant Be Empty";
+      }
+
+      if (!this.form.phone) {
+        this.formErrors.phone = "Phone Cant Be Empty";
       }
 
       // [2] Check If Subject Is Empty
-      if (!this.subject) {
-        this.formErrors.push("Subject Cant Be Empty");
-      }
+      // if (!this.subject) {
+      //   this.formErrors.push("Subject Cant Be Empty");
+      // }
 
       // [3] Check If Message Is Empty
-      if (!this.message) {
-        this.formErrors.push("Message Cant Be Empty");
-      }
+      // if (!this.message) {
+      //   this.formErrors.push("Message Cant Be Empty");
+      // }
 
       // [4] Check Username Characters Count
-      if (this.username && this.username.length > this.maxChars) {
-        this.formErrors.push(
-          `Username Cant Be More Than ${this.maxChars} Characters`
-        );
-      }
+      // if (this.username && this.username.length > this.maxChars) {
+      //   this.formErrors.push(
+      //     `Username Cant Be More Than ${this.maxChars} Characters`
+      //   );
+      // }
 
       // If No Errors Return True
-      if (!this.formErrors.length) {
-        return true;
-      }
+      // if (!this.formErrors.length) {
+      //   return true;
+      // }
       e.preventDefault();
     },
     async submitForm() {
       // console.log(this.form);
+      this.validateForm();
       await axios
         .post("https://beyonddancers.com/admin/register", {
           form: this.form,
