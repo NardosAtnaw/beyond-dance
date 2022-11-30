@@ -268,21 +268,21 @@ export default {
     validateForm: function (e) {
       // [1] Check If Username Is Empty
       if (!this.form.student_name) {
-        this.formErrors.student_name = "Name Cant Be Empty";
+        this.formErrors.student_name = "Please complete the form. Student name must not be left blank.";
       }
       if (!this.form.gender) {
-        this.formErrors.gender = "Gender Cant Be Empty";
+        this.formErrors.gender = "Please complete the form. Gender must not be left blank.";
       }
 
       if (!this.form.dob) {
-        this.formErrors.dob = "Date of Birth Cant Be Empty";
+        this.formErrors.dob = "Please complete the form. Date of Birth must not be left blank.";
       }
       if (!this.form.email) {
-        this.formErrors.email = "Email Cant Be Empty";
+        this.formErrors.email = "Please complete the form. Email must not be left blank.";
       }
 
       if (!this.form.phone) {
-        this.formErrors.phone = "Phone Cant Be Empty";
+        this.formErrors.phone = "Please complete the form. Phone must not be left blank.";
       }
 
       // [2] Check If Subject Is Empty
