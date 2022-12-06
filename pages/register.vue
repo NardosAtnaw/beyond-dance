@@ -210,12 +210,7 @@
           <input class="input" v-model="form.shoe" type="text" />
           <p>Additional Information</p>
           <input class="input" v-model="form.add_info" type="text" /><br />
-          <button
-            type="submit"
-            class="btn btn-thrid"
-            @click="submitForm"
-            @submit="validateForm"
-          >
+          <button type="submit" class="btn btn-thrid" @submit="submitForm">
             Submit
           </button>
         </form>
@@ -265,24 +260,35 @@ export default {
   },
   computed: {},
   methods: {
-    validateForm: function (e) {
+    validateForm() {
       // [1] Check If Username Is Empty
+      var status = true;
       if (!this.form.student_name) {
-        this.formErrors.student_name = "Please complete the form. Student name must not be left blank.";
+        this.formErrors.student_name =
+          "Please complete the form. Student name must not be left blank.";
+        status = false;
       }
       if (!this.form.gender) {
-        this.formErrors.gender = "Please complete the form. Gender must not be left blank.";
+        this.formErrors.gender =
+          "Please complete the form. Gender must not be left blank.";
+        status = false;
       }
 
       if (!this.form.dob) {
-        this.formErrors.dob = "Please complete the form. Date of Birth must not be left blank.";
+        this.formErrors.dob =
+          "Please complete the form. Date of Birth must not be left blank.";
+        status = false;
       }
       if (!this.form.email) {
-        this.formErrors.email = "Please complete the form. Email must not be left blank.";
+        this.formErrors.email =
+          "Please complete the form. Email must not be left blank.";
+        status = false;
       }
 
       if (!this.form.phone) {
-        this.formErrors.phone = "Please complete the form. Phone must not be left blank.";
+        this.formErrors.phone =
+          "Please complete the form. Phone must not be left blank.";
+        status = false;
       }
 
       // [2] Check If Subject Is Empty
@@ -306,20 +312,28 @@ export default {
       // if (!this.formErrors.length) {
       //   return true;
       // }
-      e.preventDefault();
+
+      return status;
     },
-    async submitForm() {
+    async submitForm(e) {
       // console.log(this.form);
-      this.validateForm();
-      await axios
-        .post("https://beyonddancers.com/admin/register", {
-          form: this.form,
-        })
-        .then((res) => {
-          console.log(res.data);
-          // this.$router.push("/thankyou");
-          window.location.href = "/thankyou";
-        });
+
+      const result = await this.validateForm();
+      console.log(result);
+      if (result) {
+        await axios
+          .post("https://beyonddancers.com/admin/register", {
+            form: this.form,
+          })
+          .then((res) => {
+            console.log(res.data);
+            // this.$router.push("/thankyou");
+            window.location.href = "/thankyou";
+          });
+      } else {
+        console.log(this.formErrors.student_name);
+        e.preventDefault();
+      }
     },
   },
 };
