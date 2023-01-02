@@ -4,7 +4,7 @@
     <div class="container1">
     
       <h3>CLASS / PROGRAM SCHEDULE<br/>
-(August 29, 2022 - December 10, 2022)</h3>
+(January 23, 2023 - June 10, 2023)</h3>
       <table class="row-grid">
         <thead>
           <tr>
