@@ -17,8 +17,8 @@
             </p>
             <br />
             <a href="https://versavvymedia.com/">
-              All CopyRight &copy; 2022 Beyond Dance Powered by Versavvy Media
-              Plc</a
+              All CopyRight Reserved &copy; 2023 Beyond Dancers and Powered by Versavvy
+              Media Plc</a
             >
           </div>
         </div>

@@ -120,7 +120,7 @@ Age group is in parenthesis next to class name
     <div class="container-sm">
     
     <h3>CLASS / PROGRAM SCHEDULE<br/>
-(August 29, 2022 - December 10, 2022)</h3>
+(January 23, 2023 - June 10, 2023)</h3>
     <table class="row-grid">
       <thead>
         <tr>
